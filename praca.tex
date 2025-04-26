@@ -1,0 +1,47 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = pl_PL
+% !TeX program = xelatex
+% !BIB program = biber
+% !TeX TXS-program:bibliography = txs:///biber
+% !TeX TXS-program:view = txs:///view-pdf-internal --embedded
+
+\documentclass[12pt, a4paper]{report}
+\usepackage[polish]{babel}
+
+\usepackage{uep-support}
+
+\def\student{Agnieszka Popiel}
+\def\titlepl{Klasyfikacja zmian skórnych z pomocą sieci neuronowych}
+\def\titleen{Skin lesion classification using neural networks}
+\def\promotor{dr hab. inż. Jarogniew Rykowski}
+\def\rodzaj{Praca magisterska}
+\def\kierunek{Informatyka i ekonometria}
+\def\specjalnosc{Informatyka w gospodarce i administracji}
+\def\rok{2026}
+
+\bibliography{bibliografia.bib}
+
+\makeindex
+
+\begin{document}
+\pagenumbering{alph}
+\maketitle
+\cleardoublepage\pagenumbering{roman}
+%\printindex
+\newpage
+\tableofcontents
+\listoftodos[Uwagi do pracy]
+\clearpage\pagenumbering{arabic}
+
+\input{wstep}
+\input{rozdzial2}
+\input{rozdzial3}
+\input{rozdzial4}
+\input{rozdzial5}
+\input{zakonczenie}
+
+\printbibliography
+\listoftables
+\listoffigures
+\lstlistoflistings
+\end{document}

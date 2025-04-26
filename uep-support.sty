@@ -1,0 +1,515 @@
+% !TeX encoding = UTF-8
+
+\usepackage{iftex}
+\ifPDFTeX
+   \usepackage[utf8]{inputenc}
+   \usepackage[T1]{fontenc}
+   %----fonts
+   \usepackage{roboto}
+   \usepackage{mathptmx}
+   \usepackage{charter}
+   \usepackage{inconsolata}
+   \DeclareUnicodeCharacter{00A0}{ }
+\else
+   \ifXeTeX
+     \usepackage{xltxtra}
+   \else 
+     \usepackage{luatextra}
+   \fi
+   \defaultfontfeatures{Mapping=tex-text,Ligatures=TeX,Scale=MatchUppercase}
+   %\defaultfontfeatures{Mapping=tex-text,Ligatures={NoRequired, NoCommon, NoContextual}} % jesli nie chcemy ligatur
+   \usepackage{amsmath} % Or mathtools    
+   \usepackage[math-style=upright]{unicode-math} % With unicode-math one can basically use only specially tailored OpenType math fonts
+   \setmainfont[Ligatures=TeX]{Calibri}
+   %\setmainfont[Ligatures=TeX]{Palatino Linotype}
+   %\setmainfont{TeX Gyre Pagella}
+   \setsansfont{Calibri}
+   %\usepackage{mathptmx}
+   %\usepackage{mathspec} % mathspec is a clever attempt to make it possible to use math in XeLaTeX documents, with system fonts
+   %\setmathfont{latinmodern-math.otf}
+   %\setmathfont{XITS Math}% for the symbols
+   %\setmathfont[range=it]{Carlito Italic}
+   %\setmathfont[range=bfup]{Carlito Bold}
+   %\setmathfont[range=bfit]{Carlito Bold Italic}
+   \setmathfont[slash-delimiter=frac]{Cambria Math}
+   \setmathfont[range=up]{Calibri}
+   \setmathfont[range=it]{Calibri Italic}
+   \setmathfont[range=bfup]{Calibri Bold}
+   \setmathfont[range=bfit]{Calibri Bold Italic}
+   \setoperatorfont\normalfont % For log, sin, cos, etc.
+   %\setmathfont{TeX Gyre Pagella Math}
+   \setmonofont[Scale=0.9]{Inconsolata LGC}
+   %\setmonofont[ExternalLocation=./fonts/Inconsolata/,ItalicFont={InconsolataLGC-Italic.otf},BoldFont={InconsolataLGC-Bold.otf},BoldItalicFont={InconsolataLGC-Bold-Italic.otf}]{InconsolataLGC.otf}
+\fi
+
+\usepackage{csquotes}
+%\DeclareQuoteAlias{german}{polish} % nie ma dla polskiego, ale niemiecki taki sam
+%mozna tez skorzystac z wlasnej definicji https://tex.stackexchange.com/questions/191709/biblatex-biber-babel-configuration-for-polish-language-and-style-of-bibliog
+\DeclareQuoteStyle[quotes]{polish}
+{\quotedblbase}
+{\textquotedblright}
+[0.05em]
+{\quotesinglbase}
+{\fixligatures\textquoteright}
+\DeclareQuoteAlias[quotes]{polish}{polish}
+\DeclareQuoteOption{polish}
+
+%dodanie mozliwosci wplywania na rozklad rysunkow przez \FloatBarrier
+\usepackage{placeins}
+
+%----usual packages
+\usepackage{graphicx}
+\usepackage{makeidx}
+%\usepackage{mdwlist}   superseded by enumitem, a newer package
+%\usepackage{enumerate} superseded by enumitem, a newer package
+\usepackage[inline]{enumitem}
+\usepackage{setspace}
+\usepackage[a4paper, twoside=true, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm, headsep=1.2cm]{geometry} 
+%\usepackage[a4paper, twoside=true, left=3.0cm, right=2cm, top=2.5cm, bottom=2.5cm, headsep=1.2cm]{geometry} 
+\usepackage{longtable}
+\usepackage{floatflt}
+\usepackage{multicol}
+\usepackage{tabularx}  % extension to the tabular env with col autowidth
+\usepackage{multirow}  % rows span in tables
+\usepackage{array}     % extension to tabular package (vertical alignment)
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem} % signle, dounle underlining, strining out
+\usepackage{scrextend} % to manipulate margins
+
+%% wciecie pierwszego wiersza jak w PL
+%\usepackage{indentfirst}
+
+%ustawienie kar na wiszące pojedyncze wiersze akapitu
+\widowpenalty10000
+\clubpenalty10000
+
+
+% w przypadku wielu \footnote oddziela je przecikiem
+% https://tex.stackexchange.com/questions/28465/multiple-footnotes-at-one-point
+%\usepackage[multiple]{footmisc} % to jest zwykle wywolanie, ale tutaj chyba biblatex laduje swoje wiec przekazujemy opcje
+%\PassOptionsToPackage{footmisc}{multiple}
+%nie dziala .... Section 2 of the footmisc manual states very clearly that footmisc is incompatible with hyperrefs hyperfootnotes option.
+
+% fnpct robi troche magii ze stopkami
+% w szczegolnosci \multfootnote
+% https://ctan.org/pkg/fnpct
+%\usepackage[punct-after=true,multiple=true]{fnpct}
+
+%ostatecznie wybrane rozwiazanie reczne
+\newcommand\footnotecomma{$^{\textrm{\footnotesize{,}}}$}
+\let\oldFootnote\footnote
+\newcommand\nextToken\relax
+\renewcommand\footnote[1]{%
+    \oldFootnote{#1}\futurelet\nextToken\isFootnote}
+\newcommand\isFootnote{%
+    \ifx\footnote\nextToken\footnotecomma\fi}
+
+
+\usepackage{caption}
+\captionsetup{labelsep=period}
+\renewcommand*{\tablename}{Tabela}
+\addto\captionspolish{\renewcommand{\tablename}{Tabela}}
+\addto\captionspolish{\renewcommand{\listtablename}{Spis tabel}}
+\addto\captionspolish{\def\sourcename{\'Zr\'od{\l}o}}
+\addto\captionsenglish{\def\sourcename{Source}}
+
+%\newcommand{\source}[1]{\vspace{0pt}\caption*{\normalfont\footnotesize\sourcename: {#1}}}
+
+\makeatletter
+\newcommand{\source}[1]{%
+  \def\myenvname{figure}
+  \ifx\@currenvir\myenvname
+    \vspace{-18pt}
+  \fi
+  \def\myenvname{table}
+  \ifx\@currenvir\myenvname
+    \vspace{-8pt}
+  \fi
+  \caption*{\normalfont\footnotesize\sourcename: {#1}}
+  \vspace{-8pt}
+  }
+\makeatother
+
+%\captionsetup[table]{captionaboveskip=10pt}
+%\captionsetup[table]{belowskip=0pt} 
+\setlength\belowcaptionskip{12pt}
+
+%\captionsetup[figure]{belowskip=-10pt}
+
+%\captionsetup{skip=20pt}
+
+%\captionsetup[figure]{position=bottom}
+%\captionsetup[table]{position=top}
+
+\renewcommand{\captionfont}{\bfseries}
+\renewcommand{\captionlabelfont}{\bfseries}
+
+%-----------------------
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{shadecolor}{cmyk}{0,0,1,0}
+\definecolor{Blue}{rgb}{0,0.16,0.90}
+\definecolor{Red}{rgb}{0.90,0.16,0}
+\definecolor{DarkBlue}{rgb}{0,0.08,0.45}
+\definecolor{ChangedColor}{rgb}{0.9,0.08,0}
+\definecolor{CommentColor}{rgb}{0.2,0.8,0.2}
+\definecolor{ToDoColor}{rgb}{0.1,0.2,1}
+\definecolor{DarkGreen}{rgb}{0,0.5,0.05}
+
+
+%-------------------
+\usepackage{comment}
+\usepackage{framed}
+
+\specialcomment{tiplength}
+{\begin{shaded}\noindent\scriptsize}
+{\end{shaded}}
+
+\specialcomment{tipcontent}
+{\begingroup\color{DarkGreen}\scriptsize}
+{\endgroup}
+
+\specialcomment{tiptask}
+{\begingroup\color{red}\textbf}
+{\endgroup}
+
+
+%-------------------
+\usepackage[colorlinks,plainpages=false,hyperindex]{hyperref}
+\definecolor{KolorLink}{rgb}{0,0.08,0.45}
+\definecolor{KolorUrl}{cmyk}{1,1,0,0.5}%<--
+\definecolor{BlackLink}{rgb}{0,0,0}
+\hypersetup{linkcolor=KolorUrl,citecolor=KolorLink,urlcolor=KolorUrl}
+
+%-------------------
+\usepackage[textsize=scriptsize,colorinlistoftodos]{todonotes}
+
+\newcommand{\done}[1]{\todo[color=Green!40]{#1}}
+\newcommand{\ask}[1]{\todo[color=Blue!40]{#1}}
+\newcommand{\rem}[1]{\todo[color=red!40]{#1}}
+\newcommand{\kaw}[1]{\todo[color=Goldenrod]{kaw: #1}}
+\newcommand{\odp}[1]{\todo[color=LimeGreen]{odp: #1}}
+
+
+%-------------------own commands
+\newcommand\compactlist{\setlength{\itemsep}{0cm}\setlength{\parskip}{0cm}}
+
+
+%-------------------bibliography
+%\usepackage[style=authoryear, useprefix=true,ibidtracker=constrict,hyperref=true,parentracker=true,maxbibnames=100,uniquename=init,firstinits=true,dashed=false,isbn=true,url=false,doi=true,citecounter=true,citetracker=true,uniquename=init,urldate=iso8601,backend=bibtex]{biblatex}
+%\usepackage[style=uep, useprefix=true,ibidtracker=constrict,hyperref=true,parentracker=true,maxbibnames=100,uniquename=init,giveninits=true,dashed=false,isbn=true,url=false,doi=true,citecounter=true,citetracker=true,uniquename=init,urldate=iso,date=year,backend=biber]{biblatex}
+%\usepackage[style=numeric, useprefix=true,ibidtracker=constrict,hyperref=true,parentracker=true,maxbibnames=100,uniquename=init,firstinits=true,isbn=true,url=false,doi=true,citecounter=true,citetracker=true,uniquename=init,urldate=iso8601,backend=bibtex]{biblatex}
+%\usepackage[style=alphabetic, useprefix=true,ibidtracker=constrict,hyperref=true,parentracker=true,maxbibnames=100,uniquename=init,firstinits=true,isbn=true,url=false,doi=true,citecounter=true,citetracker=true,uniquename=init,urldate=iso8601,backend=bibtex]{biblatex}
+
+%opcja terseinits=true usuwa kropki po imieniu
+%apamaxprtauth: To include an arbitrary number of authors (and editors) in the bibliography is possible though with the option apamaxprtauth, which defaults to 7
+
+\usepackage[style=apa, useprefix=true,ibidtracker=constrict,hyperref=true,parentracker=true,maxcitenames=3,apamaxprtauth=100,uniquename=init,giveninits=true,dashed=false,isbn=true,url=true,doi=true,citecounter=true,citetracker=true,uniquename=init,urldate=iso,date=year,backend=biber]{biblatex}
+
+%With biblatex 3.8/biblatex-apa 7.5 \DeclareLanguageMapping is not needed for biblatex-apa any more.
+\DeclareLanguageMapping{polish}{polish-apa}
+%as of 2023 language mapping is necessary again
+
+% If you are using biblatex with style=apa and want to keep the casing of your bib-file you need to use
+\DeclareFieldFormat{apacase}{#1}
+
+%tytul w bibliografii kursywa
+%\DeclareFieldFormat[misc]{title}{\textit{#1}}
+%tytul w tresci pracy rowniez moze byc kursywa albo w cudzyslowie w zaleznosci od potrzeby
+%\DeclareFieldFormat[article]{citetitle}{\mkbibemph{#1}}
+%\DeclareFieldFormat[article]{citetitle}{\mkbibquote{#1}}
+
+%przywrocenie stylu tt w url, bo biblatex-apa przedefiniowuje na normalny
+\urlstyle{tt}
+
+%zdefiniowanie komend pomocniczych do latwego cytowania
+\renewcommand\cite{\parencite}
+\newcommand\citep{\parencite}
+\newcommand\citet{\textcite}
+
+\DeclareNameAlias{author}{family-given}
+%\renewcommand*{\revsdnamepunct}{} % Removing the comma after last name in bibliography
+
+%
+%\renewcommand*{\finalnamedelim}{\addspace\bibstring{i}\space} % Removes comma after penultimate name
+% to powyzej nie dziala
+
+%https://tex.stackexchange.com/questions/200467/change-ampersand-separator-with-parencite-command-in-apa-style
+%biblatex-apa changes the \finalnamedelim quite often, so the best solution seems to be
+% ! NIESTETY NIE DZIALALO
+%\AtBeginBibliography{\renewcommand*{\finalnamedelim}{%
+%		\ifthenelse{\value{listcount}>\maxprtauth}
+%		{}
+%		{\ifthenelse{\value{liststop}>2}
+%			{\finalandcomma\addspace\bibstring{i}\space}
+%			{\addspace\bibstring{i}\space}}}}
+%%for the bibliography, and analogically
+%\AtEveryCitekey{\renewcommand*{\finalnamedelim}{%
+%		\ifthenelse{\value{listcount}>\maxprtauth}
+%		{}
+%		{\ifthenelse{\value{liststop}>2}
+%			{\finalandcomma\addspace\bibstring{i}\space}
+%			{\addspace\bibstring{i}\space}}}}
+
+%dopiero te deklaracje ponizej zadzialaly, tzn. mozna zmienic & -> i
+\DeclareDelimFormat[bib]{finalnamedelim}{\space}
+
+\DeclareDelimFormat[parencite]{finalnamedelim}
+{\ifnum\value{liststop}>2 \finalandcomma\fi\addspace i\space}
+
+\DeclareDelimFormat[nptextcite]{finalnamedelim}
+{\ifnum\value{liststop}>2 \finalandcomma\fi\addspace i\space}
+
+
+%%proper sorting of prefixes
+%\makeatletter
+%\AtBeginDocument{\toggletrue{blx@useprefix}}
+%\AtBeginBibliography{\renewcommand*{\finalnamedelim}{\addcomma\space}}
+%\AtBeginBibliography{\togglefalse{blx@useprefix}}
+%\makeatother
+
+
+%\renewbibmacro*{name:delim}[1]{%
+%  \ifnumgreater{\value{listcount}}{\value{liststart}}
+%    {\ifboolexpr{
+%       test {\ifnumless{\value{listcount}}{\value{liststop}}}
+%       or
+%       test \ifmorenames
+%     }
+%       {\multinamedelim}
+%       {\multinamedelim}}
+%    {}}
+
+%%suppress printing In in front of journal title
+%\renewbibmacro{in:}{\ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
+%
+%%The first removes the quotation marks from your citations; the second from the bibliography.
+%\DeclareFieldFormat[article]{citetitle}{#1}
+%\DeclareFieldFormat[article]{title}{#1} 
+%
+%%właściwe drukowanie vol i num
+%\DeclareFieldFormat[article]{volume}{\bibstring{jourvol}\addnbspace #1}
+%\DeclareFieldFormat[article]{number}{\bibstring{number}\addnbspace #1}
+%\renewbibmacro*{volume+number+eid}{%
+%  \printfield{volume}%
+%  \setunit{\addcomma\space}%<---- was \setunit*{\adddot}%
+%  \printfield{number}%
+%  \setunit{\addcomma\space}%
+%  \printfield{eid}}
+
+
+%\usepackage{xpatch}
+%%do usunięcia nawiasów wokół roku w author-year
+%\xpatchbibmacro{date+extrayear}{%
+%	\printtext[parens]%
+%}{%
+%\setunit{\addcomma\space}%
+%\printtext%
+%}{}{}
+
+
+%-------------------listings
+
+\usepackage{listings}
+
+%rozszerzenie zestawu znaków do użycia w xelatex w lstlisting
+%https://tex.stackexchange.com/questions/25391/the-listings-package-and-utf-8/25396#25396
+\makeatletter
+\lst@InputCatcodes
+\def\lst@DefEC{%
+ \lst@CCECUse \lst@ProcessLetter
+  ^^80^^81^^82^^83^^84^^85^^86^^87^^88^^89^^8a^^8b^^8c^^8d^^8e^^8f%
+  ^^90^^91^^92^^93^^94^^95^^96^^97^^98^^99^^9a^^9b^^9c^^9d^^9e^^9f%
+  ^^a0^^a1^^a2^^a3^^a4^^a5^^a6^^a7^^a8^^a9^^aa^^ab^^ac^^ad^^ae^^af%
+  ^^b0^^b1^^b2^^b3^^b4^^b5^^b6^^b7^^b8^^b9^^ba^^bb^^bc^^bd^^be^^bf%
+  ^^c0^^c1^^c2^^c3^^c4^^c5^^c6^^c7^^c8^^c9^^ca^^cb^^cc^^cd^^ce^^cf%
+  ^^d0^^d1^^d2^^d3^^d4^^d5^^d6^^d7^^d8^^d9^^da^^db^^dc^^dd^^de^^df%
+  ^^e0^^e1^^e2^^e3^^e4^^e5^^e6^^e7^^e8^^e9^^ea^^eb^^ec^^ed^^ee^^ef%
+  ^^f0^^f1^^f2^^f3^^f4^^f5^^f6^^f7^^f8^^f9^^fa^^fb^^fc^^fd^^fe^^ff%
+  ^^^^20ac^^^^0153^^^^0152^^^^0104^^^^0105^^^^0106^^^^0107% nouveau pour xetex
+  ^^^^0118^^^^0119^^^^0141^^^^0142^^^^0143^^^^0144^^^^015a^^^^015b%
+  ^^^^0179^^^^017a^^^^017b^^^^017c%
+  ^^00}
+\lst@RestoreCatcodes
+\makeatother
+
+\lstset{ %
+aboveskip=0.5cm,
+belowskip=0cm,
+lineskip=-0.1cm,
+frame=tb,
+tabsize=3,
+numberbychapter=false,
+extendedchars=true,		%for correct non-ASCII chars
+inputencoding=utf8,		%for correct non-ASCII chars in the source
+language=XML,                % choose the language of the code
+basicstyle=\ttfamily\footnotesize,       % the size of the fonts that are used for the code
+numbers=right,                   % where to put the line-numbers
+numberstyle=\color{Gray}\tiny,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1 each line will be numbered
+numbersep=-12pt,                  % how far the line-numbers are from the code
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+%frame=single,                   % adds a frame around the code
+frame=tb,                        % add frame at top and bottom 
+tabsize=2,                      % sets default tabsize to 2 spaces
+captionpos=b,     % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+%title=\lstname,                 % show the filename of files included with \lstinputlisting;
+backgroundcolor=\color{White},  % choose the background color
+keywordstyle=\color{DarkBlue}\bfseries,
+keywordstyle=[2]\color{Red},
+stringstyle=\color{DarkGreen},
+commentstyle=\color{Gray},
+numberbychapter=true,
+escapeinside={\%*}{*))},
+language=[Sharp]C
+}
+
+
+\renewcommand{\lstlistingname}{Listing}
+\renewcommand{\lstlistlistingname}{Spis kodów źródłowych}
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{BrickRed}
+
+\lstdefinelanguage{json}{
+	literate=
+	*{0}{{{\color{numb}0}}}{1}
+	{1}{{{\color{numb}1}}}{1}
+	{2}{{{\color{numb}2}}}{1}
+	{3}{{{\color{numb}3}}}{1}
+	{4}{{{\color{numb}4}}}{1}
+	{5}{{{\color{numb}5}}}{1}
+	{6}{{{\color{numb}6}}}{1}
+	{7}{{{\color{numb}7}}}{1}
+	{8}{{{\color{numb}8}}}{1}
+	{9}{{{\color{numb}9}}}{1}
+	{:}{{{\color{punct}{:}}}}{1}
+	{,}{{{\color{punct}{,}}}}{1}
+	{\{}{{{\color{delim}{\{}}}}{1}
+	{\}}{{{\color{delim}{\}}}}}{1}
+	{[}{{{\color{delim}{[}}}}{1}
+	{]}{{{\color{delim}{]}}}}{1},
+}
+
+
+\lstdefinelanguage{sparql}%
+  {classoffset=0,%
+   morekeywords={BASE,PREFIX,SELECT,DISTINCT,CONSTRUCT,DESCRIBE,ASK,%
+        FROM,NAMED,WHERE,ORDER,BY,ASC,DESC,LIMIT,OFFSET,OPTIONAL,%
+        GRAPH,UNION,FILTER,a,STR,LANG,LANGMATCHES,DATATYPE,BOUND,%
+        isIRI,isURI,isBLANK,isLITERAL,REGEX,true,false},%
+   classoffset=1,%
+   morekeywords={rdf,rdfs,prop,dc,ex,qb},
+   keywordstyle=\color{Brown},%
+   classoffset=0,%
+   sensitive=false,%
+   morestring=[s][\color{Gray}]{<>},%
+   morestring=[s][\color{DarkGreen}]{""},%
+   morestring=[d]',%
+   morestring=[d]"%
+   morecomment=[l]\#,%
+   escapeinside={~}{~}%
+  }[keywords,comments,strings]%  
+
+
+\lstdefinelanguage{turtle}%
+  {classoffset=0,%
+   morekeywords={@PREFIX,@prefix,@base,@BASE,a},
+   keywordstyle=\bfseries\color{DarkBlue},%
+   classoffset=1,%
+   morekeywords={xsd,rdf,rdfs,prop,dc,ex,qb,dbo,dbr},
+   keywordstyle=\color{Brown},%
+   classoffset=0,%
+   sensitive=false,%
+   morestring=[s][\color{Gray}]{<>},%
+   morestring=[s][\color{DarkGreen}]{""},%
+   morestring=[d]',%
+   morestring=[d]"%
+   morecomment=[l]\#,%
+   escapeinside={~}{~}%
+  }[keywords,comments,strings]%  
+  
+  
+%-------------------layout
+
+\setstretch{1.5}
+\sloppy
+
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{3}
+
+\setlist[itemize]{noitemsep}
+\setlist[enumerate]{noitemsep}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{
+\put(0,-1){
+\parbox[b][\paperheight]{\paperwidth}{%
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,
+keepaspectratio]{header-WIGE-pl.png}
+\vfill
+}}}
+
+\renewcommand*{\maketitle}{%
+\begin{titlepage}
+\AddToShipoutPicture*{\BackgroundPic} 
+\sffamily
+%
+\begin{center}
+\vspace*{2cm}
+{\Large\bfseries \student}\\[1.5cm]
+\end{center}
+\begin{addmargin}[3.75cm]{0cm}
+{\Large \titlepl}\\[1.5cm]
+{\Large \titleen}\\[1.5cm]
+\end{addmargin}
+\begin{center}
+{\bfseries\rodzaj}
+\end{center}
+\vfill
+\begin{flushright}
+\vspace*{2cm}
+\begin{tabular}{lr}
+Promotor: & \promotor \\
+%\multicolumn{2}{l}{Pracę przyjęto dnia:}
+\end{tabular}
+
+\vspace*{2cm}
+%{\scriptsize podpis Promotora \par}
+\end{flushright}
+\vspace*{1.5cm}
+\begin{flushleft}
+\small
+Kierunek: \kierunek \\
+Specjalność: \specjalnosc \\
+\end{flushleft}
+\begin{center}
+\vspace{0.5cm}
+Poznań \rok
+\vspace{0.5cm}
+\end{center}
+
+%
+\end{titlepage}
+}
+
+
+%allows to break URLs
+%\def\UrlOrds{\do\*\do\-\do\~\do\'\do\"\do\-}%
+%https://tex.stackexchange.com/questions/3033/forcing-linebreaks-in-url
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother

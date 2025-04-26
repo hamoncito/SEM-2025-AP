@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'praca.blg'
+[128] biber-MSWIN64:340> INFO - === 
+[168] Biber.pm:419> INFO - Reading 'praca.bcf'
+[351] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[388] bbl.pm:660> INFO - Writing 'praca.bbl' with encoding 'UTF-8'
+[388] bbl.pm:763> INFO - Output to praca.bbl
+[389] Biber.pm:131> WARN - The file 'praca.bcf' does not contain any citations!
+[389] Biber.pm:133> INFO - WARNINGS: 1
