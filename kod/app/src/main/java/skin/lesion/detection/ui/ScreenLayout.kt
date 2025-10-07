@@ -7,15 +7,23 @@ import android.graphics.Bitmap
 import android.net.Uri
 import androidx.activity.compose.ManagedActivityResultLauncher
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Info
+import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -53,23 +61,50 @@ internal fun ScreenLayout(
                 )
             )
         },
-        floatingActionButton = {
-            FloatingActionButton(
-                onClick = {
-                    val options = arrayOf("Aparat", "Galeria")
-                    AlertDialog.Builder(context)
-                        .setTitle("Wybierz źródło")
-                        .setItems(options) { _, which ->
-                            when (which) {
-                                0 -> permissionLauncher.launch(Manifest.permission.CAMERA)
-                                1 -> galleryLauncher.launch("image/*")
-                            }
+        bottomBar = {
+            BottomAppBar(
+                containerColor = MaterialTheme.colorScheme.primary,
+                contentColor = MaterialTheme.colorScheme.onPrimary,
+                actions = {
+                    Row(
+                        horizontalArrangement = Arrangement.SpaceAround,
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        IconButton(onClick = {}) {
+                            Icon(
+                                Icons.Filled.Home,
+                                contentDescription = "Strona główna",
+                                modifier = Modifier.size(32.dp)
+                            )
                         }
-                        .show()
+                        IconButton(onClick = {
+                            val options = arrayOf("Aparat", "Galeria")
+                            AlertDialog.Builder(context)
+                                .setTitle("Wybierz źródło")
+                                .setItems(options) { _, which ->
+                                    when (which) {
+                                        0 -> permissionLauncher.launch(Manifest.permission.CAMERA)
+                                        1 -> galleryLauncher.launch("image/*")
+                                    }
+                                }
+                                .show()
+                        }) {
+                            Icon(
+                                Icons.Filled.Add,
+                                contentDescription = "Dodaj zdjęcie",
+                                modifier = Modifier.size(32.dp)
+                            )
+                        }
+                        IconButton(onClick = {}) {
+                            Icon(
+                                Icons.Filled.Info,
+                                contentDescription = "Info",
+                                modifier = Modifier.size(32.dp)
+                            )
+                        }
+                    }
                 }
-            ) {
-                Icon(Icons.Filled.Add, contentDescription = "Dodaj zdjęcie")
-            }
+            )
         }
     ) { paddingValues ->
         Column(
