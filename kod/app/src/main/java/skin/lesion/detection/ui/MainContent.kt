@@ -1,21 +1,20 @@
-import android.Manifest
-import android.app.AlertDialog
 import android.graphics.Bitmap
 import android.net.Uri
 import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.Button
-import androidx.compose.material3.Text
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.unit.dp
 import androidx.core.content.FileProvider
+import skin.lesion.detection.ui.ScreenLayout
 import skin.lesion.detection.TFLiteHelper
+import skin.lesion.detection.models.PredictionResult
 import java.io.File
 
 @Composable
@@ -23,13 +22,13 @@ internal fun MainContent(modifier: Modifier) {
     val context = LocalContext.current
     var imageUri by remember { mutableStateOf<Uri?>(null) }
     var imageBitmap by remember { mutableStateOf<Bitmap?>(null) }
-    var prediction by remember { mutableStateOf<String?>(null) }
+    var predictions by remember { mutableStateOf<List<PredictionResult>?>(null) }
 
     val tfliteHelper = remember { TFLiteHelper(context) }
 
     LaunchedEffect(imageBitmap) {
         imageBitmap?.let {
-            prediction = tfliteHelper.predict(it)
+            predictions = tfliteHelper.predict(it)
         }
     }
 
@@ -43,7 +42,7 @@ internal fun MainContent(modifier: Modifier) {
                 stream?.close()
 
                 imageBitmap?.let {
-                    prediction = TFLiteHelper(context).predict(it)
+                    predictions = TFLiteHelper(context).predict(it)
                 }
             }
         }
@@ -53,6 +52,7 @@ internal fun MainContent(modifier: Modifier) {
         contract = ActivityResultContracts.GetContent()
     ) { uri: Uri? ->
         uri?.let {
+            predictions = null
             val stream = context.contentResolver.openInputStream(it)
             imageBitmap = android.graphics.BitmapFactory.decodeStream(stream)
             stream?.close()
@@ -63,6 +63,7 @@ internal fun MainContent(modifier: Modifier) {
         contract = ActivityResultContracts.RequestPermission()
     ) { granted ->
         if (granted) {
+            predictions = null
             val file = File(context.cacheDir, "skinlesion.jpg")
             val uri = FileProvider.getUriForFile(
                 context,
@@ -76,40 +77,13 @@ internal fun MainContent(modifier: Modifier) {
         }
     }
 
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .padding(16.dp)
-    ) {
-        Text("Zrób zdjęcie do analizy")
-
-        Button(
-            onClick = {
-                val options = arrayOf("Aparat", "Galeria")
-                AlertDialog.Builder(context)
-                    .setTitle("Wybierz źródło")
-                    .setItems(options) { _, which ->
-                        when (which) {
-                            0 -> permissionLauncher.launch(Manifest.permission.CAMERA)
-                            1 -> galleryLauncher.launch("image/*")
-                        }
-                    }
-                    .show()
-            },
-            modifier = Modifier.padding(top = 16.dp)
-        ) {
-            Text("Dodaj zdjęcie")
-        }
-        imageBitmap?.let { bmp ->
-            Image(
-                bitmap = bmp.asImageBitmap(),
-                contentDescription = "Zrobione zdjęcie",
-                modifier = Modifier.padding(top = 16.dp)
-            )
-        }
-
-        prediction?.let {
-            Text("Wykryto: $it", modifier = Modifier.padding(top = 16.dp))
-        }
-    }
+    ScreenLayout(
+        modifier,
+        galleryLauncher,
+        permissionLauncher,
+        imageBitmap,
+        predictions,
+        context
+    )
 }
+

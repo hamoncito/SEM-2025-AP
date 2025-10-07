@@ -19,7 +19,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             SkinlesiondetectionTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MainContent(modifier = Modifier.padding(innerPadding))
+                    MainContent(
+                        modifier = Modifier.padding(innerPadding))
                 }
             }
         }

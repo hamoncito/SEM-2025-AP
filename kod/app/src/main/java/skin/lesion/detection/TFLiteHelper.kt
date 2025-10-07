@@ -5,6 +5,8 @@ import android.graphics.Bitmap
 import android.util.Log
 import androidx.core.graphics.scale
 import org.tensorflow.lite.Interpreter
+import skin.lesion.detection.models.LesionType
+import skin.lesion.detection.models.PredictionResult
 import java.io.FileInputStream
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
@@ -57,17 +59,18 @@ class TFLiteHelper(context: Context) {
         return byteBuffer
     }
 
-    fun predict(bitmap: Bitmap): String {
+    fun predict(bitmap: Bitmap): List<PredictionResult> {
         val byteBuffer = preprocessImage(bitmap)
-
         val output = Array(1) { FloatArray(labels.size) }
 
         interpreter.run(byteBuffer, output)
 
-        Log.d("TFLiteOutput", output[0].joinToString())
+        val predictions = output[0].mapIndexed { index, confidence ->
+            val lesionType = LesionType.mapToLesionType(labels[index])
+                ?: LesionType.UNKNOWN
+            PredictionResult(lesionType, confidence)
+        }
 
-        val maxIndex = output[0].indices.maxByOrNull { output[0][it] } ?: -1
-        return labels[maxIndex]
+        return predictions.sortedByDescending { it.confidence }
     }
-
 }
