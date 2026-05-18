@@ -14,9 +14,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -31,9 +28,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import skin.lesion.detection.R
 import skin.lesion.detection.models.PredictionResult
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -84,14 +83,14 @@ internal fun ScreenLayout(
                                 .show()
                         }) {
                             Icon(
-                                Icons.Filled.Add,
+                                painter = painterResource(R.drawable.add_icon),
                                 contentDescription = "Dodaj zdjęcie",
                                 modifier = Modifier.size(32.dp)
                             )
                         }
                         IconButton(onClick = {}) {
                             Icon(
-                                Icons.Filled.Info,
+                                painter = painterResource(R.drawable.info_icon),
                                 contentDescription = "Info",
                                 modifier = Modifier.size(32.dp)
                             )

@@ -13,7 +13,16 @@ import java.nio.channels.FileChannel
 
 class TFLiteHelper(context: Context) {
 
-    private val labels = listOf("akiec", "bcc", "bkl", "df", "mel", "nv", "vasc")
+    private val labels = listOf(
+        "actinic keratosis",
+        "benign keratosis",
+        "dermatofibroma",
+        "melanoma",
+        "nevus",
+        "non-melanoma skin cancer",
+        "vascular lesions"
+    )
+
     private val interpreter: Interpreter
 
     companion object {
@@ -31,9 +40,12 @@ class TFLiteHelper(context: Context) {
         val fileChannel = inputStream.channel
         val startOffset = assetFileDescriptor.startOffset
         val declaredLength = assetFileDescriptor.declaredLength
+        val options = Interpreter.Options().apply {
+            setNumThreads(4)
+        }
 
         return Interpreter(
-            fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength)
+            fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength), options
         )
     }
 
@@ -66,7 +78,6 @@ class TFLiteHelper(context: Context) {
 
         val predictions = output[0].mapIndexed { index, confidence ->
             val lesionType = LesionType.mapToLesionType(labels[index])
-                ?: LesionType.UNKNOWN
             PredictionResult(lesionType, confidence)
         }
 
