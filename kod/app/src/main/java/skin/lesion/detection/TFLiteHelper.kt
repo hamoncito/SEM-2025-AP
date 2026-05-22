@@ -14,20 +14,20 @@ import java.nio.channels.FileChannel
 class TFLiteHelper(context: Context) {
 
     private val labels = listOf(
-        "actinic keratosis",
-        "benign keratosis",
-        "dermatofibroma",
-        "melanoma",
-        "nevus",
-        "non-melanoma skin cancer",
-        "vascular lesions"
+        "ACK",
+        "BCC",
+        "MEL",
+        "NEV",
+        "SCC",
+        "SEK"
     )
+
 
     private val interpreter: Interpreter
 
     companion object {
         private const val MODEL_NAME = "skin_lesion_model.tflite"
-        private const val INPUT_SIZE = 224
+        private const val INPUT_SIZE = 299
     }
 
     init {
@@ -58,17 +58,19 @@ class TFLiteHelper(context: Context) {
         resizedBitmap.getPixels(intValues, 0, INPUT_SIZE, 0, 0, INPUT_SIZE, INPUT_SIZE)
 
         for (pixel in intValues) {
-            val r = ((pixel shr 16) and 0xFF) / 255f
-            val g = ((pixel shr 8) and 0xFF) / 255f
-            val b = (pixel and 0xFF) / 255f
-            byteBuffer.putFloat(r)
-            byteBuffer.putFloat(g)
-            byteBuffer.putFloat(b)
+            val r = ((pixel shr 16) and 0xFF).toFloat()
+            val g = ((pixel shr 8) and 0xFF).toFloat()
+            val b = (pixel and 0xFF).toFloat()
+
+            byteBuffer.putFloat(b - 103.939f)
+            byteBuffer.putFloat(g - 116.779f)
+            byteBuffer.putFloat(r - 123.68f)
         }
 
         byteBuffer.rewind()
         return byteBuffer
     }
+
 
     fun predict(bitmap: Bitmap): List<PredictionResult> {
         val byteBuffer = preprocessImage(bitmap)
