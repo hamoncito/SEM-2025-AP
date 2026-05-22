@@ -95,7 +95,8 @@ PAD-UFES-20 zawiera sześć kategorii zmian skórnych:
 	\item nev (nevus)
 \end{itemize}
 W ramach klasy "`scc'', czyli raka kolczystokomórkowego uwzględniono również chorobę Bowena, który jest nieinwazyjną postacią tego nowotworu.
-Zbiór obejmuje również szeroki zakres danych klinicznych pacjentów, takich jak informacje o paleniu, obecności bólu lub krwawienia zmiany, a także dane socjoekonomiczne, takie jak dostęp do bieżącej wody i kanalizacji \cite{Castro_2020}.
+Zbiór obejmuje również szeroki zakres danych klinicznych pacjentów, takich jak informacje o paleniu, obecności bólu lub krwawienia zmiany, a także dane socjoekonomiczne, takie jak dostęp do bieżącej wody i kanalizacji.
+PAD-UFES-20 jest jedynym publicznie dostępnym zbiorem obrazów zmian skórnych wykonanych kamerą telefonu komórkowego, co wyraźnie odróżnia go od pozostałych zasobów wykorzystywanych w badaniach nad automatyczną analizą dermatoskopową \cite{Castro_2020}.
 
 \subsection{MED-NODE}
 MED-NODE to zbiór danych obejmujący 170 obrazów klinicznych przedstawiających zmiany melanocytowe, spośród których 70 przypadków stanowi czerniak złośliwych a 100 to łagodne zmiany melanocytowe, powszechnie nazywane pieprzykami.
@@ -318,223 +319,126 @@ Dostępne zbiory danych obejmują szerokie spektrum jednostek chorobowych, wobec
 Ograniczenie liczby rozpoznawanych typów zmian jest konieczne, ponieważ nadmierna liczba klas zwiększałaby złożoność obliczeniową modelu oraz mogłaby prowadzić do niewystarczającej liczby przykładów dla poszczególnych kategorii.
 Z kolei zbyt mała liczba klas obniżyłaby użyteczność systemu.
 
-W ramach projektu zdecydowano się na wykorzystanie zbiorów HAM10000, BCN20000, DERM7PT, ISIC 2020 oraz PAD-UFES-20.
-HAM10000, BCN20000 oraz ISIC 2020, jako oficjalne zasoby International Skin Imaging Collaboration, obejmują zbliżone kategorie zmian skórnych i definują je w podobny sposób.
-Podstawę danych stanowią HAM10000 oraz BCN20000, ponieważ zawierają one bardzo dużą liczbę obrazów oraz charakteryzują się wysoką jakością diagnostyczną.
-Choć zbiór ISIC 2020 w dużej mierze składa się z klasy "`unknown'', został on uwzględniony ze względu na obecność licznych przykładów rzadziej występujących zmian, takich jak plamy soczewicowate (ang. \textit{lentigo}) czy rogowacenie liszajowate (ang. \textit{lichenoid keratosis}).
-Zbiór PAD-UFES-20 jest istotny dla praktyczności systemu, ponieważ obejmuje zdjęcia wykonane aparatem telefonu komórkowego, co odpowiada rzeczywistemu wykorzystaniu aplikacji.
-Dodatkowo włączono zbiór DERM7PT, który jest oparty na siedmiopunktowej skali diagnostycznej, przez co zawiera szeroki zakres cech klinicznych, reprezentując różne typy znamion.
+W eksperymentach wykorzystano zbiory HAM10000, BCN20000, DERM7PT, ISIC 2020 oraz PAD-UFES-20.
+Wstępne próby łączenia zdjęć dermoskopowych ze zdjęciami wykonanymi aparatem telefonu wykazały, że tak duża heterogeniczność danych znacząco obniżała jakość modelu i utrudniała efektywne uczenie się charakterystyk obrazów.
+W konsekwencji zdecydowano się na wytrenowanie dwóch odrębnych modeli - jednego opartego wyłącznie na obrazach dermoskopowych oraz drugiego trenowanego jedynie na zdjęciach wykonanych aparatem smartfonu.
+
+Model wytrenowany na obrazach dermoskopowych osiągał bardzo wysokie wyniki na danych testowych pochodzących z tego samego typu obrazów, jednak jego skuteczność drastycznie spadała w przypadku zdjęć wykonanych telefonem.
+Wynika to z faktu, że fotografie mobilne charakteryzują się znacznie większą zmiennością pod względem oświetlenia, jakości oraz sposobu kadrowania.
+W kolejnym etapie wytrenowano modele wyłącznie na zbiorze PAD-UFES-20.
+Uzyskane wyniki wskazały, że modele oparte na tym zbiorze radzą sobie najlepiej w warunkach odpowiadających rzeczywistemu zastosowaniu aplikacji mobilnej.
+Z tego powodu zdecydowano się wykorzystać wyłącznie PAD-UFES-20 jako podstawę dalszych badań.
 
 Analiza zmian skórnych przez system opiera się wyłącznie na obrazie, więc wykorzystano jedynie metadane w postaci odnośników do zdjęć oraz odpowiadających im diagnoz.
-Po połączeniu pięciu zbiorów danych w jeden wyróżniono 45 klas, w tym:
+W zbiorze PAD-UFES-20 wyróżniono sześć kategorii zmian skórnych:
 
 \begin{itemize}
-	\item 11 klas i 16923 obrazów znamion melanocytowych, czyli pieprzyków (ang. \textit{nevus})
-	\item 8 klas i 4857 obrazów czerniaka (ang. \textit{melanoma})
-	\item 3 klasy i 4210 obrazów raka podstawnokomórkowego (ang. \textit{basal cell carcinoma})
-	\item 2 klasy i 2237 obrazów łagodnego rogowacenia (ang. \textit{benign keratosis})
-	\item 3 klasy i 1794 obrazy rogowacenie słoneczne (ang. \textit{actinic keratosis})
-	\item 2 klasy i 623 obrazy raka kolczystkomórkowego  (ang. \textit{squamous cell carcinoma})
-	\item 3 klasy i 253 obrazów zmian naczyniowych (ang. \textit{vascular lesions})
-	\item 3 klasy i 239 obrazów włókniaka twardego (ang. \textit{dermatofibroma})
+	\item BCC (basal cell carcinoma) - 845 obrazów raka podstawnokomórkowego 
+	\item ACK (actinic keratosis) - 730 obrazów rogowacenia słonecznego
+	\item NEV (nevus) - 244 obrazy znamion melanocytowych, czyli pieprzyków
+	\item SEK (seborrheic keratosis) - 235 obrazów rogowacenia łojotokowego
+	\item SCC (squamous cell carcinoma) - 192 obrazy raka kolczystkomórkowego
+	\item MEL (melanoma) - 52 obrazy czerniaka
 \end{itemize}
 
-Wykaz wszystkich klas występujących w zbiorach HAM10000, BCN20000, DERM7PT, ISIC 2020 oraz PAD‑UFES‑20, wraz z ich liczebnościami, przedstawiono w tabeli \ref{tab:klasy_zbiory}.
+\subsection{Rak podstawnokomórkowy - basal cell carcinoma}
+Rak podstawnokomórkowy (basal cell carcinoma, BCC) jest najczęściej występującym złośliwym nowotworem skóry, szczególnie u osób o jasnej karnacji.
+Rozwija się w wyniku przewlekłej ekspozycji na promieniowanie ultrafioletowe oraz częściej dotyczy osób w starszym wieku.
+Zmiana zwykle wykazuje obecność pajączków naczyniowych na swojej powierzchni, a wraz z upływem czasu stopniowo się powiększa, prowadząc do powstania nieregularnej, szorstkiej struktury.
 
-\begin{table}[htbp]
-	\centering
-	\small
-	\caption{Wykaz klas w wybranych zbiorach danych}
-	\renewcommand{\arraystretch}{1}
-	\begin{tabular}{|l|c|c|c|c|c|}
-		\hline
-		\textbf{Klasa} & \textbf{HAM10000} & \textbf{PAD-UFES-20} & \textbf{DERM7PT} & \textbf{ISIC 2020} & \textbf{BCN20000} \\ \hline
-		ACK & 0 & 730 & 0 & 0 & 0 \\ \hline
-		AK & 0 & 0 & 0 & 0 & 737 \\ \hline
-		BCC & 0 & 845 & 0 & 0 & 2809 \\ \hline
-		BKL & 0 & 0 & 0 & 0 & 1138 \\ \hline
-		DF & 0 & 0 & 0 & 0 & 124 \\ \hline
-		MEL & 0 & 52 & 0 & 0 & 2857 \\ \hline
-		NEV & 0 & 244 & 0 & 0 & 0 \\ \hline
-		NV & 0 & 0 & 0 & 0 & 4206 \\ \hline
-		SCC & 0 & 192 & 0 & 0 & 431 \\ \hline
-		SEK & 0 & 235 & 0 & 0 & 0 \\ \hline
-		VASC & 0 & 0 & 0 & 0 & 111 \\ \hline
-		akiec & 327 & 0 & 0 & 0 & 0 \\ \hline
-		atypical melanocytic proliferation & 0 & 0 & 0 & 1 & 0 \\ \hline
-		basal cell carcinoma & 0 & 0 & 42 & 0 & 0 \\ \hline
-		bcc & 514 & 0 & 0 & 0 & 0 \\ \hline
-		bkl & 1099 & 0 & 0 & 0 & 0 \\ \hline
-		blue nevus & 0 & 0 & 28 & 0 & 0 \\ \hline
-		cafe-au-lait macule & 0 & 0 & 0 & 1 & 0 \\ \hline
-		clark nevus & 0 & 0 & 399 & 0 & 0 \\ \hline
-		combined nevus & 0 & 0 & 13 & 0 & 0 \\ \hline
-		congenital nevus & 0 & 0 & 17 & 0 & 0 \\ \hline
-		dermal nevus & 0 & 0 & 33 & 0 & 0 \\ \hline
-		dermatofibroma & 0 & 0 & 20 & 0 & 0 \\ \hline
-		df & 115 & 0 & 0 & 0 & 0 \\ \hline
-		lentigo & 0 & 0 & 24 & 0 & 0 \\ \hline
-		lentigo NOS & 0 & 0 & 0 & 44 & 0 \\ \hline
-		lichenoid keratosis & 0 & 0 & 0 & 37 & 0 \\ \hline
-		mel & 1113 & 0 & 0 & 0 & 0 \\ \hline
-		melanoma & 0 & 0 & 1 & 584 & 0 \\ \hline
-		melanoma (0.76 to 1.5 mm) & 0 & 0 & 53 & 0 & 0 \\ \hline
-		melanoma (in situ) & 0 & 0 & 64 & 0 & 0 \\ \hline
-		melanoma (less than 0.76 mm) & 0 & 0 & 102 & 0 & 0 \\ \hline
-		melanoma (more than 1.5 mm) & 0 & 0 & 28 & 0 & 0 \\ \hline
-		melanoma metastasis & 0 & 0 & 4 & 0 & 0 \\ \hline
-		melanosis & 0 & 0 & 16 & 0 & 0 \\ \hline
-		miscellaneous & 0 & 0 & 8 & 0 & 0 \\ \hline
-		nevus & 0 & 0 & 0 & 5193 & 0 \\ \hline
-		nv & 6705 & 0 & 0 & 0 & 0 \\ \hline
-		recurrent nevus & 0 & 0 & 6 & 0 & 0 \\ \hline
-		reed or spitz nevus & 0 & 0 & 79 & 0 & 0 \\ \hline
-		seborrheic keratosis & 0 & 0 & 45 & 135 & 0 \\ \hline
-		solar lentigo & 0 & 0 & 0 & 7 & 0 \\ \hline
-		unknown & 0 & 0 & 0 & 27124 & 0 \\ \hline
-		vasc & 142 & 0 & 0 & 0 & 0 \\ \hline
-		vascular lesion & 0 & 0 & 29 & 0 & 0 \\ \hline
-	\end{tabular}
-	\label{tab:klasy_zbiory}
-\end{table}
+BCC wywodzi się z keratynocytów warstwy podstawnej naskórka, rozwijających się w obrębie skóry uszkodzonej przez działanie promieniowania słonecznego.
+Charakteryzuje się powolnym wzrostem oraz niskim ryzykiem przerzutów, co sprawia, że rokowanie jest zazwyczaj dobre, zwłaszcza przy wczesnym wykryciu. 
+Standardową metodą leczenia jest chirurgiczne usunięcie zmiany, które w większości przypadków prowadzi do całkowitego wyleczenia \cite{Bourke_2010}.
 
-Na podstawie dostępnej literatury zdecydowano się na arbitralne pogrupowanie dostępnych kategorii w siedem ogólnych klas zmian skórnych. 
-Strategię ujednolicenia klas zaprezentowano w tabeli \ref{tab:klasy_ujednolicone}.
-
-\begin{table}[htbp]
-	\centering
-	\caption{Ujednolicenie klas}
-	\renewcommand{\arraystretch}{1.2}
-	\begin{tabular}{|l|p{10cm}|}
-		\hline
-		\textbf{Klasa} & \textbf{Oryginalne klasy} \\ \hline
-		melanoma & mel, MEL, melanoma, melanoma (in situ), melanoma (less than 0.76 mm), melanoma (0.76 to 1.5 mm), melanoma (more than 1.5 mm), melanoma metastasis \\ \hline
-		nevus & nv, NV, NEV, nevus, clark nevus, blue nevus, combined nevus, congenital nevus, dermal nevus, recurrent nevus, reed or spitz nevus \\ \hline
-		actinic keratosis & akiec, ACK, AK \\ \hline
-		benign keratosis & SEK, BKL, bkl, seborrheic keratosis, lichenoid keratosis \\ \hline
-		non-melanoma skin cancer & bcc, BCC, basal cell carcinoma, SCC \\ \hline
-		dermatofibroma & df, dermatofibroma, DF \\ \hline
-		vascular lesions & vasc, vascular lesion \\ \hline
-	\end{tabular}
-	\label{tab:klasy_ujednolicone}
-\end{table}
-
-\subsection{Czerniak - melanoma}
-Klasa czerniaka złośliwego obejmuje różne odmiany i stadia rozwoju czerniaka, przedstawione w zestawieniu \ref{fig:melanoma_classes}.
-Są to nowotworowe zmiany wywodzące się ze znamion melanocytowych, mogące przyjmować postać inwazyjną lub nieinwazyjną (in situ).
-Wczesne wykrycie czerniaka umożliwia skuteczne leczenie chirurgiczne.
-Czerniak różni się od łagodnych znamion melanocytowych nieregularną strukturą, asymetrią oraz niejednorodnością barwy \cite{Bourke_2010, Kittler_2018}.
+Przykładowe obrazy tej klasy przedstawiono na rysunku \ref{fig:bcc_examples}.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{melanoma_classes}
-	\caption{Klasy zawarte w klasie "`melanoma''}
+	\includegraphics[width=0.9\linewidth]{bcc_examples}
+	\caption{Klasa "`basal cell carcinoma''}
 	\source{Opracowanie własne}
-	\label{fig:melanoma_classes}
-\end{figure}
-
-
-\subsection{Zmiany melanocytowe - nevus}
-Klasa nevus dotyczy łagodnych znamion melanocytowych, powszechnie określanych jako pieprzyki.
-Zawarto w niej jedenaście podkategorii przedstawionych na rysunku \ref{fig:nevus_classes}, w tym odmiany specyficzne, takie jak znamię Reeda czy znamię Clarka.
-Zmiany melanocytowe nie stanowią zagrożenia zdrowotnego, usuwa się je głównie ze względów estetycznych bądź w przypadku podejrzenia zezłośliwienia \cite{Bourke_2010}.
-Pod względem dermoskopowym mogą znacznie się różnić między sobą, m.in. w zakresie barwy, jednak w przeciwieństwie do czerniaka cechują się symetrią oraz jednorodnością struktury \cite{Kittler_2018}.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.9\linewidth]{nevus_classes}
-	\caption{Klasy zawarte w klasie "`nevus''}
-	\source{Opracowanie własne}
-	\label{fig:nevus_classes}
+	\label{fig:bcc_examples}
 \end{figure}
 
 \subsection{Rogowacenie słoneczne - actinic keratosis}
-Klasa rogowacenia słonecznego obejmuje nieninwazyjne odmiany raka płaskonabłonkowego skóry, które można leczyć miejscowo.
-Uwzględnia również raka śródnabłonkowego, określanego jako choroba Bowena.
-Przykłady rogowacenia słonecznego przedstawiono na rysunku \ref{fig:actinic_keratosis_classes}.
-Zarówno rogowacenie słoneczne, jak i choroba Bowena są związane z przewlekłą ekspozycją na promieniowanie UV, szczególnie u osób o jasnej karnacji i w regionach o wysokim nasłonecznieniu.
-Rozpoznanie wymaga potwierdzenia histopatologicznego, a leczenie może polegać na wycięciu chirurgicznym, krioterapii lub wyłyżeczkowaniu zmiany.
-W analizowanych zbiorach rogowacenie słoneczne stanowi odrębną kategorię ze względu na ryzyko progresji do inwazyjnego raka płaskonabłonkowego \cite{Bourke_2010, Kittler_2018}.
+Klasa rogowacenia słonecznego obejmuje nieinwazyjne zmiany przednowotworowe powstające w wyniku przewlekłej ekspozycji na promieniowanie ultrafioletowe.
+Zmiana może przekształcić się w złośliwego raka kolczystkomórkowego, przez co wymaga obserwacji.
+Pojedyncze obszary rogowacenia słonefznego różnią się od siebie i pojawiają się w każdym miejscu przewlekle eksponowanym na słońce, np. na twarzy, uszach i szyi.
+Przykładową fotografię rogowacenia słonecznego przedstawiono na rysunku \ref{fig:actinic_keratosis_examples}.
+Rozpoznanie wymaga potwierdzenia histopatologicznego, natomiast leczenie może obejmować krioterapię, wyłyżeczkowanie lub chirurgiczne usunięcie zmiany \cite{Bourke_2010}.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{actinic_keratosis_classes}
-	\caption{Klasy zawarte w klasie "`actinic keratosis''}
+	\includegraphics[width=0.9\linewidth]{actinic_keratosis_examples}
+	\caption{Klasa "`actinic keratosis''}
 	\source{Opracowanie własne}
-	\label{fig:actinic_keratosis_classes}
+	\label{fig:actinic_keratosis_examples}
 \end{figure}
 
-\subsection{Łagodne rogowacenie - benign keratosis}
-Klasy "`bkl'' i "`BKL'' obejmują wiele rodzajów łagodnych zmian rogowaciejących, dlatego zdecydowano się traktować je jako kategorię nadrzędną, do której przyporządkowano bardziej szczegółowe typy znamion, takie jak rogowacenie łojotokowe (seborrheic keratosis), rogowacenie liszajowate (lichenoid keratosis) oraz plamy soczewicowate (lentigo, lentigo NOS).
-Autorzy zbiorów BCN20000 i HAM10000 zdecydowali się na szeroką kategorię zrogowaceń ze względu na ich łagodny charakter oraz podobieństwo kliniczne.
-Rogowacenie łojotokowe przyjmuje postać grudkowatych zmian o nierównej powierzchni, rogowacenie liszajowate ma charakter zapalny i często przybiera barwę czerwoną lub fioletową, a plamy soczewicowate są płaskimi, brązowymi zmianami wynikającymi z proliferacji melanocytów.
-Zmiany te nie wymagają leczenia, a ich usunięcie ma zwykle charakter estetyczny \cite{Bourke_2010, Kittler_2018}.
-Przykłady łagodnego rogowacenia przedstawiono na rysunku \ref{fig:benign_keratosis_classes}.
+\subsection{Zmiana melanocytowa - nevus}
+Klasa nevus dotyczy łagodnych znamion melanocytowych, powszechnie określanych jako pieprzyki.
+Zmiany melanocytowe nie stanowią zagrożenia zdrowotnego, usuwa się je głównie ze względów estetycznych bądź w przypadku podejrzenia zezłośliwienia \cite{Bourke_2010}.
+Pod względem dermoskopowym mogą znacznie się różnić między sobą, m.in. w zakresie barwy, jednak w przeciwieństwie do czerniaka cechują się symetrią oraz jednorodnością struktury.
+Przykładowy obraz z klasy NEV przedstawiono na rysunku \ref{fig:nevus_examples}.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{benign_keratosis_classes}
-	\caption{Klasy zawarte w klasie "`benign keratosis''}
+	\includegraphics[width=0.9\linewidth]{nevus_examples}
+	\caption{Klasa "`nevus''}
 	\source{Opracowanie własne}
-	\label{fig:benign_keratosis_classes}
+	\label{fig:nevus_examples}
 \end{figure}
 
-\subsection{Rak skóry inny niż czerniak - non-melanoma skin cancer}
+\subsection{Rogowacenie łojotokowe - seborrheic keratosis}
+Rogowacenie łojotokowe, określane również jako brodawka starcza, to łagodna zmiana nowotworowa wywodząca się z komórek naskórka.
+Zmiany te są zazwyczaj wyniosłe powierzchnię skóry i mają ostro odgraniczone granice.
+Wraz z upływem czasu mogą stopniowo powiększać się i ciemnieć.
+Rogowacenie łojotokowe nie stanowi zagrożenia zdrowotnego i nie ulega zezłośliwieniu, dlatego leczenie nie jest konieczne \cite{Hafner_Vogt_2008}.
+Przykładową zmianę należącą do klasy SEK przedstawiono na rysunku \ref{fig:sek_examples}.
 
-W ramach projektu wyodrębniono klasę "`non‑melanoma skin cancer'', obejmującą raka podstawnokomórkowego (basal cell carcinoma, BCC) oraz raka kolczystokomórkowego (SCC), zaprezentowane na rysunku \ref{fig:non_melanoma_skin_cancer_classes}
-Są to najczęściej występujące złośliwe nowotwory skóry, zwykle związane z przewlekłą ekspozycją na promieniowanie słoneczne.
-Oba typy nowotworów rosną powoli i rzadko dają przerzuty, co sprawia, że rokowania są bardzo dobre przy wczesnym wykryciu.
-Standardem leczenia jest chirurgiczne usunięcie zmiany.
-Połączenie tych kategorii wynika z ich podobieństw biologicznych, przy jednoczesnym odróżnieniu od czerniaka ze względu na niższy stopień złośliwości \cite{Bourke_2010, Hernández2024, Kittler_2018}.
+\cite{Bourke_2010}
+ \ref{fig:sek_examples}.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{non_melanoma_skin_cancer_classes}
-	\caption{Klasy zawarte w klasie "`non-melanoma skin cancer''}
+	\includegraphics[width=0.9\linewidth]{sek_examples}
+	\caption{Klasa "`seborrheic keratosis''}
 	\source{Opracowanie własne}
-	\label{fig:non_melanoma_skin_cancer_classes}
+	\label{fig:sek_examples}
 \end{figure}
 
-\subsection{Włókniak twardy - dermatofibroma}
-Włókniak twardy jest łagodną zmianą nowotworową o charakterze guzka, najczęściej stanowiącą reakcję zapalną na drobny uraz.
-Cechuje się obecnością siateczkowatych linii na obrzeżach oraz białej plamki w jej środkowej części odpowiadającej zwłóknieniu.
-Zmiany te usuwa się jedynie w przypadku podejrzenia czerniaka, natomiast w większości przypadków nie wymagają leczenia \cite{Bourke_2010, Hernández2024}.
-Przykłady przedstawiono na rysunku \ref{fig:dermatofibroma_classes}.
+
+\subsection{Rak kolczystokomórkowy - squamous cell carcinoma}
+Rak kolczystokomórkowy to złośliwy nowotwór skóry rozwijający się najczęściej u osób starszych, szczególnie w miejscach przewlekle narażonych na działanie czynników karcynogennych, takich jak promieniowanie ultrafioletowe czy związki pochodne dziegciu.
+Nowotwór ten wywodzi się z keratynocytów warstwy kolczystej naskórka i może klinicznie przypominać rogowacenie słoneczne lub przyjmować postać większych mas bądź owrzodzeń.
+SCC charakteryzuje się stosunkowo niskim ryzykiem przerzutów, 
+Leczenie opiera się na chirurgicznym wycięciu zmiany, a w wybranych przypadkach stosuje się również radioterapię \cite{Bourke_2010}.
+Przykład raka kolczystokomórkowego pokazano na rysunku \ref{fig:scc_examples}.
+	
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{scc_examples}
+	\caption{Klasa "`squamous cell carcinoma''}
+	\source{Opracowanie własne}
+	\label{fig:scc_examples}
+\end{figure}
+
+
+\subsection{Czerniak - melanoma}
+Czerniak złośliwy to agresywny nowotwór wywodzący się z znamion melanocytowych, mogący występować zarówno w postaci inwazyjnej i nieinwazyjnej (in situ).
+Zmianę przedstawiono na rysunku \ref{fig:melanoma_examples}.
+Wczesne wykrycie czerniaka umożliwia skuteczne leczenie chirurgiczne.
+Czerniak różni się od łagodnych znamion melanocytowych nieregularną strukturą, asymetrią oraz niejednorodnością barwy \cite{Bourke_2010}.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{dermatofibroma_classes}
-	\caption{Klasy zawarte w klasie "`dermatofibroma''}
+	\includegraphics[width=0.9\linewidth]{melanoma_examples}
+	\caption{Klasa "`melanoma''}
 	\source{Opracowanie własne}
-	\label{fig:dermatofibroma_classes}
+	\label{fig:melanoma_examples}
 \end{figure}
 
-\subsection{Zmiany naczyniowe - vascular lesions}
-Zmiany naczyniowe vharakteryzują się intensywnym czerwono‑fioletowym zabarwieniem oraz wyraźnie odgraniczoną strukturą, wynikającą z poszerzenia i krętego przebiegu naczyń krwionośnych w skórze.
-Przykładami zmian naczyniowych są naczyniaki wiśniowe oraz ziarniniaki ropne.
-Nie powodują one dolegliwości zdrowotnych i są usuwane głównie ze względów estetycznych \cite{Bourke_2010, Kittler_2018}.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.9\linewidth]{vascular_classes}
-	\caption{Klasy zawarte w klasie "`vascular lesions''}
-	\source{Opracowanie własne}
-	\label{fig:vascular_classes}
-\end{figure}
-
-Po połączeniu wszystkich źródeł w jeden zbiór oraz przeprowadzeniu procesu ujednolicenia klas, uzyskano następujący rozkład liczebności:
-
-\begin{itemize}
-	\item nevus - 16 923 obrazów,
-	\item melanoma - 4 858 obrazów,
-	\item non‑melanoma skin cancer - 4 833 obrazów,
-	\item benign keratosis - 2 757 obrazów,
-	\item actinic keratosis - 1 794 obrazów,
-	\item vascular lesions - 253 obrazy,
-	\item dermatofibroma - 239 obrazów.
-\end{itemize}
-
-Łącznie zintegrowany zbiór obejmował 31 657 obrazów, co przedstawiono na wykresie słupkowym \ref{fig:classes_bar} oraz wykresie kołowym \ref{fig:classes_pie}.
+Łącznie badany zbiór obejmował 2 298 obrazów, co przedstawiono na wykresie słupkowym \ref{fig:classes_bar} oraz wykresie kołowym \ref{fig:classes_pie}.
 
 \begin{figure}[h]
 	\centering
@@ -550,16 +454,6 @@ Po połączeniu wszystkich źródeł w jeden zbiór oraz przeprowadzeniu procesu
 	\caption{Procentowy udział klas w zbiorze przed ich ujednoliceniem}
 	\source{Opracowanie własne}
 	\label{fig:classes_pie}
-\end{figure}
-
-Ponad 70\% wszystkich danych pochodziło ze zbiorów BCN20000 oraz HAM10000, co zilustrowano na rysunku \ref{fig:datasets}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.9\linewidth]{datasets}
-	\caption{Procentowy udział poszczególnych zbiorów źródłowych}
-	\source{Opracowanie własne}
-	\label{fig:datasets}
 \end{figure}
 
 W kolejnych etapach przeprowadzono dalsze czyszczenie oraz przygotowanie danych pod kątem wymagań modelu, co szczegółowo opisano w rozdziale 4, w podrozdziale Obróbka danych.
@@ -586,6 +480,7 @@ Następnie obraz jest przekazany do lokalnie przechowywanego modelu TFLite, któ
 
 \section{Podsumowanie}
 Prezentowany system stanowi przykład praktycznego wykorzystania głębokich sieci neuronowych do wstępnego rozpoznawania zmian skórnych, uwzględniający zarówno obecne regulacje prawne, jak i ograniczenia technologii sztucznej inteligencji oraz związane z nią zagadnienia etyczne.
+Aplikacja wykorzystuje powszechną dostępność smartfonów oraz rosnącą jakość ich aparatów fotograficznych, aby zwiększać świadomość pacjentów w zakresie monitorowania zmian skórnych i wspierać wczesną identyfikację niepokojących objawów.
 Choć współczesne modele uczenia maszynowego nie osiągnęły jeszcze poziomu dojrzałości umożliwiającego ich pełnoprawne zastosowanie kliniczne, rozwijanie prototypowych rozwiązań tego typu pozostaje kluczowe dla dalszego postępu AI.
 Systemy wykorzystujące sieci neuronowe mogą w przyszłości wspierać lekarzy w procesie diagnostycznym, odciążać służbę zdrowia oraz zwiększać świadomość pacjentów w zakresie wczesnego wykrywania zmian skórnych.
 Należy podkreślić, że wynik wygenerowany przez model nie stanowi diagnozy medycznej, lecz jedynie statystyczne przybliżenie oparte na ograniczonym zbiorze danych treningowych.

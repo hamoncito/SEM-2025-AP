@@ -24,10 +24,9 @@ Główne pakiety wykorzystane w badaniu to:
 \end{itemize}
 
 \subsection{Obróbka danych}
-Zbiory danych HAM10000, PAD‑UFES‑20, derm7pt, ISIC 2020 oraz BCN20000 pobrano lokalnie i załadowano z dysku.
-Każdy zbiór składał się z archiwum ZIP zawierającego obrazy oraz pliku CSV z metadanymi opisującymi przypadki kliniczne. 
-W pierwszym etapie rozpakowano wszystkie archiwa, a następnie dla każdego zbioru utworzono kolumnę path, która wskazywała pełną ścieżkę do konkretnego pliku graficznego. 
-Umożliwiło to późniejsze elastyczne operowanie na obrazach oraz ich łączenie w jeden zbiór.
+Zbiór PAD‑UFES‑20 pobrano lokalnie i załadowano z dysku, a następnie rozpakowano archiwa zdjęć.
+W kolejnym kroku utworzono kolumnę path, która wskazywała pełną ścieżkę do konkretnego pliku graficznego. 
+Umożliwiło to późniejsze elastyczne operowanie na obrazach.
 	
 \begin{lstlisting}[language=Python, caption=Funkcja do rozpakowywania archiwów ZIP]
 def unzip(zip_path, extract_to):
@@ -40,7 +39,6 @@ def unzip(zip_path, extract_to):
 \end{lstlisting}
 
 Po rozpakowaniu zdjęć przypisano każdemu rekordowi dokładnej lokalizacji odpowiadającego mu obrazu na dysku.
-Każdy zbiór wymagał indywidualnego podejścia, ponieważ różniły się one strukturą katalogów oraz sposobem nazewnictwa plików.
 Następnie przeprowadzono weryfikację integralności danych polegającą na próbie otwarcia każdego pliku graficznego.
 Obrazy, które generowały wyjątek, zostały usunięte ze zbioru, co zapewniło poprawność danych wejściowych wykorzystywanych w dalszych etapach analizy.
 
@@ -60,13 +58,9 @@ def remove_corrupted(metadata, path_column="path"):
 	return metadata[metadata[path_column].isin(good)].reset_index(drop=True)
 \end{lstlisting}
 
-Wszystkie zbiory obejmowały łącznie 42 klasy diagnostyczne, jednak ich nazwy znacząco różniły się między zbiorami.
-W celu uproszczenia i ujednolicenia zbiorów zdecydowano się na zredukowanie klas do siedmiu kategorii zmian skórnych, które szczegółowo opisano w Rozdziale 3 i przedstawiono w tabeli \ref{tab:klasy_ujednolicone}.
-Ujednolicenie pozwoliło na spójne etykietowanie danych pochodzących z różnych źródeł.
-	
-Ze względu na silną nierównowagę klas przeprowadzono zastosowano oversampling, czyli technikę polegającą na sztucznym zwiększeniu liczby przykładów klas rzadkich poprzez wielokrotne powielanie.
-W efekcie liczebność każdej kategorii została zwiększona do 5000 przykładów, co odpowiadało 14,3\% całego zbioru.
-Rozkład klas przed i po oversamplingu przedstawiono odpowiednio na wykresach \ref{fig:classes_bar}, \ref{fig:classes_pie} oraz \ref{fig:oversampling_classes} w Rozdziale 3.
+Ze względu na silną nierównowagę klas zastosowano oversampling, czyli technikę polegającą na sztucznym zwiększeniu liczby przykładów klas rzadkich poprzez wielokrotne powielanie.
+W efekcie liczebność kategorii SK, NEV, MEL oraz SCC została zwiększona do 300 przykładów.
+Rozkład klas przed i po oversamplingu przedstawiono odpowiednio na wykresach \ref{fig:classes_bar}, \ref{fig:classes_pie} oraz \ref{fig:oversampling_classes}.
 
 \begin{figure}[h!]
 	\centering
@@ -77,29 +71,29 @@ Rozkład klas przed i po oversamplingu przedstawiono odpowiednio na wykresach \r
 \end{figure}
 
 \subsubsection{Przygotowanie do trenowania}
-Po oczyszczeniu i ujednoliceniu danych zbiór podzielono na dwa główne podzbiory, jeden obejmujący zdjęcia dermoskopowe a drugi, znacznie mniejszy, obrazy wykonane aparatem telefonu.
-
-Następnie dokonano podziału danych dermoskopowych na zbiór testowy, który stanowił 20\% danych.
-Z pozostałych danych 10\% przeznaczono na zbiór walidacyjny i 90\% na zbiór treningowy.
-
-Zbiór obejmujący dane zdjęć wykonanych aparatem telefonu podzielono na zbiór treningowy i walidacyjny w proporcji 80 do 20.
-
-W kolejnym kroku połączono oba zbiory treningowe w jeden, aby model mógł uczyć się jednocześnie zdjęć dermoskopowych jak i telefonicznych.
-
-Ostateczne proporcje zbiorów wynosiły
+Następnie wydzielono zbiór treningowy, testowy oraz walidacyjny w proporcjach:
 \begin{itemize}
-	\item dane treningowe - x przykładów
-	\item dane walidacyjne - x przykładów obrazów dermoskopowych, x przykładów obrazów telefonicznych
-	\item dane testowe - x przykładów
+	\item dane treningowe - 1998 przykładów (72\% zbioru)
+	\item dane walidacyjne - 222 przykładów (8\% zbioru)
+	\item dane testowe - 555 przykładów (20\% zbioru)
 \end{itemize}
 
-Wyznaczenie dwóch zbiorów walidacyjnych umożliwia ocenę zdolności modelu do generalizacji na dwóch różnych typach obrazów, co jest kluczowe w kontekście zastosowań klinicznych.
+W celu przygotowania danych do trenowania wykorzystano klasę ImageDataGenerator z biblioteki Keras, która umożliwia wykonywanie losowych transformacji obrazów podczas trenowania modelu.
+Augmentacje danych wejściowych zwiększają różnorodność danych treningowych, co ogranicza ryzyko przeuczenia oraz lepiej odzwierciedla zmienność jakości zdjęć wykonywanych smartfonem.
+Zastosowano następujące transformacje:
+\begin{itemize}
+	\item obrót obrazu o losowy kąt do 25 stopni
+	\item przesunięcia poziome i pionowe do 15\% wymiaru obrazu
+	\item przybliżenie do 25\%
+	\item nachylenie obrazu do 10 stopni
+	\item losowe odbicia poziome i pionowe
+	\item zmiane jasności w zakresie 0.4-1.l6
+	\item przesunięcie kanałów kolorystycznych do 40 jednostek
+	\item uzupełnianie pikseli metodą nearest
+\end{itemize}
 
-Do przygotowania danych do trenowania wykorzystano klasę ImageDataGenerator z biblioteki Keras, która umożliwia wykonywanie losowych transformacji obrazów podczas trenowania, które zwiększają różnorodność danych treningowych.
-Zastosowano losowy obrót w zakresie 10 stopni, przybliżenie do 10\% oraz odbicie obrazu w płaszczyźnie poziomej.
-Augmentacja pomaga ograniczyć przeuczenie (ang. \textit{overfitting}) i lepiej odzwierciedla zmienność jakości zdjęć wykonywanych telefonem.
-
-Dla zbiorów walidacyjnych i testowych zastosowano generatory bez augmentacji aby zapewnić obiektywną ocenę modelu.
+Agresywne transformacje pozwalają modelowi uczyć się bardziej odpornych reprezentacji, szczególnie istotnych w przypadku zdjęć wykonywanych w warunkach domowych, przy zmiennym oświetleniu i różnej jakości aparatów.
+Dla zbiorów walidacyjnych i testowych zastosowano generatory bez augmentacji, aby zapewnić obiektywną i powtarzalną ocenę jakości modelu.
 
 \begin{lstlisting}[language=Python, caption=Definicja ImageDataGeneratora dla klasy treningowej]
 train_datagen = ImageDataGenerator(
@@ -111,21 +105,21 @@ train_datagen = ImageDataGenerator(
 )
 \end{lstlisting}
 
-Następnie utworzono generatory wczytujące obrazy z dysku, skalujące je do rozmiaru 224 na 224 pikseli, kodujące etykiety oraz stosujące zdefiniowane transformacje.
+Następnie utworzono generatory wczytujące obrazy z dysku, skalujące je do rozmiaru 299 na 299 pikseli, kodujące etykiety oraz stosujące zdefiniowane transformacje.
 
 W celu porównania skuteczności rożnych architektur konwolucyjnych sieci neuronowych zdefiniowano słownik modeli dostępnych w ramach biblioteki Keras.
 Modele różnią się pod względem liczby parametrów, głębokości architektury oraz przeznaczenia.
-Część z wybranych sieci, na przykład MobileNetV2 lub NASNetMobile zostało zaprojektowanych specjalnie z myślą o urządzeniach mobilnych, co jest istotne w kontekście implementacji systemu wykonującego inferencję na smartfonie.
+Część z wybranych sieci zostało zaprojektowanych specjalnie z myślą o urządzeniach mobilnych, co jest istotne w kontekście implementacji systemu wykonującego inferencję na smartfonie.
 
 \begin{lstlisting}[language=Python, caption=Słownik sieci neuronowych]
 MODELS = {
 	"MobileNetV2": tf.keras.applications.MobileNetV2,
-	"VGG16": tf.keras.applications.VGG16,
-	"NASNetMobile": tf.keras.applications.NASNetMobile,
+	"MobileNetV3Large": tf.keras.applications.MobileNetV3Large,
 	"ResNet50": tf.keras.applications.ResNet50,
-	"InceptionV3": tf.keras.applications.InceptionV3,
 	"EfficientNetB0": tf.keras.applications.EfficientNetB0,
 	"DenseNet121": tf.keras.applications.DenseNet121,
+	"ResNet101": tf.keras.applications.ResNet101,
+	"ConvNeXtTiny": tf.keras.applications.ConvNeXtTiny,
 }
 \end{lstlisting}
 
@@ -137,8 +131,8 @@ TransferLearningTuner w pierwszym kroku tworzy architekturę wczytując model ba
 W kolejnym kroku dodano warstwy klasyfikacyjne, które redukują wymiar cech, stabilizują trenowanie oraz zapobiegają przeuczeniu.
 
 Pierwszy etap trenowania polega na uczeniu wyłącznie warstw klasyfikacyjnych przy zamrożonych wagach modelu bazowego.
-Domyślnie trenowanie w tym etapie składa się z pięciu epok i jest wykonywane z learning rate na poziomie 5e-5.
-Do trenowania wykorzystano optymalizator Adam oraz funkcję straty CategoricalFocalCrossentropy, która redukuje wpływ klas dominujących na predykcje modelu.
+Domyślnie trenowanie w tym etapie składa się z pięciu epok.
+Do trenowania wykorzystano optymalizator Adam oraz funkcję straty CategoricalCrossentropy, która redukuje wpływ klas dominujących na predykcje modelu.
 Zdefiniowano również kilka funkcji wywoływanych po każdej epoce lub po zakończeniu procesu, polegających na zapisie najlepszych wag modelu, zatrzymanie trenowania po 3 epokach bez poprawy, redukcji learning rate przy stagnacji oraz minitorowanie różnic między domeną dermoskopową a zdjęć telefonicznych.
 
 Drugi etap trenowania odmraża większość warstw modelu bazowego z wyjątkiem warstw BatchNormalization, które przechowują statystyki domenowe i ich trenowanie mogłoby destabilizować proces.
@@ -146,7 +140,7 @@ Odmrożenie warstw pozwala dostosować głębsze reprezentacje do specyfiki dany
 
 Po zakończeniu trenowania wykonywana jest ewaluacja na zbiorze testowym a następnie generowana jest macierz pomyłek, wynik F1 dla każdej klasy oraz wykresy strat i dokładności.
 Następnie wytrenowany model jest konwertowany do formatu TensorFlow Lite, umożliwiając wykorzystanie go do bezpośredniej inferencji na urządzeniu mobilnym.
-Cały pipeline uruchamiany jest motodą run, która wykonuje oba etapy trenowania oraz pełną ewaluację.
+Cały pipeline uruchamiany jest metodą run, która wykonuje oba etapy trenowania oraz pełną ewaluację.
 
 \section{Aplikacja mobilna}
 W ramach systemu zaprojektowano aplikację mobilną korzystającą z wybranego modelu.
@@ -162,23 +156,43 @@ Sieć neuronową uwzględniono w zasobach aplikacji i obsłużono za pomocą bib
 	\label{fig:diagram_klas}
 \end{figure}
 
-Diagram \ref{fig:diagram_klas} przedstawia pełną architekturę aplikacji, w której warstwa interfejsu użytkownika jest ściśle oddzielona od logiki przetwarzania obrazu i inferencji modelu uczenia maszynowego.
-Klasa MainActivity pełni rolę punktu wejścia aplikacji i inicjuje środowisko Compose, delegując dalsze zarządzanie stanem i logiką do komponentu MainContent.
-MainContent stanowi centralny element warstwy interfejsu użytkownika - przechowuje stan bieżącego obrazu, wyniki klasyfikacji oraz instancję klasy TFLiteHelper.
-TFLiteHelper odpowiada za przygotowanie danych wejściowych, uruchomienie modelu TensorFlow Lite oraz przetworzenie wyników inferencji.
-Obraz dostarczony przez użytkownika jest skalowany, normalizowany i konwertowany do formatu akceptowanego przez Interpreter z biblioteki TensorFlow Lite.
-Następnie model zwraca wektor prawdopodobieństw, który jest mapowany na typy zmian skórnych zdefiniowane w enumeracji LesionType.
-Każdy wynik jest reprezentowany jako obiekt PredictionResult, zawierający LesionType jak i poziom prawdopodobieństwa przynależności do danej grupy.
-Stworzenie dedykowanej klasy umożliwia łatwą prezentacje wyników i ich dalsze przetwarzanie.
+Diagram \ref{fig:diagram_klas} przedstawia pełną architekturę aplikacji, w której warstwa interfejsu użytkownika jest oddzielona od logiki przetwarzania obrazu oraz inferencji modelu uczenia maszynowego.
+Głównym punktem wejścia aplikacji jest klasa MainActivity, odpowiedzialna za inicjalizację środowiska Jetpack Compose oraz utworzenie instancji MainViewModel, który zarządza stanem aplikacji.
 
-Warstwa prezentacji została zaprojektowana w sposób modularny. 
-Komponent ScreenLayout odpowiada za ogólny układ ekranu, a szczegółowa prezentacja wyników delegowana jest do AnalysisPanel, który generuje dynamiczną listę komponentów PredictionRow, z których każdy odpowiada pojedynczemu wynikowi klasyfikacji.
+Warstwa prezentacji została zaprojektowana modularnie.
+Komponent ScreenContent odpowiada za ogólny układ aplikacji, natomiast poszczególne ekrany realizują konkretne funkcje interfejsu.
+Ekran PredictionScreen prezentuje wyniki klasyfikacji, natomiast AnalysisPanel generuje dynamiczną listę elementów PredictionRow, z których każdy reprezentuje pojedynczy wynik inferencji.
+Dodatkowym elementem warstwy prezentacji jest ekran InfoScreen, który pełni funkcję informacyjną.
+Zawiera on szczegółowe opisy wszystkich typów zmian skórnych rozpoznawanych przez model1, wraz z przykładowymi ilustracjami.
 
-Relacje przedstawione na diagramie \ref{fig:diagram_klas} odzwierciedlają naturalny przepływ danych w aplikacji.
-Użytkownik inicjuje proces analizy poprzez wykonanie zdjęcia lub wybór obrazu z galerii.
-Klasa MainContent obsługuje te zdarzenia i aktualizuje stan imageBitmap, czyli obrazu reprezentowanego w postaci mapy bitów.
-Zmiana stanu imageBitmap automatycznie wywołuje metodę predict() klasy TFLiteHelper, która dokonuje inferencji.
-Wyniki klasyfikacji reprezentowane są w postaci listy obiektów PredictionResult, a następnie zaprezentowane w komponencie ScreenLayout, konkretnie w elementach PredictionRow.
+Logika przetwarzania obrazu oraz komunikacja z modelem TensorFlow Lite została umieszczona w dedykowanej klasie TFLiteHelper.
+Odpowiada ona za przygotowanie danych wejściowych, w tym skalowanie obrazu, konwersję do formatu akceptowanego przez interpreter TFLite oraz zastosowanie preprocessingu zgodnego z wybraną architekturą.
+Model zwraca wektor prawdopodobieństw, który jest mapowany na typy zmian skórnych zdefiniowane w enumeracji LesionType.
+Wyniki klasyfikacji reprezentowane są w postaci listy obiektów PredictionResult, a następnie zaprezentowane w komponencie PredictionScreen.
+
+Przepływ danych w aplikacji odzwierciedla naturalny scenariusz użytkownika.
+Proces rozpoczyna się od wykonania zdjęcia lub wyboru obrazu z galerii.
+MainViewModel aktualizuje stan imageBitmap, co automatycznie inicjuje wywołanie metody predict() w klasie TFLiteHelper.
+Wyniki inferencji są następnie przekazywane do warstwy prezentacji i wyświetlane w komponencie PredictionScreen w postaci listy obiektów PredictionResult.
+Pełen przepływ użytkownika wraz z prezentacją interfejsu przedstawiono na diagramiach \ref{fig:diagram_app1} oraz \ref{fig:diagram_app2}.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{diagram_app1}
+	\caption{Diagram klas przedstawiający przepływ użytkownika przez proces klasyfikacji zmiany skórnej}
+	\source{Opracowanie własne}
+	\label{fig:diagram_app1}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{diagram_app2}
+	\caption{Diagram klas przedstawiający InfoScreen}
+	\source{Opracowanie własne}
+	\label{fig:diagram_app2}
+\end{figure}
 
 
 \section{Wyniki}
