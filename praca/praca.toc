@@ -30,27 +30,26 @@
 \contentsline {subsection}{\numberline {3.1.5}PAD-UFES-20}{24}{subsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.1.6}MED-NODE}{25}{subsection.3.1.6}%
 \contentsline {subsection}{\numberline {3.1.7}PH2}{25}{subsection.3.1.7}%
-\contentsline {subsection}{\numberline {3.1.8}Fitzpatrick17k}{25}{subsection.3.1.8}%
+\contentsline {subsection}{\numberline {3.1.8}Fitzpatrick17k}{26}{subsection.3.1.8}%
 \contentsline {subsection}{\numberline {3.1.9}Dermofit}{27}{subsection.3.1.9}%
-\contentsline {section}{\numberline {3.2}Dobór zbiorów i opis wybranych zmian skórnych}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Czerniak - melanoma}{31}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Zmiany melanocytowe - nevus}{32}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Rogowacenie słoneczne - actinic keratosis}{32}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Łagodne rogowacenie - benign keratosis}{33}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Rak skóry inny niż czerniak - non-melanoma skin cancer}{34}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Włókniak twardy - dermatofibroma}{35}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Zmiany naczyniowe - vascular lesions}{35}{subsection.3.2.7}%
-\contentsline {section}{\numberline {3.3}Infrastruktura}{37}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Podsumowanie}{39}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Metodyka badania}{41}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Model sieci neuronowej}{41}{section.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.0.1}Wstęp}{41}{subsubsection.4.1.0.1}%
-\contentsline {subsection}{\numberline {4.1.1}Obróbka danych}{42}{subsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.1.1}Przygotowanie do trenowania}{43}{subsubsection.4.1.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.1.2}Przygotowanie do trenowania}{45}{subsubsection.4.1.1.2}%
-\contentsline {section}{\numberline {4.2}Aplikacja mobilna}{46}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Wyniki}{48}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Podsumowanie}{48}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Wyniki i wnioski}{49}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Podsumowanie}{49}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Podsumowanie}{50}{chapter.6}%
+\contentsline {section}{\numberline {3.2}Dobór zbiorów i opis wybranych zmian skórnych}{29}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Rak podstawnokomórkowy - basal cell carcinoma}{30}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Rogowacenie słoneczne - actinic keratosis}{30}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Zmiana melanocytowa - nevus}{31}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Rogowacenie łojotokowe - seborrheic keratosis}{31}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Rak kolczystokomórkowy - squamous cell carcinoma}{31}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Czerniak - melanoma}{32}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Infrastruktura}{32}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Podsumowanie}{34}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Metodyka badania}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Model sieci neuronowej}{36}{section.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.0.1}Wstęp}{36}{subsubsection.4.1.0.1}%
+\contentsline {subsection}{\numberline {4.1.1}Obróbka danych}{37}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Przygotowanie do trenowania}{38}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}Przygotowanie do trenowania}{40}{subsubsection.4.1.1.2}%
+\contentsline {section}{\numberline {4.2}Aplikacja mobilna}{41}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Wyniki}{43}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Podsumowanie}{43}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Wyniki i wnioski}{44}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Podsumowanie}{44}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Podsumowanie}{45}{chapter.6}%

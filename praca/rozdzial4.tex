@@ -143,38 +143,45 @@ Następnie wytrenowany model jest konwertowany do formatu TensorFlow Lite, umoż
 Cały pipeline uruchamiany jest metodą run, która wykonuje oba etapy trenowania oraz pełną ewaluację.
 
 \section{Aplikacja mobilna}
-W ramach systemu zaprojektowano aplikację mobilną korzystającą z wybranego modelu.
-Zdecydowano się na zaimplementowanie aplikacji na systemy Android z wykorzystaniem języka programistycznego Kotlin.
-Do stworzenia elementów interfejsu graficznego użyto biblioteki Jetpack Compose.
-Sieć neuronową uwzględniono w zasobach aplikacji i obsłużono za pomocą biblioteki TensorFlow Lite.
+W ramach stworzenia prototypu systemu zaprojektowano aplikację mobilną wykorzystującą wytrenowany model klasyfikacji zmian skórnych.
+Aplikację zaimplementowano na platformę Android z użyciem języka Kotlin oraz biblioteki Jetpack Compose, która umożliwia deklaratywne tworzenie interfejsu użytkownika.
+Model sieci neuronowej został umieszczony w zasobach aplikacji i obsłużony za pomocą biblioteki TensorFlow Lite.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{diagram_klas}
+	\includegraphics[width=1\linewidth]{diagram_klas}
 	\caption{Diagram klas przedstawiający działanie aplikacji}
 	\source{Opracowanie własne}
 	\label{fig:diagram_klas}
 \end{figure}
 
-Diagram \ref{fig:diagram_klas} przedstawia pełną architekturę aplikacji, w której warstwa interfejsu użytkownika jest oddzielona od logiki przetwarzania obrazu oraz inferencji modelu uczenia maszynowego.
-Głównym punktem wejścia aplikacji jest klasa MainActivity, odpowiedzialna za inicjalizację środowiska Jetpack Compose oraz utworzenie instancji MainViewModel, który zarządza stanem aplikacji.
+Diagram \ref{fig:diagram_klas} przedstawia pełną architekturę aplikacji, w której warstwa interfejsu użytkownika jest oddzielona od logiki przetwarzania obrazu oraz inferencji modelu.
+Głównym punktem wejścia aplikacji jest klasa \texttt{MainActivity}, odpowiedzialna za inicjalizację środowiska Jetpack Compose.
+Klasa ta korzysta z \texttt{MainViewModel}, który zarządza stanem aplikacji.
 
-Warstwa prezentacji została zaprojektowana modularnie.
-Komponent ScreenContent odpowiada za ogólny układ aplikacji, natomiast poszczególne ekrany realizują konkretne funkcje interfejsu.
-Ekran PredictionScreen prezentuje wyniki klasyfikacji, natomiast AnalysisPanel generuje dynamiczną listę elementów PredictionRow, z których każdy reprezentuje pojedynczy wynik inferencji.
-Dodatkowym elementem warstwy prezentacji jest ekran InfoScreen, który pełni funkcję informacyjną.
-Zawiera on szczegółowe opisy wszystkich typów zmian skórnych rozpoznawanych przez model1, wraz z przykładowymi ilustracjami.
+Po stronie interfejsu użytkownika kluczową rolę pełni komponent \texttt{AppLayout}, tworzony w ramach \texttt{MainActivity}.
+Odpowiada on za ogólny układ aplikacji, w tym wyświetlanie górnego i dolnego paska nawigacyjnego (\texttt{TopAppBar} oraz \texttt{BottomAppBar}) oraz za inicjalizację głównego obszaru roboczego.
+\texttt{AppLayout} tworzy komponent \texttt{ScreenContent}, który decyduje o tym, jaki ekran zostanie wyświetlony - ekran klasyfikacji (\texttt{PredictionScreen}) lub ekran informacyjny (\texttt{InfoScreen}), zależnie od stanu \texttt{showInfo} przechowywanego w \texttt{MainViewModel}.
 
-Logika przetwarzania obrazu oraz komunikacja z modelem TensorFlow Lite została umieszczona w dedykowanej klasie TFLiteHelper.
-Odpowiada ona za przygotowanie danych wejściowych, w tym skalowanie obrazu, konwersję do formatu akceptowanego przez interpreter TFLite oraz zastosowanie preprocessingu zgodnego z wybraną architekturą.
-Model zwraca wektor prawdopodobieństw, który jest mapowany na typy zmian skórnych zdefiniowane w enumeracji LesionType.
-Wyniki klasyfikacji reprezentowane są w postaci listy obiektów PredictionResult, a następnie zaprezentowane w komponencie PredictionScreen.
+Ekran \texttt{PredictionScreen} odpowiada za wyświetlanie instrukcji oraz wyników klasyfikacji.
+Jeżeli użytkownik nie wykonał jeszcze zdjęcia, \texttt{PredictionScreen} prezentuje komunikat z instrukcją dotyczącą wykonania fotografii zmiany skórnej.
+Po wykonaniu zdjęcia i przetworzeniu go przez model wywoływany jest komponent \texttt{AnalysisPanel}, który generuje dynamiczną listę elementów \texttt{PredictionRow}.
+Każdy z nich reprezentuje pojedynczy wynik inferencji, zawierający typ zmiany skórnej oraz poziom pewności klasyfikacji.
+Ekran \texttt{InfoScreen} pełni funkcję informacyjną.
+Zawiera zestaw bloków \texttt{LesionInfoBlock}, prezentujących opisy wszystkich typów zmian skórnych zdefiniowanych w enumeracji \texttt{LesionType} oraz informacje na temat projektu.
+
+Logika przetwarzania obrazu oraz komunikacja z modelem TensorFlow Lite została umieszczona w dedykowanej klasie \texttt{TFLiteHelper}.
+Klasa ta jest tworzona i przechowywana wewnątrz \texttt{MainViewModel}, co zapewnia jej spójny cykl życia.
+\texttt{TFLiteHelper} odpowiada za przygotowanie danych wejściowych, w tym skalowanie obrazu, konwersję do formatu \texttt{ByteBuffer} oraz zastosowanie preprocessingu zgodnego z architekturą modelu.
+Wynik inferencji stanowi wektor prawdopodobieństw, który jest mapowany na typy zmian skórnych zdefiniowane w \texttt{LesionType}.
+Każdy wynik jest reprezentowany jako obiekt \texttt{PredictionResult}.
 
 Przepływ danych w aplikacji odzwierciedla naturalny scenariusz użytkownika.
 Proces rozpoczyna się od wykonania zdjęcia lub wyboru obrazu z galerii.
-MainViewModel aktualizuje stan imageBitmap, co automatycznie inicjuje wywołanie metody predict() w klasie TFLiteHelper.
-Wyniki inferencji są następnie przekazywane do warstwy prezentacji i wyświetlane w komponencie PredictionScreen w postaci listy obiektów PredictionResult.
-Pełen przepływ użytkownika wraz z prezentacją interfejsu przedstawiono na diagramiach \ref{fig:diagram_app1} oraz \ref{fig:diagram_app2}.
+\texttt{MainViewModel} aktualizuje stan \texttt{imageBitmap}, a następnie wywołuje metodę \texttt{predict()} w klasie \texttt{TFLiteHelper}.
+Otrzymane wyniki są przekazywane do warstwy prezentacji i wyświetlane w komponencie \texttt{PredictionScreen} w postaci listy obiektów \texttt{PredictionResult}.
+Użytkownik może również przełączyć się do zakładki Info, w której komponent \texttt{InfoScreen} prezentuje szczegółowe opisy wszystkich typów zmian skórnych.
+Pełen przepływ użytkownika wraz z prezentacją interfejsu przedstawiono na diagramach \ref{fig:diagram_app1} oraz \ref{fig:diagram_app2}.
 
 
 \begin{figure}[h!]

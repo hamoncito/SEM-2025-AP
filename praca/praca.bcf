@@ -3228,28 +3228,20 @@
     <bcf:citekey order="116" intorder="1">Dermofit</bcf:citekey>
     <bcf:citekey order="116" intorder="2">inbook</bcf:citekey>
     <bcf:citekey order="117" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="117" intorder="2">Kittler_2018</bcf:citekey>
     <bcf:citekey order="118" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="119" intorder="1">Kittler_2018</bcf:citekey>
-    <bcf:citekey order="120" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="120" intorder="2">Kittler_2018</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">Bourke_2010</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">Hafner_Vogt_2008</bcf:citekey>
     <bcf:citekey order="121" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="121" intorder="2">Kittler_2018</bcf:citekey>
     <bcf:citekey order="122" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="122" intorder="2">Hernández2024</bcf:citekey>
-    <bcf:citekey order="122" intorder="3">Kittler_2018</bcf:citekey>
     <bcf:citekey order="123" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="123" intorder="2">Hernández2024</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="124" intorder="2">Kittler_2018</bcf:citekey>
-    <bcf:citekey order="125" intorder="1">pandas</bcf:citekey>
-    <bcf:citekey order="126" intorder="1">Harris_2020</bcf:citekey>
-    <bcf:citekey order="127" intorder="1">matplotlib</bcf:citekey>
-    <bcf:citekey order="127" intorder="2">seaborn</bcf:citekey>
-    <bcf:citekey order="128" intorder="1">abadi2016tensorflowlargescalemachinelearning</bcf:citekey>
-    <bcf:citekey order="129" intorder="1">1874254</bcf:citekey>
-    <bcf:citekey order="129" intorder="2">paszke2019pytorchimperativestylehighperformance</bcf:citekey>
-    <bcf:citekey order="130" intorder="1">pedregosa2018scikitlearnmachinelearningpython</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">pandas</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">Harris_2020</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">matplotlib</bcf:citekey>
+    <bcf:citekey order="126" intorder="2">seaborn</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">abadi2016tensorflowlargescalemachinelearning</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">1874254</bcf:citekey>
+    <bcf:citekey order="128" intorder="2">paszke2019pytorchimperativestylehighperformance</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">pedregosa2018scikitlearnmachinelearningpython</bcf:citekey>
     <bcf:citekeycount count="1">CHAPMAN20153</bcf:citekeycount>
     <bcf:citekeycount count="1">HALEEM202370</bcf:citekeycount>
     <bcf:citekeycount count="1">mahara_revolutionising_2023</bcf:citekeycount>
@@ -3330,8 +3322,8 @@
     <bcf:citekeycount count="3">Li_Koban_Schenck_Giunta_Li_Sun_2022</bcf:citekeycount>
     <bcf:citekeycount count="1">9113301</bcf:citekeycount>
     <bcf:citekeycount count="0">Bourouis_Zerdazi_Feham_Bouchachia_2013</bcf:citekeycount>
-    <bcf:citekeycount count="7">Kittler_2018</bcf:citekeycount>
-    <bcf:citekeycount count="3">Hernández2024</bcf:citekeycount>
+    <bcf:citekeycount count="1">Kittler_2018</bcf:citekeycount>
+    <bcf:citekeycount count="1">Hernández2024</bcf:citekeycount>
     <bcf:citekeycount count="1">Hamarneh_2019</bcf:citekeycount>
     <bcf:citekeycount count="1">Castro_2020</bcf:citekeycount>
     <bcf:citekeycount count="1">giotis2015med</bcf:citekeycount>
@@ -3340,7 +3332,8 @@
     <bcf:citekeycount count="1">Bowman_Hogan_Sanusi_2001</bcf:citekeycount>
     <bcf:citekeycount count="1">Dermofit</bcf:citekeycount>
     <bcf:citekeycount count="1">inbook</bcf:citekeycount>
-    <bcf:citekeycount count="7">Bourke_2010</bcf:citekeycount>
+    <bcf:citekeycount count="6">Bourke_2010</bcf:citekeycount>
+    <bcf:citekeycount count="0">Hafner_Vogt_2008</bcf:citekeycount>
     <bcf:citekeycount count="1">pandas</bcf:citekeycount>
     <bcf:citekeycount count="1">Harris_2020</bcf:citekeycount>
     <bcf:citekeycount count="1">matplotlib</bcf:citekeycount>

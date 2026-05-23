@@ -4,19 +4,19 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Relacje między sztuczną inteligencją, uczeniem maszynowym i głębokim uczeniem}}{8}{figure.caption.4}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Podstawowa architektura konwolucyjnej sieci neuronowej}}{9}{figure.caption.5}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Klasy zawarte w klasie "`melanoma''}}{31}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Klasy zawarte w klasie "`nevus''}}{32}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Klasy zawarte w klasie "`actinic keratosis''}}{33}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Klasy zawarte w klasie "`benign keratosis''}}{34}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Klasy zawarte w klasie "`non-melanoma skin cancer''}}{34}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Klasy zawarte w klasie "`dermatofibroma''}}{35}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Klasy zawarte w klasie "`vascular lesions''}}{35}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Rozkład klas w zbiorze po ich ujednoliceniu}}{36}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Procentowy udział klas w zbiorze przed ich ujednoliceniem}}{37}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Procentowy udział poszczególnych zbiorów źródłowych}}{38}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Uproszczony diagram systemu przedstawiający działanie aplikacji}}{39}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Klasa "`basal cell carcinoma''}}{30}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Klasa "`actinic keratosis''}}{31}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Klasa "`nevus''}}{31}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Klasa "`seborrheic keratosis''}}{31}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Klasa "`squamous cell carcinoma''}}{32}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Klasa "`melanoma''}}{32}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Rozkład klas w zbiorze po ich ujednoliceniu}}{33}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Procentowy udział klas w zbiorze przed ich ujednoliceniem}}{34}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Uproszczony diagram systemu przedstawiający działanie aplikacji}}{34}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Rozkład klas po oversamplingu}}{44}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagram klas przedstawiający działanie aplikacji}}{47}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Rozkład klas po oversamplingu}}{38}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagram klas przedstawiający działanie aplikacji}}{42}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagram klas przedstawiający przepływ użytkownika przez proces klasyfikacji zmiany skórnej}}{43}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagram klas przedstawiający InfoScreen}}{43}{figure.caption.19}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
