@@ -974,6 +974,68 @@
       \field{title}{Dermatologia. Podręcznik i atlas.}
       \field{year}{2010}
     \endentry
+    \entry{Bourouis_Zerdazi_Feham_Bouchachia_2013}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=92a331b73af708b9ec5a3050d043d701}{%
+           family={Bourouis},
+           familyi={B\bibinitperiod},
+           given={Abderrahim},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2532dfd80f281b440a23c23c8d03cf9}{%
+           family={Zerdazi},
+           familyi={Z\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58b228cda5f36f9f6dada7c6ed0798df}{%
+           family={Feham},
+           familyi={F\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cb927209b522e1d5fff80c38210c753}{%
+           family={Bouchachia},
+           familyi={B\bibinitperiod},
+           given={Abdelhamid},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c1785a1807e2521e532fa27319913f8a}
+      \strng{fullhash}{3257c3dc2bcdb06143fb48acf560325d}
+      \strng{bibnamehash}{3257c3dc2bcdb06143fb48acf560325d}
+      \strng{authorbibnamehash}{3257c3dc2bcdb06143fb48acf560325d}
+      \strng{authornamehash}{c1785a1807e2521e532fa27319913f8a}
+      \strng{authorfullhash}{3257c3dc2bcdb06143fb48acf560325d}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The increasing use of Smartphone and Tablet, their on-board sensors and increasing computational power show immense promise for improved mobile health technologies, one of the medical areas which needs this technologies is skin analysis to identify diseases. In this paper, we describe an innovative development of a low cost smartphone based intelligent system using integrated camera. The advantage of this solution is that patients in remote areas, poor and developing countries can scan, analyze and make regular skin examinations in any place. In this paper, an Artificial Neural Network algorithm is used to analyze the skin images to identify cancer.}
+      \field{issn}{1877-0509}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{note}{The 4th International Conference on Ambient Systems, Networks and Technologies (ANT 2013), the 3rd International Conference on Sustainable Energy Information Technology (SEIT-2013)}
+      \field{title}{M-Health: Skin Disease Analysis System Using Smartphone's Camera}
+      \field{volume}{19}
+      \field{year}{2013}
+      \field{pages}{1116\bibrangedash 1120}
+      \range{pages}{5}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.procs.2013.06.157
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050913007655
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050913007655
+      \endverb
+      \keyw{M-Health,Smartphone,Mobile NN}
+    \endentry
     \entry{Bouchachia_2013}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=92a331b73af708b9ec5a3050d043d701}{%
@@ -1010,8 +1072,10 @@
       \strng{authorbibnamehash}{3257c3dc2bcdb06143fb48acf560325d}
       \strng{authornamehash}{c1785a1807e2521e532fa27319913f8a}
       \strng{authorfullhash}{3257c3dc2bcdb06143fb48acf560325d}
+      \field{extraname}{2}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
@@ -1088,6 +1152,87 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0190962201751961
+      \endverb
+    \endentry
+    \entry{jamadermatol}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=bd63e43b51fb801f844ea5631845413b}{%
+           family={Brewer},
+           familyi={B\bibinitperiod},
+           given={Ann\bibnamedelima Chang},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5fd741c6e0987786a9b029a35eae737}{%
+           family={Endly},
+           familyi={E\bibinitperiod},
+           given={Dawnielle\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2da8b299bf4fd5cffacdee97c44e932e}{%
+           family={Henley},
+           familyi={H\bibinitperiod},
+           given={Jill},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5379ec19c6f0dba6b6c0b6212599e2d}{%
+           family={Amir},
+           familyi={A\bibinitperiod},
+           given={Mahsa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=745f77aa5eeea06586bbf52187c0e164}{%
+           family={Sampson},
+           familyi={S\bibinitperiod},
+           given={Blake\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c995ba4e09e54ae86fe51c790bb5cac}{%
+           family={Moreau},
+           familyi={M\bibinitperiod},
+           given={Jacqueline\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a51b1aa9c3d4cc607a35d47d14fbca2}{%
+           family={Dellavalle},
+           familyi={D\bibinitperiod},
+           given={Robert\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3e5643777daf15553e5aed0c1d098b32}
+      \strng{fullhash}{1fb22fd20a73a7143868801fab71a462}
+      \strng{bibnamehash}{1fb22fd20a73a7143868801fab71a462}
+      \strng{authorbibnamehash}{1fb22fd20a73a7143868801fab71a462}
+      \strng{authornamehash}{3e5643777daf15553e5aed0c1d098b32}
+      \strng{authorfullhash}{1fb22fd20a73a7143868801fab71a462}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With advancements in mobile technology, cellular phone–based mobile applications (apps) may be used in the practice and delivery of dermatologic care.To identify and categorize the variety of current mobile apps available in dermatology for patients and providers.Dermatology-related search terms were queried in the online app stores of the most commonly used mobile platforms developed by Apple, Android, Blackberry, Nokia, and Windows. Applications were assigned to categories based on description. Popularity, price, and reviews were recorded and target audiences were determined through websites offering online mobile apps.Number, type, and price of mobile apps in dermatology.A total of 229 dermatology-related apps were identified in the following categories: general dermatology reference (61 [26.6\%]), self-surveillance/diagnosis (41 [17.9\%]), disease guide (39 [17.0\%]), educational aid (20 [8.7\%]), sunscreen/UV recommendation (19 [8.3\%]), calculator (12 [5.2\%]), teledermatology (8 [3.5\%]), conference (6 [2.6\%]), journal (6 [2.6\%]), photograph storage/sharing (5 [2.2\%]), dermoscopy (2 [0.9\%]), pathology (2 [0.9\%]), and other (8 [3.5\%]). The most reviewed apps included Ultraviolet ~ UV Index (355 reviews), VisualDx (306), SPF (128), iSore (61), and SpotMole (50). There were 209 unique apps, with 17 apps existing on more than 1 operating system. More than half of the apps were offered free of charge (117 [51.1\%]). Paid apps (112 [48.9\%]) ranged from \$0.99 to \$139.99 (median, \$2.99). Target audiences included patient (117 [51.1\%]), health care provider (94 [41.0\%]), and both (18 [7.9\%]).The widespread variety and popularity of mobile apps demonstrate a great potential to expand the practice and delivery of dermatologic care.}
+      \field{issn}{2168-6068}
+      \field{journaltitle}{JAMA Dermatology}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Mobile Applications in Dermatology}
+      \field{volume}{149}
+      \field{year}{2013}
+      \field{pages}{1300\bibrangedash 1304}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1001/jamadermatol.2013.5517
+      \endverb
+      \verb{eprint}
+      \verb https://jamanetwork.com/journals/jamadermatology/articlepdf/1741083/doi130035.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1001/jamadermatol.2013.5517
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1001/jamadermatol.2013.5517
       \endverb
     \endentry
     \entry{briganti_artificial_2020}{article}{}
@@ -2384,6 +2529,56 @@
       \verb http://journals.lww.com/00008390-200012000-00008
       \endverb
     \endentry
+    \entry{Hafner_Vogt_2008}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4d9d982d1230dd65e9984efc8fde8365}{%
+           family={Hafner},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7846f2aaa4b95686fe2d8a3ab3d9a165}{%
+           family={Vogt},
+           familyi={V\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b09061768f659633d7821f22b3a9216e}
+      \strng{fullhash}{b09061768f659633d7821f22b3a9216e}
+      \strng{bibnamehash}{b09061768f659633d7821f22b3a9216e}
+      \strng{authorbibnamehash}{b09061768f659633d7821f22b3a9216e}
+      \strng{authornamehash}{b09061768f659633d7821f22b3a9216e}
+      \strng{authorfullhash}{b09061768f659633d7821f22b3a9216e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1610-0379, 1610-0387}
+      \field{journaltitle}{JDDG: Journal der Deutschen Dermatologischen Gesellschaft}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Seborrheic keratosis}
+      \field{volume}{6}
+      \field{year}{2008}
+      \field{pages}{664\bibrangedash 677}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1111/j.1610-0387.2008.06788.x
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1610-0387.2008.06788.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1610-0387.2008.06788.x
+      \endverb
+    \endentry
     \entry{halcox_assessment_2017}{article}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=7e0871d470b31100e41e74eca4912137}{%
@@ -2811,12 +3006,12 @@
     \endentry
     \entry{He_Baxter_Xu_Xu_Zhou_Zhang_2019}{article}{}
       \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=e1deb441e38b6ff9b478b7ede5937d47}{%
+        {{un=1,uniquepart=given,hash=e1deb441e38b6ff9b478b7ede5937d47}{%
            family={He},
            familyi={H\bibinitperiod},
            given={Jianxing},
            giveni={J\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=8a649a20e66854b1b48bf2a9db5135ca}{%
            family={Baxter},
            familyi={B\bibinitperiod},
@@ -2861,7 +3056,6 @@
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1078-8956, 1546-170X}
@@ -2881,6 +3075,59 @@
       \endverb
       \verb{url}
       \verb https://www.nature.com/articles/s41591-018-0307-0
+      \endverb
+    \endentry
+    \entry{he2015deepresiduallearningimage}{misc}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=5e72bc22dbcf0984c6d113d280e36990}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiangyu},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Shaoqing},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{bibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authorbibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Deep Residual Learning for Image Recognition}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1512.03385
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1512.03385
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1512.03385
       \endverb
     \endentry
     \entry{Henning_Stein_Yeung_Dusza_Marghoob_Rabinovitz_Polsky_Kopf_2008}{article}{}
@@ -3180,6 +3427,164 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0040816619300904
       \endverb
     \endentry
+    \entry{howard2019searchingmobilenetv3}{misc}{}
+      \name{author}{12}{}{%
+        {{un=0,uniquepart=base,hash=315c4166fc1f7cb66324a7f0d82827cd}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f90fd131c2bbfde4d0e9fdd7ed4ea8b}{%
+           family={Sandler},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23d7392f104cfe02f7b2ad118417c972}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Grace},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9dddfcfd529634a150ee38ee5c0203d7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liang-Chieh},
+           giveni={L\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31960f03389184b7f052f5b197cc9fdf}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1e7d6abb8225099acc71f672b9ec336e}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Mingxing},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47ad65c82b1de7d642988df185d7d8ea}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Weijun},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41859f30c12640f5249fa065131fc2f4}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Yukun},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79b11327e6066baac1563390e41c13f2}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Ruoming},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bab2011f2b9e7af47ab45308470b9faf}{%
+           family={Vasudevan},
+           familyi={V\bibinitperiod},
+           given={Vijay},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c636f146591d51579a8119b777394878}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc\bibnamedelima V.},
+           giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c707ec5b5997dc408a14a34a8380166c}{%
+           family={Adam},
+           familyi={A\bibinitperiod},
+           given={Hartwig},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9c50b2a45a0cfd3fd86fb7850dc23eb0}
+      \strng{fullhash}{1f186e1a9b32bef8cdecf585255a11d6}
+      \strng{bibnamehash}{1f186e1a9b32bef8cdecf585255a11d6}
+      \strng{authorbibnamehash}{1f186e1a9b32bef8cdecf585255a11d6}
+      \strng{authornamehash}{9c50b2a45a0cfd3fd86fb7850dc23eb0}
+      \strng{authorfullhash}{1f186e1a9b32bef8cdecf585255a11d6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Searching for MobileNetV3}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1905.02244
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1905.02244
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1905.02244
+      \endverb
+    \endentry
+    \entry{huang2018denselyconnectedconvolutionalnetworks}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0d12f90a1d1945cb1b98f583c9dc9572}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Gao},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7eda249dc15ce9f452344ec95bbcc67}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhuang},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47fbe2837893a84fb516e9e85ba7aa36}{%
+           family={Maaten},
+           familyi={M\bibinitperiod},
+           given={Laurens},
+           giveni={L\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=68a0238356fbd88b34be8886f25938a7}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={Kilian\bibnamedelima Q.},
+           giveni={K\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3dcda21c08021918fcbe6ecf2e003538}
+      \strng{fullhash}{bdb4a5391f81b99dc554fecb00ecee8f}
+      \strng{bibnamehash}{bdb4a5391f81b99dc554fecb00ecee8f}
+      \strng{authorbibnamehash}{bdb4a5391f81b99dc554fecb00ecee8f}
+      \strng{authornamehash}{3dcda21c08021918fcbe6ecf2e003538}
+      \strng{authorfullhash}{bdb4a5391f81b99dc554fecb00ecee8f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Densely Connected Convolutional Networks}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1608.06993
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1608.06993
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1608.06993
+      \endverb
+    \endentry
     \entry{Hubel_Wiesel_1968}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=dd78b0965a1fbcb42a037804e3d7772e}{%
@@ -3306,6 +3711,48 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0960077920308870
+      \endverb
+    \endentry
+    \entry{ioffe2015batchnormalizationacceleratingdeep}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5543e82359e26b035efc009cb3efff9d}{%
+           family={Ioffe},
+           familyi={I\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed568d9c3bb059e6bf22899fbf170f86}{%
+           family={Szegedy},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{fullhash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{bibnamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authorbibnamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authornamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authorfullhash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1502.03167
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1502.03167
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1502.03167
       \endverb
     \endentry
     \entry{ismael_deep_2021}{article}{}
@@ -3460,6 +3907,48 @@
       \range{pages}{8}
       \verb{doi}
       \verb 10.5604/17322693.955121
+      \endverb
+    \endentry
+    \entry{kanavati2021partialtransfusionexpressiveinfluence}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=46efcf803b4287dcc411152a239dc179}{%
+           family={Kanavati},
+           familyi={K\bibinitperiod},
+           given={Fahdi},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a125e1eec535b82102fcbcf1d88ef41}{%
+           family={Tsuneki},
+           familyi={T\bibinitperiod},
+           given={Masayuki},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a5af98fb1014686105992403d51c736b}
+      \strng{fullhash}{a5af98fb1014686105992403d51c736b}
+      \strng{bibnamehash}{a5af98fb1014686105992403d51c736b}
+      \strng{authorbibnamehash}{a5af98fb1014686105992403d51c736b}
+      \strng{authornamehash}{a5af98fb1014686105992403d51c736b}
+      \strng{authorfullhash}{a5af98fb1014686105992403d51c736b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Partial transfusion: on the expressive influence of trainable batch norm parameters for transfer learning}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2102.05543
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2102.05543
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2102.05543
       \endverb
     \endentry
     \entry{Kawahara_2016}{article}{}
@@ -3630,6 +4119,48 @@
       \endverb
       \verb{url}
       \verb https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-019-1426-2
+      \endverb
+    \endentry
+    \entry{kingma2017adammethodstochasticoptimization}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Adam: A Method for Stochastic Optimization}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1412.6980
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1412.6980
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1412.6980
       \endverb
     \endentry
     \entry{Janda_2021}{article}{}
@@ -3952,6 +4483,72 @@
       \endverb
       \verb{url}
       \verb https://www.mdpi.com/2077-0383/11/22/6826
+      \endverb
+    \endentry
+    \entry{liu2022convnet2020s}{misc}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=f7eda249dc15ce9f452344ec95bbcc67}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhuang},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=326137dec73ca7ba28f804a81dd26892}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Hanzi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0616e6c3dae5ba93fee86f3d88778be4}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Chao-Yuan},
+           giveni={C\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd2fff33d3a5433188d2662695e79eb5}{%
+           family={Feichtenhofer},
+           familyi={F\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=843b6293b24d49cdfdcda48e1ccd7eb3}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Saining},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5ab1c4b39b70b003d37ce0d046ed1c0e}
+      \strng{fullhash}{5be7ce23991a0ed9f2212f28b3cc3422}
+      \strng{bibnamehash}{5be7ce23991a0ed9f2212f28b3cc3422}
+      \strng{authorbibnamehash}{5be7ce23991a0ed9f2212f28b3cc3422}
+      \strng{authornamehash}{5ab1c4b39b70b003d37ce0d046ed1c0e}
+      \strng{authorfullhash}{5be7ce23991a0ed9f2212f28b3cc3422}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{A ConvNet for the 2020s}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2201.03545
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2201.03545
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2201.03545
       \endverb
     \endentry
     \entry{Lu_Firoozeh_Abolhasani_Zadeh_2022}{article}{}
@@ -5823,6 +6420,66 @@
       \verb http://www.termedia.pl/doi/10.5114/dr.2016.57736
       \endverb
     \endentry
+    \entry{sandler2019mobilenetv2invertedresidualslinear}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8f90fd131c2bbfde4d0e9fdd7ed4ea8b}{%
+           family={Sandler},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=315c4166fc1f7cb66324a7f0d82827cd}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d767e8e4d733bcf728bcdf2c193462f7}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Menglong},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48f4090a93cf9f445057a9d6defe7973}{%
+           family={Zhmoginov},
+           familyi={Z\bibinitperiod},
+           given={Andrey},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9dddfcfd529634a150ee38ee5c0203d7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liang-Chieh},
+           giveni={L\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{70179dd377b16c4cfcc0748ef0bd028a}
+      \strng{fullhash}{8d58d04315a5e1c06300772330b235d7}
+      \strng{bibnamehash}{8d58d04315a5e1c06300772330b235d7}
+      \strng{authorbibnamehash}{8d58d04315a5e1c06300772330b235d7}
+      \strng{authornamehash}{70179dd377b16c4cfcc0748ef0bd028a}
+      \strng{authorfullhash}{8d58d04315a5e1c06300772330b235d7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{MobileNetV2: Inverted Residuals and Linear Bottlenecks}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1801.04381
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1801.04381
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1801.04381
+      \endverb
+    \endentry
     \entry{Schneider_Dittmer_2017}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=0dce361fbe40a2dfc0d1640f3f2dd567}{%
@@ -5924,6 +6581,48 @@
       \endverb
       \verb{url}
       \verb http://www.ncbi.nlm.nih.gov/books/NBK537131/
+      \endverb
+    \endentry
+    \entry{tan2020efficientnetrethinkingmodelscaling}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1e7d6abb8225099acc71f672b9ec336e}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Mingxing},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c636f146591d51579a8119b777394878}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc\bibnamedelima V.},
+           giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{fullhash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{bibnamehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{authorbibnamehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{authornamehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{authorfullhash}{d029e8131f7a0bef056d7edc726f1529}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 1905.11946
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1905.11946
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1905.11946
       \endverb
     \endentry
     \entry{Tang_Li_Fantus_2023}{article}{}
@@ -6077,6 +6776,66 @@
       \endverb
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/10.1002/hcs2.115
+      \endverb
+    \endentry
+    \entry{thulasidasan2020mixuptrainingimprovedcalibration}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=ab6073265d830ee85472d68509d9c51e}{%
+           family={Thulasidasan},
+           familyi={T\bibinitperiod},
+           given={Sunil},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a7c4a4ef0b592c66e33bea9fc2106d8}{%
+           family={Chennupati},
+           familyi={C\bibinitperiod},
+           given={Gopinath},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e284097865f61b75b0b6bba6f066b8c}{%
+           family={Bilmes},
+           familyi={B\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1dab4266b9778fe3ffbdc6d9d220291}{%
+           family={Bhattacharya},
+           familyi={B\bibinitperiod},
+           given={Tanmoy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=64cfd2ffe695ab526cf6ca776bc18f13}{%
+           family={Michalak},
+           familyi={M\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0174c4ea3b1581a2e4d98481ccf90817}
+      \strng{fullhash}{7cb39c72fbd86d94b5d761626573ec71}
+      \strng{bibnamehash}{7cb39c72fbd86d94b5d761626573ec71}
+      \strng{authorbibnamehash}{7cb39c72fbd86d94b5d761626573ec71}
+      \strng{authornamehash}{0174c4ea3b1581a2e4d98481ccf90817}
+      \strng{authorfullhash}{7cb39c72fbd86d94b5d761626573ec71}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{title}{On Mixup Training: Improved Calibration and Predictive Uncertainty for Deep Neural Networks}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 1905.11001
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1905.11001
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1905.11001
       \endverb
     \endentry
     \entry{topalovic_artificial_2019}{article}{}
@@ -6534,6 +7293,91 @@
       \verb 10.21105/joss.03021
       \endverb
     \endentry
+    \entry{Binder_2013}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=164d5cb589d8c7676312afede133b323}{%
+           family={Weingast},
+           familyi={W\bibinitperiod},
+           given={Jessika},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c3e8a3e4518b8a0506ea08b54f81253}{%
+           family={Scheibböck},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44867b975d1db565de65f93d08f5539b}{%
+           family={Wurm},
+           familyi={W\bibinitperiod},
+           given={Elisabeth\bibnamedelima Mt},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44d3c030117b762846564a26fa4ee275}{%
+           family={Ranharter},
+           familyi={R\bibinitperiod},
+           given={Elisabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45c303c9500ac38dce29c8641eae9c42}{%
+           family={Porkert},
+           familyi={P\bibinitperiod},
+           given={Stefanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=678b952300ffa50671e695cb4b4d2cdb}{%
+           family={Dreiseitl},
+           familyi={D\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=083390fbe6b61fda6bb4d93c3c0592df}{%
+           family={Posch},
+           familyi={P\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ad4ab5f3af57012323d48fa9fe15a7a}{%
+           family={Binder},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ebd9a30dd7942baad4e2c5cb040e454a}
+      \strng{fullhash}{43c1af7a64b6a17c3dc069f05f96cad2}
+      \strng{bibnamehash}{43c1af7a64b6a17c3dc069f05f96cad2}
+      \strng{authorbibnamehash}{43c1af7a64b6a17c3dc069f05f96cad2}
+      \strng{authornamehash}{ebd9a30dd7942baad4e2c5cb040e454a}
+      \strng{authorfullhash}{43c1af7a64b6a17c3dc069f05f96cad2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1357-633X, 1758-1109}
+      \field{journaltitle}{Journal of Telemedicine and Telecare}
+      \field{number}{4}
+      \field{title}{A Prospective Study of Mobile Phones for Dermatology in a Clinical Setting}
+      \field{volume}{19}
+      \field{year}{2013}
+      \field{pages}{213\bibrangedash 218}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1177/1357633x13490890
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/10.1177/1357633x13490890
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/10.1177/1357633x13490890
+      \endverb
+    \endentry
     \entry{Wirawan_2020}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=fa1941f74d8958df267f39ebcc715618}{%
@@ -6715,6 +7559,100 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0190962218327282
+      \endverb
+    \endentry
+    \entry{zhang2018mixupempiricalriskminimization}{misc}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=2055fe99efa178d6f877d718047b0390}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hongyi},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=c55edd870afd5174d08d32e8560235f0}{%
+           family={Cisse},
+           familyi={C\bibinitperiod},
+           given={Moustapha},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea1ca71b064fbb7ec15bd2e49e287ea9}{%
+           family={Dauphin},
+           familyi={D\bibinitperiod},
+           given={Yann\bibnamedelima N.},
+           giveni={Y\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47d681c0cbae75196012a538c46ccc06}{%
+           family={Lopez-Paz},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{47ed15e39b226ffdc3da65f48de59b1f}
+      \strng{fullhash}{99e17545100e06ee9db2c0f295e2db48}
+      \strng{bibnamehash}{99e17545100e06ee9db2c0f295e2db48}
+      \strng{authorbibnamehash}{99e17545100e06ee9db2c0f295e2db48}
+      \strng{authornamehash}{47ed15e39b226ffdc3da65f48de59b1f}
+      \strng{authorfullhash}{99e17545100e06ee9db2c0f295e2db48}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{mixup: Beyond Empirical Risk Minimization}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1710.09412
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1710.09412
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1710.09412
+      \endverb
+    \endentry
+    \entry{zhang2018generalizedcrossentropyloss}{misc}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=35e75c41b2ad52e82ab5690b269900bb}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhilu},
+           giveni={Z\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=885ad74f7e4e07ac204c4f7ea0af8dee}{%
+           family={Sabuncu},
+           familyi={S\bibinitperiod},
+           given={Mert\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \strng{fullhash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \strng{bibnamehash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \strng{authorbibnamehash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \strng{authornamehash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \strng{authorfullhash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Generalized Cross Entropy Loss for Training Deep Neural Networks with Noisy Labels}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1805.07836
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1805.07836
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1805.07836
       \endverb
     \endentry
   \enddatalist
@@ -7674,6 +8612,68 @@
       \field{title}{Dermatologia. Podręcznik i atlas.}
       \field{year}{2010}
     \endentry
+    \entry{Bourouis_Zerdazi_Feham_Bouchachia_2013}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=92a331b73af708b9ec5a3050d043d701}{%
+           family={Bourouis},
+           familyi={B\bibinitperiod},
+           given={Abderrahim},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2532dfd80f281b440a23c23c8d03cf9}{%
+           family={Zerdazi},
+           familyi={Z\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58b228cda5f36f9f6dada7c6ed0798df}{%
+           family={Feham},
+           familyi={F\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cb927209b522e1d5fff80c38210c753}{%
+           family={Bouchachia},
+           familyi={B\bibinitperiod},
+           given={Abdelhamid},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c1785a1807e2521e532fa27319913f8a}
+      \strng{fullhash}{3257c3dc2bcdb06143fb48acf560325d}
+      \strng{bibnamehash}{3257c3dc2bcdb06143fb48acf560325d}
+      \strng{authorbibnamehash}{3257c3dc2bcdb06143fb48acf560325d}
+      \strng{authornamehash}{c1785a1807e2521e532fa27319913f8a}
+      \strng{authorfullhash}{3257c3dc2bcdb06143fb48acf560325d}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The increasing use of Smartphone and Tablet, their on-board sensors and increasing computational power show immense promise for improved mobile health technologies, one of the medical areas which needs this technologies is skin analysis to identify diseases. In this paper, we describe an innovative development of a low cost smartphone based intelligent system using integrated camera. The advantage of this solution is that patients in remote areas, poor and developing countries can scan, analyze and make regular skin examinations in any place. In this paper, an Artificial Neural Network algorithm is used to analyze the skin images to identify cancer.}
+      \field{issn}{1877-0509}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{note}{The 4th International Conference on Ambient Systems, Networks and Technologies (ANT 2013), the 3rd International Conference on Sustainable Energy Information Technology (SEIT-2013)}
+      \field{title}{M-Health: Skin Disease Analysis System Using Smartphone's Camera}
+      \field{volume}{19}
+      \field{year}{2013}
+      \field{pages}{1116\bibrangedash 1120}
+      \range{pages}{5}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.procs.2013.06.157
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050913007655
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050913007655
+      \endverb
+      \keyw{M-Health,Smartphone,Mobile NN}
+    \endentry
     \entry{Bouchachia_2013}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=92a331b73af708b9ec5a3050d043d701}{%
@@ -7710,8 +8710,10 @@
       \strng{authorbibnamehash}{3257c3dc2bcdb06143fb48acf560325d}
       \strng{authornamehash}{c1785a1807e2521e532fa27319913f8a}
       \strng{authorfullhash}{3257c3dc2bcdb06143fb48acf560325d}
+      \field{extraname}{2}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
@@ -7788,6 +8790,87 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0190962201751961
+      \endverb
+    \endentry
+    \entry{jamadermatol}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=bd63e43b51fb801f844ea5631845413b}{%
+           family={Brewer},
+           familyi={B\bibinitperiod},
+           given={Ann\bibnamedelima Chang},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5fd741c6e0987786a9b029a35eae737}{%
+           family={Endly},
+           familyi={E\bibinitperiod},
+           given={Dawnielle\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2da8b299bf4fd5cffacdee97c44e932e}{%
+           family={Henley},
+           familyi={H\bibinitperiod},
+           given={Jill},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c5379ec19c6f0dba6b6c0b6212599e2d}{%
+           family={Amir},
+           familyi={A\bibinitperiod},
+           given={Mahsa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=745f77aa5eeea06586bbf52187c0e164}{%
+           family={Sampson},
+           familyi={S\bibinitperiod},
+           given={Blake\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c995ba4e09e54ae86fe51c790bb5cac}{%
+           family={Moreau},
+           familyi={M\bibinitperiod},
+           given={Jacqueline\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a51b1aa9c3d4cc607a35d47d14fbca2}{%
+           family={Dellavalle},
+           familyi={D\bibinitperiod},
+           given={Robert\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3e5643777daf15553e5aed0c1d098b32}
+      \strng{fullhash}{1fb22fd20a73a7143868801fab71a462}
+      \strng{bibnamehash}{1fb22fd20a73a7143868801fab71a462}
+      \strng{authorbibnamehash}{1fb22fd20a73a7143868801fab71a462}
+      \strng{authornamehash}{3e5643777daf15553e5aed0c1d098b32}
+      \strng{authorfullhash}{1fb22fd20a73a7143868801fab71a462}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With advancements in mobile technology, cellular phone–based mobile applications (apps) may be used in the practice and delivery of dermatologic care.To identify and categorize the variety of current mobile apps available in dermatology for patients and providers.Dermatology-related search terms were queried in the online app stores of the most commonly used mobile platforms developed by Apple, Android, Blackberry, Nokia, and Windows. Applications were assigned to categories based on description. Popularity, price, and reviews were recorded and target audiences were determined through websites offering online mobile apps.Number, type, and price of mobile apps in dermatology.A total of 229 dermatology-related apps were identified in the following categories: general dermatology reference (61 [26.6\%]), self-surveillance/diagnosis (41 [17.9\%]), disease guide (39 [17.0\%]), educational aid (20 [8.7\%]), sunscreen/UV recommendation (19 [8.3\%]), calculator (12 [5.2\%]), teledermatology (8 [3.5\%]), conference (6 [2.6\%]), journal (6 [2.6\%]), photograph storage/sharing (5 [2.2\%]), dermoscopy (2 [0.9\%]), pathology (2 [0.9\%]), and other (8 [3.5\%]). The most reviewed apps included Ultraviolet ~ UV Index (355 reviews), VisualDx (306), SPF (128), iSore (61), and SpotMole (50). There were 209 unique apps, with 17 apps existing on more than 1 operating system. More than half of the apps were offered free of charge (117 [51.1\%]). Paid apps (112 [48.9\%]) ranged from \$0.99 to \$139.99 (median, \$2.99). Target audiences included patient (117 [51.1\%]), health care provider (94 [41.0\%]), and both (18 [7.9\%]).The widespread variety and popularity of mobile apps demonstrate a great potential to expand the practice and delivery of dermatologic care.}
+      \field{issn}{2168-6068}
+      \field{journaltitle}{JAMA Dermatology}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Mobile Applications in Dermatology}
+      \field{volume}{149}
+      \field{year}{2013}
+      \field{pages}{1300\bibrangedash 1304}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1001/jamadermatol.2013.5517
+      \endverb
+      \verb{eprint}
+      \verb https://jamanetwork.com/journals/jamadermatology/articlepdf/1741083/doi130035.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1001/jamadermatol.2013.5517
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1001/jamadermatol.2013.5517
       \endverb
     \endentry
     \entry{briganti_artificial_2020}{article}{}
@@ -9084,6 +10167,56 @@
       \verb http://journals.lww.com/00008390-200012000-00008
       \endverb
     \endentry
+    \entry{Hafner_Vogt_2008}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4d9d982d1230dd65e9984efc8fde8365}{%
+           family={Hafner},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7846f2aaa4b95686fe2d8a3ab3d9a165}{%
+           family={Vogt},
+           familyi={V\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b09061768f659633d7821f22b3a9216e}
+      \strng{fullhash}{b09061768f659633d7821f22b3a9216e}
+      \strng{bibnamehash}{b09061768f659633d7821f22b3a9216e}
+      \strng{authorbibnamehash}{b09061768f659633d7821f22b3a9216e}
+      \strng{authornamehash}{b09061768f659633d7821f22b3a9216e}
+      \strng{authorfullhash}{b09061768f659633d7821f22b3a9216e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1610-0379, 1610-0387}
+      \field{journaltitle}{JDDG: Journal der Deutschen Dermatologischen Gesellschaft}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Seborrheic keratosis}
+      \field{volume}{6}
+      \field{year}{2008}
+      \field{pages}{664\bibrangedash 677}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1111/j.1610-0387.2008.06788.x
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1610-0387.2008.06788.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1610-0387.2008.06788.x
+      \endverb
+    \endentry
     \entry{halcox_assessment_2017}{article}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=7e0871d470b31100e41e74eca4912137}{%
@@ -9511,12 +10644,12 @@
     \endentry
     \entry{He_Baxter_Xu_Xu_Zhou_Zhang_2019}{article}{}
       \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=e1deb441e38b6ff9b478b7ede5937d47}{%
+        {{un=1,uniquepart=given,hash=e1deb441e38b6ff9b478b7ede5937d47}{%
            family={He},
            familyi={H\bibinitperiod},
            given={Jianxing},
            giveni={J\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=8a649a20e66854b1b48bf2a9db5135ca}{%
            family={Baxter},
            familyi={B\bibinitperiod},
@@ -9561,7 +10694,6 @@
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1078-8956, 1546-170X}
@@ -9581,6 +10713,59 @@
       \endverb
       \verb{url}
       \verb https://www.nature.com/articles/s41591-018-0307-0
+      \endverb
+    \endentry
+    \entry{he2015deepresiduallearningimage}{misc}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=5e72bc22dbcf0984c6d113d280e36990}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiangyu},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Shaoqing},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{bibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authorbibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Deep Residual Learning for Image Recognition}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1512.03385
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1512.03385
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1512.03385
       \endverb
     \endentry
     \entry{Henning_Stein_Yeung_Dusza_Marghoob_Rabinovitz_Polsky_Kopf_2008}{article}{}
@@ -9880,6 +11065,164 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0040816619300904
       \endverb
     \endentry
+    \entry{howard2019searchingmobilenetv3}{misc}{}
+      \name{author}{12}{}{%
+        {{un=0,uniquepart=base,hash=315c4166fc1f7cb66324a7f0d82827cd}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f90fd131c2bbfde4d0e9fdd7ed4ea8b}{%
+           family={Sandler},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23d7392f104cfe02f7b2ad118417c972}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Grace},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9dddfcfd529634a150ee38ee5c0203d7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liang-Chieh},
+           giveni={L\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31960f03389184b7f052f5b197cc9fdf}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1e7d6abb8225099acc71f672b9ec336e}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Mingxing},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47ad65c82b1de7d642988df185d7d8ea}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Weijun},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41859f30c12640f5249fa065131fc2f4}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Yukun},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79b11327e6066baac1563390e41c13f2}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Ruoming},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bab2011f2b9e7af47ab45308470b9faf}{%
+           family={Vasudevan},
+           familyi={V\bibinitperiod},
+           given={Vijay},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c636f146591d51579a8119b777394878}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc\bibnamedelima V.},
+           giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c707ec5b5997dc408a14a34a8380166c}{%
+           family={Adam},
+           familyi={A\bibinitperiod},
+           given={Hartwig},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9c50b2a45a0cfd3fd86fb7850dc23eb0}
+      \strng{fullhash}{1f186e1a9b32bef8cdecf585255a11d6}
+      \strng{bibnamehash}{1f186e1a9b32bef8cdecf585255a11d6}
+      \strng{authorbibnamehash}{1f186e1a9b32bef8cdecf585255a11d6}
+      \strng{authornamehash}{9c50b2a45a0cfd3fd86fb7850dc23eb0}
+      \strng{authorfullhash}{1f186e1a9b32bef8cdecf585255a11d6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Searching for MobileNetV3}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1905.02244
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1905.02244
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1905.02244
+      \endverb
+    \endentry
+    \entry{huang2018denselyconnectedconvolutionalnetworks}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0d12f90a1d1945cb1b98f583c9dc9572}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Gao},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7eda249dc15ce9f452344ec95bbcc67}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhuang},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47fbe2837893a84fb516e9e85ba7aa36}{%
+           family={Maaten},
+           familyi={M\bibinitperiod},
+           given={Laurens},
+           giveni={L\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=68a0238356fbd88b34be8886f25938a7}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={Kilian\bibnamedelima Q.},
+           giveni={K\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3dcda21c08021918fcbe6ecf2e003538}
+      \strng{fullhash}{bdb4a5391f81b99dc554fecb00ecee8f}
+      \strng{bibnamehash}{bdb4a5391f81b99dc554fecb00ecee8f}
+      \strng{authorbibnamehash}{bdb4a5391f81b99dc554fecb00ecee8f}
+      \strng{authornamehash}{3dcda21c08021918fcbe6ecf2e003538}
+      \strng{authorfullhash}{bdb4a5391f81b99dc554fecb00ecee8f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Densely Connected Convolutional Networks}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1608.06993
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1608.06993
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1608.06993
+      \endverb
+    \endentry
     \entry{Hubel_Wiesel_1968}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=dd78b0965a1fbcb42a037804e3d7772e}{%
@@ -10006,6 +11349,48 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0960077920308870
+      \endverb
+    \endentry
+    \entry{ioffe2015batchnormalizationacceleratingdeep}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5543e82359e26b035efc009cb3efff9d}{%
+           family={Ioffe},
+           familyi={I\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed568d9c3bb059e6bf22899fbf170f86}{%
+           family={Szegedy},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{fullhash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{bibnamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authorbibnamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authornamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \strng{authorfullhash}{7e8dee717d54c2984b1c6bd3f3c0561f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1502.03167
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1502.03167
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1502.03167
       \endverb
     \endentry
     \entry{ismael_deep_2021}{article}{}
@@ -10160,6 +11545,48 @@
       \range{pages}{8}
       \verb{doi}
       \verb 10.5604/17322693.955121
+      \endverb
+    \endentry
+    \entry{kanavati2021partialtransfusionexpressiveinfluence}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=46efcf803b4287dcc411152a239dc179}{%
+           family={Kanavati},
+           familyi={K\bibinitperiod},
+           given={Fahdi},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a125e1eec535b82102fcbcf1d88ef41}{%
+           family={Tsuneki},
+           familyi={T\bibinitperiod},
+           given={Masayuki},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a5af98fb1014686105992403d51c736b}
+      \strng{fullhash}{a5af98fb1014686105992403d51c736b}
+      \strng{bibnamehash}{a5af98fb1014686105992403d51c736b}
+      \strng{authorbibnamehash}{a5af98fb1014686105992403d51c736b}
+      \strng{authornamehash}{a5af98fb1014686105992403d51c736b}
+      \strng{authorfullhash}{a5af98fb1014686105992403d51c736b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Partial transfusion: on the expressive influence of trainable batch norm parameters for transfer learning}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2102.05543
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2102.05543
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2102.05543
       \endverb
     \endentry
     \entry{Kawahara_2016}{article}{}
@@ -10330,6 +11757,48 @@
       \endverb
       \verb{url}
       \verb https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-019-1426-2
+      \endverb
+    \endentry
+    \entry{kingma2017adammethodstochasticoptimization}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Adam: A Method for Stochastic Optimization}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1412.6980
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1412.6980
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1412.6980
       \endverb
     \endentry
     \entry{Janda_2021}{article}{}
@@ -10652,6 +12121,72 @@
       \endverb
       \verb{url}
       \verb https://www.mdpi.com/2077-0383/11/22/6826
+      \endverb
+    \endentry
+    \entry{liu2022convnet2020s}{misc}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=f7eda249dc15ce9f452344ec95bbcc67}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhuang},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=326137dec73ca7ba28f804a81dd26892}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Hanzi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0616e6c3dae5ba93fee86f3d88778be4}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Chao-Yuan},
+           giveni={C\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd2fff33d3a5433188d2662695e79eb5}{%
+           family={Feichtenhofer},
+           familyi={F\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=843b6293b24d49cdfdcda48e1ccd7eb3}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Saining},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5ab1c4b39b70b003d37ce0d046ed1c0e}
+      \strng{fullhash}{5be7ce23991a0ed9f2212f28b3cc3422}
+      \strng{bibnamehash}{5be7ce23991a0ed9f2212f28b3cc3422}
+      \strng{authorbibnamehash}{5be7ce23991a0ed9f2212f28b3cc3422}
+      \strng{authornamehash}{5ab1c4b39b70b003d37ce0d046ed1c0e}
+      \strng{authorfullhash}{5be7ce23991a0ed9f2212f28b3cc3422}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{A ConvNet for the 2020s}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2201.03545
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2201.03545
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2201.03545
       \endverb
     \endentry
     \entry{Lu_Firoozeh_Abolhasani_Zadeh_2022}{article}{}
@@ -12523,6 +14058,66 @@
       \verb http://www.termedia.pl/doi/10.5114/dr.2016.57736
       \endverb
     \endentry
+    \entry{sandler2019mobilenetv2invertedresidualslinear}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8f90fd131c2bbfde4d0e9fdd7ed4ea8b}{%
+           family={Sandler},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=315c4166fc1f7cb66324a7f0d82827cd}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d767e8e4d733bcf728bcdf2c193462f7}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Menglong},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48f4090a93cf9f445057a9d6defe7973}{%
+           family={Zhmoginov},
+           familyi={Z\bibinitperiod},
+           given={Andrey},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9dddfcfd529634a150ee38ee5c0203d7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liang-Chieh},
+           giveni={L\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{70179dd377b16c4cfcc0748ef0bd028a}
+      \strng{fullhash}{8d58d04315a5e1c06300772330b235d7}
+      \strng{bibnamehash}{8d58d04315a5e1c06300772330b235d7}
+      \strng{authorbibnamehash}{8d58d04315a5e1c06300772330b235d7}
+      \strng{authornamehash}{70179dd377b16c4cfcc0748ef0bd028a}
+      \strng{authorfullhash}{8d58d04315a5e1c06300772330b235d7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{MobileNetV2: Inverted Residuals and Linear Bottlenecks}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1801.04381
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1801.04381
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1801.04381
+      \endverb
+    \endentry
     \entry{Schneider_Dittmer_2017}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=0dce361fbe40a2dfc0d1640f3f2dd567}{%
@@ -12624,6 +14219,48 @@
       \endverb
       \verb{url}
       \verb http://www.ncbi.nlm.nih.gov/books/NBK537131/
+      \endverb
+    \endentry
+    \entry{tan2020efficientnetrethinkingmodelscaling}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1e7d6abb8225099acc71f672b9ec336e}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Mingxing},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c636f146591d51579a8119b777394878}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc\bibnamedelima V.},
+           giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{fullhash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{bibnamehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{authorbibnamehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{authornamehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{authorfullhash}{d029e8131f7a0bef056d7edc726f1529}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 1905.11946
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1905.11946
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1905.11946
       \endverb
     \endentry
     \entry{Tang_Li_Fantus_2023}{article}{}
@@ -12777,6 +14414,66 @@
       \endverb
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/10.1002/hcs2.115
+      \endverb
+    \endentry
+    \entry{thulasidasan2020mixuptrainingimprovedcalibration}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=ab6073265d830ee85472d68509d9c51e}{%
+           family={Thulasidasan},
+           familyi={T\bibinitperiod},
+           given={Sunil},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a7c4a4ef0b592c66e33bea9fc2106d8}{%
+           family={Chennupati},
+           familyi={C\bibinitperiod},
+           given={Gopinath},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e284097865f61b75b0b6bba6f066b8c}{%
+           family={Bilmes},
+           familyi={B\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1dab4266b9778fe3ffbdc6d9d220291}{%
+           family={Bhattacharya},
+           familyi={B\bibinitperiod},
+           given={Tanmoy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=64cfd2ffe695ab526cf6ca776bc18f13}{%
+           family={Michalak},
+           familyi={M\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0174c4ea3b1581a2e4d98481ccf90817}
+      \strng{fullhash}{7cb39c72fbd86d94b5d761626573ec71}
+      \strng{bibnamehash}{7cb39c72fbd86d94b5d761626573ec71}
+      \strng{authorbibnamehash}{7cb39c72fbd86d94b5d761626573ec71}
+      \strng{authornamehash}{0174c4ea3b1581a2e4d98481ccf90817}
+      \strng{authorfullhash}{7cb39c72fbd86d94b5d761626573ec71}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{title}{On Mixup Training: Improved Calibration and Predictive Uncertainty for Deep Neural Networks}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 1905.11001
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1905.11001
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1905.11001
       \endverb
     \endentry
     \entry{topalovic_artificial_2019}{article}{}
@@ -13234,6 +14931,91 @@
       \verb 10.21105/joss.03021
       \endverb
     \endentry
+    \entry{Binder_2013}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=164d5cb589d8c7676312afede133b323}{%
+           family={Weingast},
+           familyi={W\bibinitperiod},
+           given={Jessika},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c3e8a3e4518b8a0506ea08b54f81253}{%
+           family={Scheibböck},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44867b975d1db565de65f93d08f5539b}{%
+           family={Wurm},
+           familyi={W\bibinitperiod},
+           given={Elisabeth\bibnamedelima Mt},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44d3c030117b762846564a26fa4ee275}{%
+           family={Ranharter},
+           familyi={R\bibinitperiod},
+           given={Elisabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45c303c9500ac38dce29c8641eae9c42}{%
+           family={Porkert},
+           familyi={P\bibinitperiod},
+           given={Stefanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=678b952300ffa50671e695cb4b4d2cdb}{%
+           family={Dreiseitl},
+           familyi={D\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=083390fbe6b61fda6bb4d93c3c0592df}{%
+           family={Posch},
+           familyi={P\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ad4ab5f3af57012323d48fa9fe15a7a}{%
+           family={Binder},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ebd9a30dd7942baad4e2c5cb040e454a}
+      \strng{fullhash}{43c1af7a64b6a17c3dc069f05f96cad2}
+      \strng{bibnamehash}{43c1af7a64b6a17c3dc069f05f96cad2}
+      \strng{authorbibnamehash}{43c1af7a64b6a17c3dc069f05f96cad2}
+      \strng{authornamehash}{ebd9a30dd7942baad4e2c5cb040e454a}
+      \strng{authorfullhash}{43c1af7a64b6a17c3dc069f05f96cad2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1357-633X, 1758-1109}
+      \field{journaltitle}{Journal of Telemedicine and Telecare}
+      \field{number}{4}
+      \field{title}{A Prospective Study of Mobile Phones for Dermatology in a Clinical Setting}
+      \field{volume}{19}
+      \field{year}{2013}
+      \field{pages}{213\bibrangedash 218}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1177/1357633x13490890
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/10.1177/1357633x13490890
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/10.1177/1357633x13490890
+      \endverb
+    \endentry
     \entry{Wirawan_2020}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=fa1941f74d8958df267f39ebcc715618}{%
@@ -13417,8 +15199,101 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0190962218327282
       \endverb
     \endentry
+    \entry{zhang2018mixupempiricalriskminimization}{misc}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=2055fe99efa178d6f877d718047b0390}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hongyi},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=c55edd870afd5174d08d32e8560235f0}{%
+           family={Cisse},
+           familyi={C\bibinitperiod},
+           given={Moustapha},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea1ca71b064fbb7ec15bd2e49e287ea9}{%
+           family={Dauphin},
+           familyi={D\bibinitperiod},
+           given={Yann\bibnamedelima N.},
+           giveni={Y\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47d681c0cbae75196012a538c46ccc06}{%
+           family={Lopez-Paz},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{47ed15e39b226ffdc3da65f48de59b1f}
+      \strng{fullhash}{99e17545100e06ee9db2c0f295e2db48}
+      \strng{bibnamehash}{99e17545100e06ee9db2c0f295e2db48}
+      \strng{authorbibnamehash}{99e17545100e06ee9db2c0f295e2db48}
+      \strng{authornamehash}{47ed15e39b226ffdc3da65f48de59b1f}
+      \strng{authorfullhash}{99e17545100e06ee9db2c0f295e2db48}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{mixup: Beyond Empirical Risk Minimization}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1710.09412
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1710.09412
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1710.09412
+      \endverb
+    \endentry
+    \entry{zhang2018generalizedcrossentropyloss}{misc}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=35e75c41b2ad52e82ab5690b269900bb}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhilu},
+           giveni={Z\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=885ad74f7e4e07ac204c4f7ea0af8dee}{%
+           family={Sabuncu},
+           familyi={S\bibinitperiod},
+           given={Mert\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \strng{fullhash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \strng{bibnamehash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \strng{authorbibnamehash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \strng{authornamehash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \strng{authorfullhash}{3816823a5cd71986a8cf0a52f9a55e29}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Generalized Cross Entropy Loss for Training Deep Neural Networks with Noisy Labels}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1805.07836
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1805.07836
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1805.07836
+      \endverb
+    \endentry
   \enddatalist
-  \missing{Bourouis_Zerdazi_Feham_Bouchachia_2013}
 \endrefsection
 \endinput
 

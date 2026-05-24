@@ -115,7 +115,7 @@ Badanie dermoskopowe nie stanowi ostatecznej diagnozy i powinno być połączone
 
 \section{Głębokie uczenie w dermatologii}
 \subsection{Podstawy deep learning}
-\begin{figure}
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.5\linewidth]{ai_ml_dl}
 	\caption{Relacje między sztuczną inteligencją, uczeniem maszynowym i głębokim uczeniem}
@@ -216,16 +216,16 @@ Alternatywnym podejściem jest globalne zliczanie poprawnych i niepoprawnych pre
 
 \subsection{Klasyfikacja binarna}
 \citet{diagnostics12102472} opracowali metodę agregującą wyniki wielu modeli w celu klasyfikacji nowotworów skóry jako złośliwe lub łagodne.
-Zbiór danych obejmował 1000 obrazów czerniaka i 1000 zdjęć nowotworów łagodnych pochodzących z archiwów ISIC.
+Zbiór danych obejmował 1.000 obrazów czerniaka i 1.000 zdjęć nowotworów łagodnych pochodzących z archiwów ISIC.
 W badaniu wykorzystano maszynę wektorów nośnych, lasy losowe oraz metodę k-najbliższych sąsiadów, a także głębokie sieci neuronowe takie jak Xception, ResNet50 oraz VGG16.
 Metoda osiągnęła dokładność 90,9\%, wynik F1 równy 89,6\%, czułość 88,6\% oraz AUC 91,7\%.
 
 W 2019 \citet{Adegun_Viriri_2020} przedstawili system oparty na głębokich sieciach neuronowych rozróżniający czerniaka od pozostałych zmian skórnych.
-Model trenowano na zbiorach zdjęć dermoskopowych ISIC 2017 oraz PH2, łącznie obejmujących 2200 obrazów w zbiorze treningowym i 660 w testowym.
+Model trenowano na zbiorach zdjęć dermoskopowych ISIC 2017 oraz PH2, łącznie obejmujących 2.200 obrazów w zbiorze treningowym i 660 w testowym.
 Autorzy zaproponowali własną architekturę konwolucyjnej sieci neuronowej typu koder-dekoder oraz zastosowali techniki augmentacji obrazu, takie jak losowe obroty.
 Metoda osiągnęła dokładność 95\%, czułość 97\% i swoistość 96\%.
 
-\citet{Alzubaidi_Al-Amidie_Al-Asadi_Humaidi_Al-Shamma_Fadhel_Zhang_Santamaría_Duan_2021} zaproponowali rozwiązanie oparte na głębokich konwolucyjnych sieciach neuronowych, wykorzystuujące zbiory ISIC z konkursów z lat 2016-2020, 170 obrazów z zbioru MED-NODE oraz 1300 zdjęć z zbioru Dermofit.
+\citet{Alzubaidi_Al-Amidie_Al-Asadi_Humaidi_Al-Shamma_Fadhel_Zhang_Santamaría_Duan_2021} zaproponowali rozwiązanie oparte na głębokich konwolucyjnych sieciach neuronowych, wykorzystuujące zbiory ISIC z konkursów z lat 2016-2020, 170 obrazów z zbioru MED-NODE oraz 1.300 zdjęć z zbioru Dermofit.
 Zastosowali augmentację danych zwiększającą liczbę przykładów do 200 000 oraz techniki transfer learning oraz double transfer learning.
 W badaniu uzyskano dokładność wynoszącą 98,57\%, pełność 97,9\%, precyzję 99,18\% oraz F1 równe 98,53\%.
 
@@ -252,17 +252,17 @@ Model wytrenowano na podstawie danych z zbioru HAM10000.
 Metoda osiągnęła dokładność 100\%, czułość 94,05\%, precyzję 97,07\% oraz wynik F1 95.53\%.
 
 \citet{Kassani_2019} porównali popularne głębokie konwolucyjne sieci neuronowe Xception, AlexNet, VGGNet oraz ResNet w zadaniu klasyfikacji wieloklasowej zmian skórnych.
-Wykorzystano zbiór ISIC 2018, który obejmuje 10 015 zdjęć dermoskopowych i siedem kategorii zmian skórnych.
+Wykorzystano zbiór ISIC 2018, który obejmuje 10.015 zdjęć dermoskopowych i siedem kategorii zmian skórnych.
 Najlepsze wyniki osiągnął model ResNet50 z dokładnością wynoszącą 92,08\%, F1 92,74\%, precyzją 93,73\% i pełnością 92,53\%.
 
 \citet{Han_Kim_Lim_Park_Park_Chang_2018} dokonali \textit{fine-tuning} na konwolucyjnej sieci neuronowej ResNet-152 w celu klasyfikacji 12 kategorii zmian skórnych - raka podstawnokomórkowego, płaskonabłonkowego i śródnabłonkowego, czerniaka złośliwego, rogowacenia słonecznego i łojotokowego, plam soczewicowatych, włókniaka twardego, ziarniniaka ropnego, naczyniaka, brodawki i znamienia melanocytowego, potocznie nazywanego pieprzykiem. 
-\textit{Fine-tuning} obejmował 19 398 obrazów z zbiorów MED-NODE, Dermofit oraz zdjęć z Uniwersytetów Asan i Hallym oraz obrazów pobranych z różnych internetowych atlasów dermatologicznych.
+\textit{Fine-tuning} obejmował 19.398 obrazów z zbiorów MED-NODE, Dermofit oraz zdjęć z Uniwersytetów Asan i Hallym oraz obrazów pobranych z różnych internetowych atlasów dermatologicznych.
 Model osiągnął wyniki porównywalne do 16 dermatologów.
  
 \citet{Kawahara_2016} w 2016 roku zaprezentowali klasyfikator liniowy wytrenowany na podstawie cech wyodrębnionych z głębokiej sieci konwolucyjnej.
 Model został wyuczony na zbiorze danych Dermofit i rozróżniał dziesięć kategorii zmian skórnych z większą dokładnością niż ówczesne wyniki innych metod dla tego samego zbioru danych.
  
-\citet{Esteva_Kuprel_Novoa_Ko_Swetter_Blau_Thrun_2017} wytrenowali konwolucyjną sieć neuronową GoogleNetInceptionV3 na 129 450 przykładach obejmujących 2032 jednostek chorobowych i porównali jej wydajność z 21 dermatologami.
+\citet{Esteva_Kuprel_Novoa_Ko_Swetter_Blau_Thrun_2017} wytrenowali konwolucyjną sieć neuronową GoogleNetInceptionV3 na 129.450 przykładach obejmujących 2.032 jednostek chorobowych i porównali jej wydajność z 21 dermatologami.
 Szczególnie skupiono się na rozróżnianiu nowotworów keratynocytowych (rak podstawnokomórkowy i płaskonabłonkowy) od łagodnych rogowaceń oraz rozróżnianiu czerniaków złośliwych i znamion melanocytowych.
 Sieć wykazała się skutecznością na poziomie porównywalnym z dermatologami.
 Autorzy zasugerowali wykorzystanie tego typu rozwiązań do zapewnienia powszechnego dostępu do opieki diagnostycznej po niższych kosztach przy pomocy urządzeń mobilnych.
@@ -272,7 +272,7 @@ Autorzy zasugerowali wykorzystanie tego typu rozwiązań do zapewnienia powszech
 W 2019 \citet{Ajisafe_2020} przedstawili aplikację mobilną dla systemu Android klasyfikującą zmiany skórne na łagodne i złośliwe.
 Autorzy zastosowali własny, trzy warstwowy model konwolucyjnej sieci neuronowej, VGG-16 oraz Google Inception V3.
 Model Inception V3 osiągnął dokładność 81\% i czułość 84\%.
-Dane uzyskano z archiwów ISIC a do trenowania wykorzystano 1758 obrazów poddanych technice augmentacji danych.
+Dane uzyskano z archiwów ISIC a do trenowania wykorzystano 1.758 obrazów poddanych technice augmentacji danych.
 Wytrenowany model Google Inception V3 przekonwertowano na model Tensorflow a następnie zaimportowano do aplikacji androidowej z prostym interfejsem użytkownika.
 
 W aplikacji przedstawionej przez \citet{Wirawan_2020} wykorzystano model MobileNet v2, cechujący się niewielkim rozmiarem oraz niskim opóźnieniem, zaprojektowany w celu użycia na systemach mobilnych.
@@ -283,7 +283,7 @@ Model przetestowano na fizycznie wydrukowanych zdjęciach zmian skórnych, na zd
 Model uzyskał 70\% dokładność w zadaniu klasyfikacyjnym ze zdjęć kamerą telefonu i 90\% dokładności z zdjęciami ze zbioru.
 
 \citet{Virvou_2022} zbadali możliwości jedenastu konwolucyjnych sieci neuronowych w zadaniu klasyfikacji siedmiu zmian skórnych.
-Dane uzyskano z zbioru HAM10000, który obejmuje 10 000 obrazów zmian skórnych.
+Dane uzyskano z zbioru HAM10000, który obejmuje 10.000 obrazów zmian skórnych.
 Najlepsze wyniki osiągnął model DenseNet169 z dokładnością 92,25\% i pełnością 93,59\%.
 Autorzy wykorzystali uczenie transferowe oraz augmentację zdjęć.
 Model przekonwertowano do formatu tensorlite i utworzono aplikację mobilną android, która zbiera również informacje o ekspozycji na UV oraz lokalizacji użytkownika.
@@ -291,7 +291,7 @@ Model przekonwertowano do formatu tensorlite i utworzono aplikację mobilną and
 \citet{Bouchachia_2013} opracowali prototyp mobilnego systemu do analizy zmian skórnych, wykorzystującego aparat smartfona oraz lokalnie działającą sieć neuronową.
 Model został wytrenowany na zbiorze 200 obrazów w zadaniu binarnej klasyfikacji zmian skórnych na łagodne i złośliwe.
 
-\citet{8795362} przedstawili aplikację mobilną przeznaczoną dla systemu iOS, wykorzystującą autorską sieć konwolucyjną wytrenowaną na podstawie 10 015 obrazów z zbioru HAM10000.
+\citet{8795362} przedstawili aplikację mobilną przeznaczoną dla systemu iOS, wykorzystującą autorską sieć konwolucyjną wytrenowaną na podstawie 10.015 obrazów z zbioru HAM10000.
 Model został następnie przekonwertowany na format mobilny za pomocą biblioteki Core ML, co umożliwiło dokonanie predykcji w czasie niemal rzeczywistym.
 Po zrobieniu zdjęcia przez użytkownika aplikacja prezentuje na ekranie telefonu najbardziej prawdopodobną klasę zmiany skórnej.
 Autorzy nie opublikowali szczegółowych wyników walidacji ani metryk oceniających skuteczność modelu.
@@ -362,5 +362,5 @@ Aby możliwe było przełożenie wyników badań na skuteczne wdrożenia klinicz
 
 W wyniku powszechności urządzeń mobilnych medycyna stopniowo przenosi się do wymiaru cyfrowego i internetowego
 Integracja usług zdrowotnych z aplikacjami mobilnymi może znacząco zwiększyć dostępność opieki, poprawić profilaktykę oraz umożliwić pacjentom bardziej świadome zarządzanie własnym zdrowiem.
-Rozwijanie narzędzi łączących algorytmy diagnostyczne z intuicyjnymi interfejsami mobilnymi stanowi naturalny kierunek rozwoju współczesnej medycyny cyfrowej \cite{Ajisafe_2020, Bourouis_Zerdazi_Feham_Bouchachia_2013}.
+Rozwijanie narzędzi łączących algorytmy diagnostyczne z intuicyjnymi interfejsami mobilnymi stanowi naturalny kierunek rozwoju współczesnej medycyny cyfrowej \cite{Ajisafe_2020, Bourouis_Zerdazi_Feham_Bouchachia_2013, jamadermatol}.
 W niniejszej pracy przedstawiono propozycję systemu integrującego możliwości głębokich sieci neuronowych w diagnostyce zmian skórnych z aplikacją mobilną przeznaczoną dla systemu Android, co stanowi przykład praktycznego wykorzystania głebokiego uczenia w nowoczesnej opiece zdrowotnej.

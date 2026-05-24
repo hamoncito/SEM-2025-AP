@@ -64,7 +64,7 @@ Rysunek \ref{fig:oversampling_classes} przedstawia rozkład klas w zbiorze przed
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{oversampling_classes}
+	\includegraphics[width=1\linewidth]{oversampling_classes}
 	\caption{Rozkład klas przed i po oversamplingu}
 	\source{Opracowanie własne}
 	\label{fig:oversampling_classes}
@@ -73,7 +73,7 @@ Rysunek \ref{fig:oversampling_classes} przedstawia rozkład klas w zbiorze przed
 
 Następnie wydzielono zbiór treningowy, testowy oraz walidacyjny w proporcjach:
 \begin{itemize}
-	\item dane treningowe - 1998 przykładów (72\% zbioru)
+	\item dane treningowe - 1.998 przykładów (72\% zbioru)
 	\item dane walidacyjne - 222 przykładów (8\% zbioru)
 	\item dane testowe - 555 przykładów (20\% zbioru)
 \end{itemize}
@@ -87,7 +87,7 @@ Na podstawie wyników wybrano zestaw umiarkowanych transformacji, obejmujący:
 	\item rotację do 15 stopni,
 	\item przesunięcia poziome i pionowe do 10\%,
 	\item przybliżenie do 15\%,
-	\item zmiany jasności w zakresie 0.8 - 1.2,
+	\item zmiany jasności w zakresie 0,8-1,2,
 	\item uzupełnianie pikseli metodą najbliższego sąsiada.
 \end{itemize}
 
@@ -183,17 +183,16 @@ Wytrenowany model jest konwertowany do formatu TensorFlow Lite, umożliwiając w
 Cały pipeline uruchamiany jest metodą run, która wykonuje oba etapy trenowania oraz pełną ewaluację.
 
 \section{Aplikacja mobilna}
-W ramach stworzenia prototypu systemu zaprojektowano aplikację mobilną wykorzystującą wytrenowany model klasyfikacji zmian skórnych.
-Aplikację zaimplementowano na platformę Android z użyciem języka Kotlin oraz biblioteki Jetpack Compose, która umożliwia deklaratywne tworzenie interfejsu użytkownika.
-Model sieci neuronowej został umieszczony w zasobach aplikacji i obsłużony za pomocą biblioteki TensorFlow Lite.
-
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{diagram_klas}
+	\includegraphics[width=0.9\linewidth]{diagram_klas}
 	\caption{Diagram klas przedstawiający działanie aplikacji}
 	\source{Opracowanie własne}
 	\label{fig:diagram_klas}
 \end{figure}
+W ramach stworzenia prototypu systemu zaprojektowano aplikację mobilną wykorzystującą wytrenowany model klasyfikacji zmian skórnych.
+Aplikację zaimplementowano na platformę Android z użyciem języka Kotlin oraz biblioteki Jetpack Compose, która umożliwia deklaratywne tworzenie interfejsu użytkownika.
+Model sieci neuronowej został umieszczony w zasobach aplikacji i obsłużony za pomocą biblioteki TensorFlow Lite.
 
 Diagram \ref{fig:diagram_klas} przedstawia pełną architekturę aplikacji, w której warstwa interfejsu użytkownika jest oddzielona od logiki przetwarzania obrazu oraz inferencji modelu.
 Głównym punktem wejścia aplikacji jest klasa \texttt{MainActivity}, odpowiedzialna za inicjalizację środowiska Jetpack Compose.
@@ -264,7 +263,7 @@ Wyniki uzyskane przez modele zagregowano na wykresie słupkowym \ref{fig:wyniki1
 Analiza metryk uzyskanych przez poszczególne architektury przedstawiona na \ref{fig:wyniki1} oraz \ref{fig:wyniki2} ujawnia wyraźne różnice w ich skuteczności w zadaniu klasyfikacji zdjęć telefonem komórkowych zmian skórnych.
 Najwyższą jakość predykcji osiągnęły modele z rodziny ResNet. 
 ResNet50 oraz ResNet101 uzyskały odpowiednio średni F1-score równy 0,72 i 0,714, co czyni je zdecydowanie najlepszymi spośród wszystkich testowanych modeli.
-Obie sieci osiągnęły również najwyższe wartości AUC powyżej 0.9, co świadczy o ich wysokiej zdolności rozróżniania klas.
+Obie sieci osiągnęły również najwyższe wartości AUC powyżej 0,9, co świadczy o ich wysokiej zdolności rozróżniania klas.
 Dokładność dla ResNet50 wyniosła 0,741, a dla ResNet101 0,768.
 Modele ConvNeXtTiny oraz MobileNetV3Large osiągnęły umiarkowane wyniki z dokładnością na poziomie odpowiednio 0,589 i 0,566, AUC w wysokości 0,852 i 0,856 oraz średnim wynikiem F1 0,5676 oraz 0,498.
 EfficientNetB0, DenseNet121 oraz MobileNetV2 uzyskały najniższe wyniki w badaniu. 
@@ -287,7 +286,7 @@ Architektury mobilne osiągnęły znacznie niższe wartości F1, co sugeruje, ż
 Modele ConvNeXtTiny oraz EfficientNetB0 uzyskały wyniki umiarkowane, plasując się pomiędzy modelami mobilnymi a architekturami rezydualnymi.
 
 Wszystkie modele poradziły sobie stosunkowo dobrze z klasyfikacją raka podstawnokomórkowego skóry (BCC), co może wynikać z jego największej reprezentacji w zbiorze danych. 
-Najwyższe wartości F1 osiągnęły ResNet50 oraz ResNet101, natomiast architektury mobilne uzyskały wyniki w zakresie 0,45 - 0,57.
+Najwyższe wartości F1 osiągnęły ResNet50 oraz ResNet101, natomiast architektury mobilne uzyskały wyniki w zakresie 0,45-0,57.
 DenseNet121 osiągnął w tej klasie swój najlepszy rezultat z F1 na poziomie 0,613.
 
 Czerniak (MEL) stanowi klasę o kluczowym znaczeniu klinicznym i jednocześnie jedną z najtrudniejszych do klasyfikacji ze względu na duże podobieństwo do łagodnych znamion melanocytowych.
@@ -302,11 +301,11 @@ Umiarkowane wyniki uzyskały MobileNetV3Large oraz ConvNeXtTiny, natomiast najni
 Największe trudności wiązały się z klasyfikacją raka kolczystokomórkowego (SCC).
 Szczególnie słabo wypadł DenseNet121, który uzyskał F1 równe 0, co wskazuje na całkowity brak zdolności do poprawnej klasyfikacji tej klasy.
 Trudność ta może wynikać z klinicznego podobieństwa SCC do rogowacenia słonecznego, z którego często się rozwija, a także z faktu, że SCC charakteryzuje się objawami, których nie da się w pełni uchwycić na zdjęciach, takimi jak podrażnienie, ból czy uniesienie brzegów przewlekłego owrzodzenia \cite{Bourke_2010}.
-Modele ResNet uzyskały najwyższe, choć nadal umiarkowane wyniki (0,511 – 0,564).
+Modele ResNet uzyskały najwyższe, choć nadal umiarkowane wyniki (0,511-0,564).
 
 Klasa obejmująca łagodne rogowacenie łojotokowe (SEK) również charakteryzowała się stosunkowo niskimi wynikami F1 w porównaniu z innymi kategoriami.
 Najlepsze rezultaty uzyskały ResNet101 (0,698) oraz ResNet50 (0,718).
-Najsłabszy wynik ponownie osiągnął MobileNetV2 (0,069), natomiast pozostałe architektury uzyskały wartości F1 w zakresie 0,333 – 0,471.
+Najsłabszy wynik ponownie osiągnął MobileNetV2 (0,069), natomiast pozostałe architektury uzyskały wartości F1 w zakresie 0,333-0,471.
 
 \subsection{Podsumowanie wyników}
 Przeprowadzone eksperymenty wykazały wyraźne różnice skuteczności między analizowanymi architekturami.
@@ -323,7 +322,7 @@ Może to wynikać z wysokiej wrażliwości na hiperparametry oraz podatność na
 \section{Praktyczne zastosowanie aplikacji}
 Wybór modelu do aplikacji mobilnej wykonującej inferencję bezpośrednio na urządzeniu wymaga uwzględnienia zarówno skuteczności diagnostycznej, kosztu obliczeniowego, obejmującego czas przetwarzania, zużycie energii oraz opóźnienie inferencji. 
 W oparciu o uzyskane wyniki, obejmujące wysoką skuteczność ogólną, stabilność między klasami oraz dobrą wydajność, do systemu wdrożono architekturę ResNet101.
-Model został przetestowany po konwersji do formatu TFLite pod kątem złożoności obliczeniowej oraz czasu inferencji na dwóch urządzeniach: Samsung Galaxy A35 oraz Google Pixel 8a, oba z Androidem w wersji 16.
+Model został przetestowany po konwersji do formatu TFLite pod kątem złożoności obliczeniowej oraz czasu inferencji na dwóch urządzeniach - Samsung Galaxy A35 oraz Google Pixel 8a, oba z Androidem w wersji 16.
 
 \begin{figure}[h!]
 	\centering

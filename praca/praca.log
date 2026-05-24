@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2024.1.7)  23 MAY 2026 13:49
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2024.1.7)  24 MAY 2026 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2180,36 +2180,36 @@ Package csquotes Info: Redefining alias 'default' -> 'polish'.
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                'urldate=iso' requires 'dateera=astronomical'.
-(biblatex)                Setting 'dateera=astronomical' on input line 29.
+(biblatex)                Setting 'dateera=astronomical' on input line 32.
 
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                'urldate=iso' requires 'seconds=true'.
-(biblatex)                Setting 'seconds=true' on input line 29.
+(biblatex)                Setting 'seconds=true' on input line 32.
 
 (praca.aux)
 \openout1 = `praca.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2249,7 +2249,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 32.
 (praca.out) (praca.out)
 \@outlinefile=\write7
 \openout7 = `praca.out'.
@@ -2259,7 +2259,7 @@ Package hyperref Info: Link coloring ON on input line 29.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 29.
+loading the todonotes package. on input line 32.
 
 Package biblatex Info: Trying to load language 'polish' -> 'polish-apa'...
 Package biblatex Info: ... file 'polish-apa.lbx' found.
@@ -2291,70 +2291,62 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'praca.bbl' found.
- (praca.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Bourouis_Zerdazi_Feham_Bouchachia_2013
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 29.
-Package biblatex Info: Reference segment=0 on input line 29.
+ (praca.bbl)
+Package biblatex Info: Reference section=0 on input line 32.
+Package biblatex Info: Reference segment=0 on input line 32.
 \c@lstlisting=\count516
 LaTeX Font Info:    Font shape `TU/Calibri(1)/m/n' will be
-(Font)              scaled to size 12.97174pt on input line 31.
+(Font)              scaled to size 12.97174pt on input line 34.
 LaTeX Font Info:    Font shape `TU/Calibri(1)/m/n' will be
-(Font)              scaled to size 18.67929pt on input line 31.
+(Font)              scaled to size 18.67929pt on input line 34.
 LaTeX Font Info:    Font shape `TU/Calibri(1)/b/n' will be
-(Font)              scaled to size 18.67929pt on input line 31.
+(Font)              scaled to size 18.67929pt on input line 34.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
 []\TU/Calibri(1)/m/n/17.28 Aplikacja mobilna jako klasyfikator zmian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
 
  []
 
 LaTeX Font Info:    Font shape `TU/Calibri(1)/b/n' will be
-(Font)              scaled to size 12.97174pt on input line 31.
+(Font)              scaled to size 12.97174pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CambriaMath(1)/m/n' will be
-(Font)              scaled to size 8.97679pt on input line 31.
+(Font)              scaled to size 8.97679pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CambriaMath(1)/m/n' will be
-(Font)              scaled to size 7.37819pt on input line 31.
+(Font)              scaled to size 7.37819pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
-(Font)              scaled to size 12.29828pt on input line 31.
+(Font)              scaled to size 12.29828pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
-(Font)              scaled to size 8.97774pt on input line 31.
+(Font)              scaled to size 8.97774pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CambriaMath(2)/m/n' will be
-(Font)              scaled to size 7.37895pt on input line 31.
+(Font)              scaled to size 7.37895pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
-(Font)              scaled to size 12.29572pt on input line 31.
+(Font)              scaled to size 12.29572pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
-(Font)              scaled to size 8.97586pt on input line 31.
+(Font)              scaled to size 8.97586pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CambriaMath(3)/m/n' will be
-(Font)              scaled to size 7.37741pt on input line 31.
+(Font)              scaled to size 7.37741pt on input line 34.
 LaTeX Font Info:    Font shape `TU/Calibri(3)/m/n' will be
-(Font)              scaled to size 9.46936pt on input line 31.
+(Font)              scaled to size 9.46936pt on input line 34.
 LaTeX Font Info:    Font shape `TU/Calibri(3)/m/n' will be
-(Font)              scaled to size 7.78304pt on input line 31.
+(Font)              scaled to size 7.78304pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CalibriItalic(0)/m/n' will be
-(Font)              scaled to size 9.44743pt on input line 31.
+(Font)              scaled to size 9.44743pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CalibriItalic(0)/m/n' will be
-(Font)              scaled to size 7.76501pt on input line 31.
+(Font)              scaled to size 7.76501pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CalibriBold(0)/m/n' will be
-(Font)              scaled to size 9.46936pt on input line 31.
+(Font)              scaled to size 9.46936pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CalibriBold(0)/m/n' will be
-(Font)              scaled to size 7.78304pt on input line 31.
+(Font)              scaled to size 7.78304pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CalibriBoldItalic(0)/m/n' will be
-(Font)              scaled to size 9.46936pt on input line 31.
+(Font)              scaled to size 9.46936pt on input line 34.
 LaTeX Font Info:    Font shape `TU/CalibriBoldItalic(0)/m/n' will be
-(Font)              scaled to size 7.78304pt on input line 31.
+(Font)              scaled to size 7.78304pt on input line 34.
 LaTeX Font Info:    Font shape `TU/Calibri(1)/m/n' will be
-(Font)              scaled to size 11.8367pt on input line 31.
+(Font)              scaled to size 11.8367pt on input line 34.
 File: header-WIGE-pl.png Graphic file (type bmp)
 <header-WIGE-pl.png>
 [1
@@ -2364,9 +2356,9 @@ File: header-WIGE-pl.png Graphic file (type bmp)
 
 ]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 26.89474pt on input line 35.
+(Font)              scaled to size 26.89474pt on input line 38.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/b/n' will be
-(Font)              scaled to size 26.89474pt on input line 35.
+(Font)              scaled to size 26.89474pt on input line 38.
  (praca.toc
 LaTeX Font Info:    Font shape `TU/Calibri(0)/b/n' will be
 (Font)              scaled to size 12.97174pt on input line 2.
@@ -2376,105 +2368,73 @@ LaTeX Font Info:    Font shape `TU/Calibri(0)/b/n' will be
 \tf@toc=\write8
 \openout8 = `praca.toc'.
 
- [2] (praca.tdo)
+ [2] [3] (praca.tdo)
 \tf@tdo=\write9
 \openout9 = `praca.tdo'.
 
- [3
+ [4
 
 ] (wstep.tex
 Rozdział 1.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 18.67929pt on input line 7.
+(Font)              scaled to size 18.67929pt on input line 6.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/b/n' will be
-(Font)              scaled to size 18.67929pt on input line 7.
-) (rozdzial2.tex [1
+(Font)              scaled to size 18.67929pt on input line 6.
+
+Underfull \hbox (badness 1681) in paragraph at lines 13--15
+\TU/Calibri(1)/m/n/12 Celem pracy jest opracowanie prototypu systemu rozpoznawa
+nia zmian skórnych
+ []
+
+[1
 
 
-]
+]) (rozdzial2.tex [2]
 Rozdział 2.
-[2
+[3
 
-]
+] [4]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/it' will be
-(Font)              scaled to size 12.94171pt on input line 26.
- [3] [4]
-Overfull \hbox (17.01274pt too wide) in paragraph at lines 49--80
+(Font)              scaled to size 12.94171pt on input line 33.
+ [5]
+Overfull \hbox (17.01274pt too wide) in paragraph at lines 56--87
  [][] 
  []
 
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 10.80978pt on input line 80.
-[5] [6]
-Underfull \hbox (badness 1331) in paragraph at lines 103--108
+(Font)              scaled to size 10.80978pt on input line 87.
+[6] [7]
+Underfull \hbox (badness 1331) in paragraph at lines 110--115
 \TU/Calibri(1)/m/n/12 oraz wywiadem z pacjentem, stanowi skuteczną metodę profi
 laktyki czerniaka ze
  []
 
+[8]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 15.56607pt on input line 110.
+(Font)              scaled to size 15.56607pt on input line 117.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/b/n' will be
-(Font)              scaled to size 15.56607pt on input line 110.
+(Font)              scaled to size 15.56607pt on input line 117.
 File: ai_ml_dl.png Graphic file (type bmp)
 <ai_ml_dl.png>
-[7]
+ [9]
 File: cnn.png Graphic file (type bmp)
 <cnn.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] [9]
+ [10]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 9.46936pt on input line 154.
+(Font)              scaled to size 9.46936pt on input line 161.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 7.78304pt on input line 154.
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-[]\TU/Calibri(1)/m/n/12 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DODAĆ MACIERZ 
-POMY-
- []
-
-[10] [11] [12]
+(Font)              scaled to size 7.78304pt on input line 161.
+ [11] [12] [13]
 Underfull \hbox (badness 1845) in paragraph at lines 246--248
 \TU/Calibri(1)/m/n/12 zastosowania uczenia transferowego na modelach EfficientN
 etB0, EfficientNetB1 i
  []
 
-[13] [14] [15] [16] [17] [18] [19]
-
-LaTeX Warning: Citation 'Bourouis_Zerdazi_Feham_Bouchachia_2013' on page 20 und
-efined on input line 365.
-
-) (rozdzial3.tex
-Underfull \hbox (badness 3482) in paragraph at lines 363--3
-[]\TU/Calibri(1)/m/n/12 W wyniku powszechności urządzeń mobilnych medycyna stop
-niowo przenosi
- []
-
-
-Underfull \hbox (badness 2088) in paragraph at lines 363--3
-\TU/Calibri(1)/m/n/12 się do wymiaru cyfrowego i internetowego Integracja usług
- zdrowotnych z apli-
- []
-
-
-Underfull \hbox (badness 1546) in paragraph at lines 363--3
-\TU/Calibri(1)/m/n/12 Rozwijanie narzędzi łączących algorytmy diagnostyczne z i
-ntuicyjnymi interfejsami
- []
-
-
-Underfull \hbox (badness 3148) in paragraph at lines 363--3
-\TU/Calibri(1)/m/n/12 mobilnymi stanowi naturalny kierunek rozwoju współczesnej
- medycyny cyfrowej
- []
-
-[20]
+[14] [15] [16] [17] [18] [19] [20]) (rozdzial3.tex [21]
 Rozdział 3.
-[21
+[22
 
-] [22] [23] [24] [25] [26]
+] [23] [24] [25] [26] [27]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
 (Font)              scaled to size 6.48587pt on input line 161.
 LaTeX Font Info:    Font shape `TU/CambriaMath(1)/m/n' will be
@@ -2557,126 +2517,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--291
 []|\TU/Calibri(3)/m/n/6 Zdjęcia wykonane
  []
 
-[27] [28] [29]
-
-! LaTeX Error: File `bcc_examples' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.357 ...aphics[width=0.9\linewidth]{bcc_examples}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `actinic_keratosis_examples' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.372 ....9\linewidth]{actinic_keratosis_examples}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[30]
-
-! LaTeX Error: File `nevus_examples' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.386 ...hics[width=0.9\linewidth]{nevus_examples}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Citation 'Hafner_Vogt_2008' on page 31 undefined on input line 3
-96.
-
-
-! LaTeX Error: File `sek_examples' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.404 ...aphics[width=0.9\linewidth]{sek_examples}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[31]
-
-! LaTeX Error: File `scc_examples' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.420 ...aphics[width=0.9\linewidth]{scc_examples}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `melanoma_examples' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.435 ...s[width=0.9\linewidth]{melanoma_examples}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[28] [29] [30]
+File: bcc_sample.png Graphic file (type bmp)
+<bcc_sample.png>
+ [31]
+File: ack_sample.png Graphic file (type bmp)
+<ack_sample.png>
+File: nev_sample.png Graphic file (type bmp)
+<nev_sample.png>
+ [32]
+File: sek_examples.png Graphic file (type bmp)
+<sek_examples.png>
+File: scc_examples.png Graphic file (type bmp)
+<scc_examples.png>
+ [33]
+File: mel_sample.png Graphic file (type bmp)
+<mel_sample.png>
 File: classes_bar.png Graphic file (type bmp)
 <classes_bar.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: classes_pie.png Graphic file (type bmp)
 <classes_pie.png>
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32]
+[34]
 File: diagram_systemu.png Graphic file (type bmp)
 <diagram_systemu.png>
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33] [34]) (rozdzial4.tex [35]
+[35] [36]) (rozdzial4.tex [37]
 Rozdział 4.
-[36
+[38
 
 ]
 Missing character: There is no ‑ in font Calibri/OT:script=latn;language=dflt;m
@@ -2695,63 +2569,76 @@ LaTeX Font Info:    Font shape `TU/InconsolataLGC(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/InconsolataLGC(0)/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 32.
 
-[37]
+[39]
 File: oversampling_classes.png Graphic file (type bmp)
 <oversampling_classes.png>
- [38] [39] [40]
+ [40] [41] [42] [43]
 File: diagram_klas.png Graphic file (type bmp)
 <diagram_klas.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[41]
+ [44] [45]
 File: diagram_app1.png Graphic file (type bmp)
 <diagram_app1.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: diagram_app2.png Graphic file (type bmp)
 <diagram_app2.png>
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (rozdzial5.tex [42] [43]
+File: wyniki1.png Graphic file (type bmp)
+<wyniki1.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: wyniki2.png Graphic file (type bmp)
+<wyniki2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[46] [47]
+File: wyniki3.png Graphic file (type bmp)
+<wyniki3.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[48] [49] [50]
+File: wyniki4.png Graphic file (type bmp)
+<wyniki4.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[51] [52]) (zakonczenie.tex [53]
 Rozdział 5.
-) (zakonczenie.tex [44
+[54
 
-]
-Rozdział 6.
-) [45
+]) [55] [56
 
-] [46
-
-] [47] [48]
-Underfull \hbox (badness 1642) in paragraph at lines 47--47
+] [57] [58]
+Underfull \hbox (badness 1642) in paragraph at lines 49--49
 []\TU/Calibri(1)/m/n/12 Goodfellow, I., Bengio, Y., Courville, A. (2016). \TU/C
 alibri(0)/m/it/12 Deep Learning \TU/Calibri(1)/m/n/12 [[][]$[][][][] [] [] [] [
 ][][] []
  []
 
-[49] [50] [51] [52] [53] [54] [55] [56] [57] (praca.lot)
+[59] [60] [61] [62] [63] [64] [65] [66] [67] [68] (praca.lot)
 \tf@lot=\write10
 \openout10 = `praca.lot'.
 
- [58
+ [69
 
 ] (praca.lof)
 \tf@lof=\write11
 \openout11 = `praca.lof'.
 
 
-[59
+[70
 
 ] (praca.lol)
 \tf@lol=\write12
 \openout12 = `praca.lol'.
 
- [60
+ [71
 
 ] (praca.aux)
  ***********
@@ -2763,7 +2650,7 @@ L3 programming layer <2023-10-10>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `praca.out' has not changed.
-(rerunfilecheck)             Checksum: 241A3C83AF07190EDC52B3975086F563;8982.
+(rerunfilecheck)             Checksum: F1DD6FDDA035E22297C05EDF544F49D0;9989.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                praca
@@ -2774,12 +2661,12 @@ Package logreq Info: Writing requests to 'praca.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42800 strings out of 409955
- 846289 string characters out of 5781419
- 2206615 words of memory out of 5000000
- 63910 multiletter control sequences out of 15000+600000
+ 42812 strings out of 409955
+ 848657 string characters out of 5781419
+ 2258007 words of memory out of 5000000
+ 63925 multiletter control sequences out of 15000+600000
  561679 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  123i,12n,137p,2745b,5736s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on praca.pdf (65 pages).
+Output written on praca.pdf (77 pages).

@@ -3072,62 +3072,65 @@
     <bcf:citekey order="5" intorder="2">briganti_artificial_2020</bcf:citekey>
     <bcf:citekey order="5" intorder="3">halcox_assessment_2017</bcf:citekey>
     <bcf:citekey order="6" intorder="1">briganti_artificial_2020</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">das_collaboration_2023</bcf:citekey>
-    <bcf:citekey order="7" intorder="2">topalovic_artificial_2019</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">rajaraman_visualization_2018</bcf:citekey>
-    <bcf:citekey order="8" intorder="2">ismael_deep_2021</bcf:citekey>
-    <bcf:citekey order="8" intorder="3">hussain_corodet_2021</bcf:citekey>
-    <bcf:citekey order="8" intorder="4">lee_validation_2023</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">briganti_artificial_2020</bcf:citekey>
-    <bcf:citekey order="9" intorder="2">yang_application_2019</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">rajaraman_pre-trained_2018</bcf:citekey>
-    <bcf:citekey order="10" intorder="2">adaptive_2023</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">ais.2021.15</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">lidstromer_artificial_2021</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Nachbar_Stolz_Merkle_Cognetta_Vogt_Landthaler_Bilek_Braun-Falco_Plewig_1994</bcf:citekey>
-    <bcf:citekey order="13" intorder="2">Wysocki_2016</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">jamadermatol</bcf:citekey>
+    <bcf:citekey order="7" intorder="2">Binder_2013</bcf:citekey>
+    <bcf:citekey order="7" intorder="3">Janda_2021</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">das_collaboration_2023</bcf:citekey>
+    <bcf:citekey order="8" intorder="2">topalovic_artificial_2019</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">rajaraman_visualization_2018</bcf:citekey>
+    <bcf:citekey order="9" intorder="2">ismael_deep_2021</bcf:citekey>
+    <bcf:citekey order="9" intorder="3">hussain_corodet_2021</bcf:citekey>
+    <bcf:citekey order="9" intorder="4">lee_validation_2023</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">briganti_artificial_2020</bcf:citekey>
+    <bcf:citekey order="10" intorder="2">yang_application_2019</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">rajaraman_pre-trained_2018</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">adaptive_2023</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">ais.2021.15</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">lidstromer_artificial_2021</bcf:citekey>
     <bcf:citekey order="14" intorder="1">Nachbar_Stolz_Merkle_Cognetta_Vogt_Landthaler_Bilek_Braun-Falco_Plewig_1994</bcf:citekey>
+    <bcf:citekey order="14" intorder="2">Wysocki_2016</bcf:citekey>
     <bcf:citekey order="15" intorder="1">Nachbar_Stolz_Merkle_Cognetta_Vogt_Landthaler_Bilek_Braun-Falco_Plewig_1994</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Abbasi_Shaw_Rigel_Friedman_McCarthy_Osman_Kopf_Polsky_2004</bcf:citekey>
-    <bcf:citekey order="16" intorder="2">Duarte_Sousa-Pinto_Azevedo_Barros_Puig_Malvehy_Haneke_Correia_2021</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Henning_Stein_Yeung_Dusza_Marghoob_Rabinovitz_Polsky_Kopf_2008</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Grob_Bonerandi_1998</bcf:citekey>
-    <bcf:citekey order="18" intorder="2">dermatoscopy-kamiska-wiciorek-spiewak</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">mackie1989malignant</bcf:citekey>
-    <bcf:citekey order="19" intorder="2">MacKie_1990</bcf:citekey>
-    <bcf:citekey order="19" intorder="3">Walter_Prevost_Vasconcelos_Hall_Burrows_Morris_Kinmonth_Emery_2013</bcf:citekey>
-    <bcf:citekey order="19" intorder="4">Congdon_Davis_2023</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Menzies_Ingvar_Crotty_McCarthy_1996</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">Rosendahl_Cameron_McColl_Wilkinson_2012</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">Rogers_Marino_Dusza_Bajaj_Marchetti_Marghoob_2017</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">Wysocki_2016</bcf:citekey>
-    <bcf:citekey order="23" intorder="2">dermatoscopy-kamiska-wiciorek-spiewak</bcf:citekey>
-    <bcf:citekey order="23" intorder="3">Sonthalia_Yumeen_Kaliyadan_2025</bcf:citekey>
-    <bcf:citekey order="23" intorder="4">Davis_Piggott_Lyon_DeSanto_2020</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">Sonthalia_Yumeen_Kaliyadan_2025</bcf:citekey>
-    <bcf:citekey order="24" intorder="2">Yélamos_Braun_Liopyris_Wolner_Kerl_Gerami_Marghoob_2019</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">Oliviero_2000</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">Goodfellow-et-al-2016</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">LeCun_Bengio_Hinton_2015</bcf:citekey>
-    <bcf:citekey order="27" intorder="2">Goodfellow-et-al-2016</bcf:citekey>
-    <bcf:citekey order="27" intorder="3">Russell_Norvig_2022</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Ghosh_2020</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Nachbar_Stolz_Merkle_Cognetta_Vogt_Landthaler_Bilek_Braun-Falco_Plewig_1994</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Abbasi_Shaw_Rigel_Friedman_McCarthy_Osman_Kopf_Polsky_2004</bcf:citekey>
+    <bcf:citekey order="17" intorder="2">Duarte_Sousa-Pinto_Azevedo_Barros_Puig_Malvehy_Haneke_Correia_2021</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Henning_Stein_Yeung_Dusza_Marghoob_Rabinovitz_Polsky_Kopf_2008</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Grob_Bonerandi_1998</bcf:citekey>
+    <bcf:citekey order="19" intorder="2">dermatoscopy-kamiska-wiciorek-spiewak</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">mackie1989malignant</bcf:citekey>
+    <bcf:citekey order="20" intorder="2">MacKie_1990</bcf:citekey>
+    <bcf:citekey order="20" intorder="3">Walter_Prevost_Vasconcelos_Hall_Burrows_Morris_Kinmonth_Emery_2013</bcf:citekey>
+    <bcf:citekey order="20" intorder="4">Congdon_Davis_2023</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Menzies_Ingvar_Crotty_McCarthy_1996</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Rosendahl_Cameron_McColl_Wilkinson_2012</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Rogers_Marino_Dusza_Bajaj_Marchetti_Marghoob_2017</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Wysocki_2016</bcf:citekey>
+    <bcf:citekey order="24" intorder="2">dermatoscopy-kamiska-wiciorek-spiewak</bcf:citekey>
+    <bcf:citekey order="24" intorder="3">Sonthalia_Yumeen_Kaliyadan_2025</bcf:citekey>
+    <bcf:citekey order="24" intorder="4">Davis_Piggott_Lyon_DeSanto_2020</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">Sonthalia_Yumeen_Kaliyadan_2025</bcf:citekey>
+    <bcf:citekey order="25" intorder="2">Yélamos_Braun_Liopyris_Wolner_Kerl_Gerami_Marghoob_2019</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Oliviero_2000</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">Goodfellow-et-al-2016</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">LeCun_Bengio_Hinton_2015</bcf:citekey>
+    <bcf:citekey order="28" intorder="2">Goodfellow-et-al-2016</bcf:citekey>
+    <bcf:citekey order="28" intorder="3">Russell_Norvig_2022</bcf:citekey>
     <bcf:citekey order="29" intorder="1">Ghosh_2020</bcf:citekey>
     <bcf:citekey order="30" intorder="1">Ghosh_2020</bcf:citekey>
-    <bcf:citekey order="30" intorder="2">Hubel_Wiesel_1968</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">Krizhevsky_2012</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">Ghosh_2020</bcf:citekey>
     <bcf:citekey order="31" intorder="2">Hubel_Wiesel_1968</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">Ghosh_2020</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Krizhevsky_2012</bcf:citekey>
+    <bcf:citekey order="32" intorder="2">Hubel_Wiesel_1968</bcf:citekey>
     <bcf:citekey order="33" intorder="1">Ghosh_2020</bcf:citekey>
     <bcf:citekey order="34" intorder="1">Ghosh_2020</bcf:citekey>
-    <bcf:citekey order="34" intorder="2">Mahbod_Schaefer_Wang_Dorffner_Ecker_Ellinger_2020</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">Rainio_2024</bcf:citekey>
-    <bcf:citekey order="35" intorder="2">Erickson_Kitamura_2021</bcf:citekey>
-    <bcf:citekey order="35" intorder="3">Grandini_Bagli_Visani_2020</bcf:citekey>
-    <bcf:citekey order="35" intorder="4">Nowak_2022</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">Grandini_Bagli_Visani_2020</bcf:citekey>
-    <bcf:citekey order="36" intorder="2">Nowak_2022</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">Rainio_2024</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">Ghosh_2020</bcf:citekey>
+    <bcf:citekey order="35" intorder="2">Mahbod_Schaefer_Wang_Dorffner_Ecker_Ellinger_2020</bcf:citekey>
+    <bcf:citekey order="35" intorder="3">kanavati2021partialtransfusionexpressiveinfluence</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Rainio_2024</bcf:citekey>
+    <bcf:citekey order="36" intorder="2">Erickson_Kitamura_2021</bcf:citekey>
+    <bcf:citekey order="36" intorder="3">Grandini_Bagli_Visani_2020</bcf:citekey>
+    <bcf:citekey order="36" intorder="4">Nowak_2022</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">Grandini_Bagli_Visani_2020</bcf:citekey>
+    <bcf:citekey order="37" intorder="2">Nowak_2022</bcf:citekey>
     <bcf:citekey order="38" intorder="1">Rainio_2024</bcf:citekey>
     <bcf:citekey order="38" intorder="2">Nowak_2022</bcf:citekey>
     <bcf:citekey order="39" intorder="1">Rainio_2024</bcf:citekey>
@@ -3204,6 +3207,7 @@
     <bcf:citekey order="96" intorder="2">Kelly_Karthikesalingam_Suleyman_Corrado_King_2019</bcf:citekey>
     <bcf:citekey order="97" intorder="1">Ajisafe_2020</bcf:citekey>
     <bcf:citekey order="97" intorder="2">Bourouis_Zerdazi_Feham_Bouchachia_2013</bcf:citekey>
+    <bcf:citekey order="97" intorder="3">jamadermatol</bcf:citekey>
     <bcf:citekey order="98" intorder="1">Li_Koban_Schenck_Giunta_Li_Sun_2022</bcf:citekey>
     <bcf:citekey order="99" intorder="1">Li_Koban_Schenck_Giunta_Li_Sun_2022</bcf:citekey>
     <bcf:citekey order="100" intorder="1">Kittler_2018</bcf:citekey>
@@ -3228,20 +3232,48 @@
     <bcf:citekey order="116" intorder="1">Dermofit</bcf:citekey>
     <bcf:citekey order="116" intorder="2">inbook</bcf:citekey>
     <bcf:citekey order="117" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="118" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="119" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="120" intorder="1">Hafner_Vogt_2008</bcf:citekey>
-    <bcf:citekey order="121" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="122" intorder="1">Bourke_2010</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">Bourke_2010</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">Castro_2020</bcf:citekey>
     <bcf:citekey order="123" intorder="1">Bourke_2010</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">pandas</bcf:citekey>
-    <bcf:citekey order="125" intorder="1">Harris_2020</bcf:citekey>
-    <bcf:citekey order="126" intorder="1">matplotlib</bcf:citekey>
-    <bcf:citekey order="126" intorder="2">seaborn</bcf:citekey>
-    <bcf:citekey order="127" intorder="1">abadi2016tensorflowlargescalemachinelearning</bcf:citekey>
-    <bcf:citekey order="128" intorder="1">1874254</bcf:citekey>
-    <bcf:citekey order="128" intorder="2">paszke2019pytorchimperativestylehighperformance</bcf:citekey>
-    <bcf:citekey order="129" intorder="1">pedregosa2018scikitlearnmachinelearningpython</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">Hafner_Vogt_2008</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">Bourke_2010</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">Bourke_2010</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">Castro_2020</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">pandas</bcf:citekey>
+    <bcf:citekey order="136" intorder="1">Harris_2020</bcf:citekey>
+    <bcf:citekey order="137" intorder="1">matplotlib</bcf:citekey>
+    <bcf:citekey order="137" intorder="2">seaborn</bcf:citekey>
+    <bcf:citekey order="138" intorder="1">abadi2016tensorflowlargescalemachinelearning</bcf:citekey>
+    <bcf:citekey order="139" intorder="1">1874254</bcf:citekey>
+    <bcf:citekey order="139" intorder="2">paszke2019pytorchimperativestylehighperformance</bcf:citekey>
+    <bcf:citekey order="140" intorder="1">pedregosa2018scikitlearnmachinelearningpython</bcf:citekey>
+    <bcf:citekey order="141" intorder="1">zhang2018mixupempiricalriskminimization</bcf:citekey>
+    <bcf:citekey order="142" intorder="1">zhang2018mixupempiricalriskminimization</bcf:citekey>
+    <bcf:citekey order="143" intorder="1">zhang2018mixupempiricalriskminimization</bcf:citekey>
+    <bcf:citekey order="144" intorder="1">thulasidasan2020mixuptrainingimprovedcalibration</bcf:citekey>
+    <bcf:citekey order="145" intorder="1">sandler2019mobilenetv2invertedresidualslinear</bcf:citekey>
+    <bcf:citekey order="146" intorder="1">howard2019searchingmobilenetv3</bcf:citekey>
+    <bcf:citekey order="147" intorder="1">he2015deepresiduallearningimage</bcf:citekey>
+    <bcf:citekey order="148" intorder="1">he2015deepresiduallearningimage</bcf:citekey>
+    <bcf:citekey order="149" intorder="1">tan2020efficientnetrethinkingmodelscaling</bcf:citekey>
+    <bcf:citekey order="150" intorder="1">huang2018denselyconnectedconvolutionalnetworks</bcf:citekey>
+    <bcf:citekey order="151" intorder="1">liu2022convnet2020s</bcf:citekey>
+    <bcf:citekey order="152" intorder="1">kingma2017adammethodstochasticoptimization</bcf:citekey>
+    <bcf:citekey order="152" intorder="2">zhang2018generalizedcrossentropyloss</bcf:citekey>
+    <bcf:citekey order="153" intorder="1">ioffe2015batchnormalizationacceleratingdeep</bcf:citekey>
+    <bcf:citekey order="153" intorder="2">kanavati2021partialtransfusionexpressiveinfluence</bcf:citekey>
+    <bcf:citekey order="154" intorder="1">Bourke_2010</bcf:citekey>
+    <bcf:citekey order="155" intorder="1">huang2018denselyconnectedconvolutionalnetworks</bcf:citekey>
     <bcf:citekeycount count="1">CHAPMAN20153</bcf:citekeycount>
     <bcf:citekeycount count="1">HALEEM202370</bcf:citekeycount>
     <bcf:citekeycount count="1">mahara_revolutionising_2023</bcf:citekeycount>
@@ -3252,6 +3284,9 @@
     <bcf:citekeycount count="1">alonso_predictive_2019</bcf:citekeycount>
     <bcf:citekeycount count="4">briganti_artificial_2020</bcf:citekeycount>
     <bcf:citekeycount count="1">halcox_assessment_2017</bcf:citekeycount>
+    <bcf:citekeycount count="2">jamadermatol</bcf:citekeycount>
+    <bcf:citekeycount count="1">Binder_2013</bcf:citekeycount>
+    <bcf:citekeycount count="2">Janda_2021</bcf:citekeycount>
     <bcf:citekeycount count="1">das_collaboration_2023</bcf:citekeycount>
     <bcf:citekeycount count="1">topalovic_artificial_2019</bcf:citekeycount>
     <bcf:citekeycount count="1">rajaraman_visualization_2018</bcf:citekeycount>
@@ -3288,7 +3323,8 @@
     <bcf:citekeycount count="2">Hubel_Wiesel_1968</bcf:citekeycount>
     <bcf:citekeycount count="1">Krizhevsky_2012</bcf:citekeycount>
     <bcf:citekeycount count="2">Mahbod_Schaefer_Wang_Dorffner_Ecker_Ellinger_2020</bcf:citekeycount>
-    <bcf:citekeycount count="7">Rainio_2024</bcf:citekeycount>
+    <bcf:citekeycount count="2">kanavati2021partialtransfusionexpressiveinfluence</bcf:citekeycount>
+    <bcf:citekeycount count="6">Rainio_2024</bcf:citekeycount>
     <bcf:citekeycount count="4">Erickson_Kitamura_2021</bcf:citekeycount>
     <bcf:citekeycount count="3">Grandini_Bagli_Visani_2020</bcf:citekeycount>
     <bcf:citekeycount count="7">Nowak_2022</bcf:citekeycount>
@@ -3308,7 +3344,6 @@
     <bcf:citekeycount count="1">Virvou_2022</bcf:citekeycount>
     <bcf:citekeycount count="1">Bouchachia_2013</bcf:citekeycount>
     <bcf:citekeycount count="1">8795362</bcf:citekeycount>
-    <bcf:citekeycount count="1">Janda_2021</bcf:citekeycount>
     <bcf:citekeycount count="1">Aldaham_2016</bcf:citekeycount>
     <bcf:citekeycount count="3">groh2021evaluating</bcf:citekeycount>
     <bcf:citekeycount count="5">Kelly_Karthikesalingam_Suleyman_Corrado_King_2019</bcf:citekeycount>
@@ -3321,7 +3356,7 @@
     <bcf:citekeycount count="1">Tang_Li_Fantus_2023</bcf:citekeycount>
     <bcf:citekeycount count="3">Li_Koban_Schenck_Giunta_Li_Sun_2022</bcf:citekeycount>
     <bcf:citekeycount count="1">9113301</bcf:citekeycount>
-    <bcf:citekeycount count="0">Bourouis_Zerdazi_Feham_Bouchachia_2013</bcf:citekeycount>
+    <bcf:citekeycount count="1">Bourouis_Zerdazi_Feham_Bouchachia_2013</bcf:citekeycount>
     <bcf:citekeycount count="1">Kittler_2018</bcf:citekeycount>
     <bcf:citekeycount count="1">Hernández2024</bcf:citekeycount>
     <bcf:citekeycount count="1">Hamarneh_2019</bcf:citekeycount>
@@ -3333,7 +3368,7 @@
     <bcf:citekeycount count="1">Dermofit</bcf:citekeycount>
     <bcf:citekeycount count="1">inbook</bcf:citekeycount>
     <bcf:citekeycount count="6">Bourke_2010</bcf:citekeycount>
-    <bcf:citekeycount count="0">Hafner_Vogt_2008</bcf:citekeycount>
+    <bcf:citekeycount count="1">Hafner_Vogt_2008</bcf:citekeycount>
     <bcf:citekeycount count="1">pandas</bcf:citekeycount>
     <bcf:citekeycount count="1">Harris_2020</bcf:citekeycount>
     <bcf:citekeycount count="1">matplotlib</bcf:citekeycount>
@@ -3342,6 +3377,17 @@
     <bcf:citekeycount count="1">1874254</bcf:citekeycount>
     <bcf:citekeycount count="1">paszke2019pytorchimperativestylehighperformance</bcf:citekeycount>
     <bcf:citekeycount count="1">pedregosa2018scikitlearnmachinelearningpython</bcf:citekeycount>
+    <bcf:citekeycount count="2">zhang2018mixupempiricalriskminimization</bcf:citekeycount>
+    <bcf:citekeycount count="1">thulasidasan2020mixuptrainingimprovedcalibration</bcf:citekeycount>
+    <bcf:citekeycount count="1">sandler2019mobilenetv2invertedresidualslinear</bcf:citekeycount>
+    <bcf:citekeycount count="1">howard2019searchingmobilenetv3</bcf:citekeycount>
+    <bcf:citekeycount count="2">he2015deepresiduallearningimage</bcf:citekeycount>
+    <bcf:citekeycount count="1">tan2020efficientnetrethinkingmodelscaling</bcf:citekeycount>
+    <bcf:citekeycount count="2">huang2018denselyconnectedconvolutionalnetworks</bcf:citekeycount>
+    <bcf:citekeycount count="1">liu2022convnet2020s</bcf:citekeycount>
+    <bcf:citekeycount count="1">kingma2017adammethodstochasticoptimization</bcf:citekeycount>
+    <bcf:citekeycount count="1">zhang2018generalizedcrossentropyloss</bcf:citekeycount>
+    <bcf:citekeycount count="1">ioffe2015batchnormalizationacceleratingdeep</bcf:citekeycount>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
