@@ -11,3 +11,4 @@ venv/
 .env/
 .ipynb_checkpoints/
 .idea/
+kod/.idea/misc.xml

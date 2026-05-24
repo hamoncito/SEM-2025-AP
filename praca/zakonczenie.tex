@@ -4,3 +4,32 @@
 \def\filename{podsumowanie}
 
 \chapter{Podsumowanie}\label{ch:podsumowanie}
+\section{Podsumowanie}
+W niniejszej pracy podjęto tematykę dynamicznie rozwijających się technologii sztucznej inteligencji w kontekście diagnostyki zmian skórnych.
+Przedstawiono potencjał konwolucyjnych sieci neuronowych w obszarze \textit{computer-aided diagnosis}, jednocześnie zwracajac uwagę na istniejąc ograniczenia, takie jak ramy etyczne i regulacyjne, kwestie poufności oraz bezpieczeństwa danych pacjentów, brak wyjaśnialności decyzji oraz brak niezależnych oraz reprezentatywnych zbiorów danych.
+Zauważono również rosnącą rolę urządzeń mobilnych jako narzędzi wspierających pacjentów w monitorowaniu zmian skórnych oraz zwiększaniu świadomości dotyczącej wczesnej diagnostyki.
+
+W pracy przeanalizowano aktualną literaturę dotyczącą zastosowania konwolucyjnych sieci neuronowych w medycynie,ze szczególnym uwzględnieniem diagnostyki dermatologicznej, oraz omówiono istniejące rozwiązania mobilne w tej dziedzinie.
+Zaproponowano autorski system obejmujący model \textit{pre-trained} przekonwertowany do formatu TensorFlow Lite oraz aplikację mobilną na system Android, wykonującą inferencję bezpośrednio na urządzeniu pacjenta.
+Przedstawiono dostępne repozytoria i zbiory zmian skórnych, ich charakterystykę oraz luki, które wypełniają w kontekście badań nad sztuczną inteligencją w dermatologii.
+
+Po przeprowadzeniu eksperymentów na różnych zestawach danych ostatecznie zdecydowano się wykorzystać zbiór PAD-UFES-20, zawierający zdjęcia wykonane aparatem telefonu komórkowego, co stanowiło przedmiot dalszych badań i zapewniło wysoką skuteczność pomimo zmienności obrazów.
+W procesie trenowania zastosowano technikę \textit{transfer learning}, polegającą na dostosowaniu wcześniej wytrenowanego modelu do specyfiki nowych danych, oraz zestaw metod augmentacji obrazu, w tym mixup, zwiększających zdolność uogólniania modeli.
+Zbadano skuteczność siedmiu architektur konwolucyjnych.
+Najlepsze wyniki osiągnął model ResNet101, uzyskując AUC równy 0,938 oraz dokładność na poziomie 0,768 w zbiorze testowym.
+Model ten został wykorzystany w implementacji aplikacji mobilnej.
+Skuteczność aplikacji oceniono w ramach wstępnych testów empirycznych przeprowadzonych na niewielkiej próbie łagodnych zmian skórnych, których charakter został potwierdzony przez dermatologa.
+Wyniki te potwierdziły poprawność działania systemu w warunkach zbliżonych do rzeczywistego użytkowania.
+
+Kolejnym etapem badań powinno być rozszerzenie testów empirycznych o rzadsze i złośliwe zmiany skórne, przeprowadzane pod nadzorem dermatologa.
+W przyszłości aplikację można również rozszerzyć o obsługę innych systemów operacyjnych, ponieważ obecnie funkcjonuje wyłącznie na urządzeniach z systemem Android.
+Istotnym kierunkiem rozwoju jest także implementacja funkcjonalności umożliwiającej monitorowanie zmian w czasie, co stanowi ważny element diagnostyki dermatologicznej, a jednocześnie nie zawsze jest możliwe w warunkach klinicznych.
+
+Ograniczeniem obecnej wersji systemu jest wykorzystywanie wyłącznie danych obrazowych.
+Uwzględnienie dodatkowych informacji, takich jak wiek, płeć, lokalizacja zmiany czy obecność bólu lub świądu, mogłoby znacząco zwiększyć skuteczność diagnostyczną, szczególnie w przypadku raka kolczystokomórkowego.
+Kolejną wadą jest brak możliwości porównania danej zmiany z pozostałymi znamionami pacjenta, co uniemożliwia zastosowanie zasady "`brzydkiego kaczątka'', powszechnie wykorzystywanej przez dermatologów.
+
+Pomimo tych ograniczeń zaprezentowany system wykazuje znaczący potencjał w obszarze diagnostyki cyfrowej.
+Dostępność narzędzia na urządzeniach mobilnych może realnie zwiększać świadomość pacjentów dotyczącą wyglądu potencjalnie złośliwych zmian skórnych.
+Tworzenie tego typu prototypów jest szczególnie istotne w kontekście dynamicznego rozwoju technologii sztucznej inteligencji oraz kształtujących się ram regulacyjnych.
+Systemy takie mogą w przyszłości przyczynić się do poprawy wczesnej diagnostyki nowotworów skóry na całym świecie, zwłaszcza w regionach o ograniczonym dostępie do specjalistycznej opieki dermatologicznej.

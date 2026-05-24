@@ -18,9 +18,16 @@ W praktyce oznacza to odejście od reaktywnego modelu opieki zdrowotnej na rzecz
 Stan zdrowia pacjenta w medycynie 4P jest opisywany poprzez spersonalizowaną chmurę szczegółowych danych, takich jak pomiary biochemiczne, ocenę narażenia na czynniki ryzyka (np. stres, zanieczyszczenia) oraz dane genetyczne.
 Inteligentne technologie medyczne zwiększają autonomię oraz wygodę pacjenta jednocześnie zmniejszając biurokrację i koszty usług medycznych przez ograniczenie dokumentacji automatyzację procesów \cite{glos_medycyna_2017, alonso_predictive_2019, briganti_artificial_2020}.
 
-W ciągu ostatniej dekady algorytmy oparte na sztucznej inteligencji, implementowane w całej gamie przenośnych urządzeń, znalazły szerokie zastosowanie w kardiologii, umożliwiając obserwowanie i automatyczną analizę parametrów fizjologicznych oraz rejestrację sygnału elektrokardiograficznego.
-Zdalne monitorowanie zapisu EKG z wykorzystaniem takich urządzeń jak Fitbit czy Apple Watch 4 jak i aplikacji mobilnych, np. Kardia, umożliwia wczesne wykrywanie migotania przedsionków oraz pomaga zarówno pacjentom oraz lekarzom w dokładniejszej ocenie stanu zdrowia \cite{amisha_overview_2019, briganti_artificial_2020, halcox_assessment_2017}.
-Systemy przenośnych urządzeń monitorujących zsynchronizowanych z smartfonem i opartych na analizie AI sprawdziły się również w przypadku endokrynologii, dostarczając stały przepływ informacji na temat poziomu glukozy we krwi pacjentów z cukrzycą, oraz w neurologii w celu wczesnego wykrywania ataków epilepsji \cite{briganti_artificial_2020}.
+W ciągu ostatnich dekad urządzenia mobilne, w szczególności smartfony, stały się kluczowym elementem ekosystemu nowoczesnej medycyny cyfrowej.
+Ich rola jest szczególnie widoczna w kardiologii, gdzie algorytmy sztucznej inteligencji implementowane w przenośnych urządzeniach umożliwiają ciągłe monitorowanie parametrów fizjologicznych oraz rejestrację sygnału elektrokardiograficznego. 
+Zdalne monitorowanie EKG z wykorzystaniem urządzeń takich jak Fitbit czy Apple Watch 4 oraz aplikacji mobilnych, m.in. Kardia, pozwala na wczesne wykrywanie migotania przedsionków i wspiera zarówno pacjentów, jak i lekarzy w ocenie stanu zdrowia.
+Podobne rozwiązania znalazły zastosowanie w endokrynologii, gdzie systemy monitorujące poziom glukozy we krwi, zsynchronizowane ze smartfonem i oparte na analizie AI, umożliwiają stałą kontrolę cukrzycy \cite{amisha_overview_2019, briganti_artificial_2020, halcox_assessment_2017}.
+W neurologii natomiast przenośne systemy oparte na sztucznej inteligencji wspierają wczesne wykrywanie napadów epilepsji \cite{briganti_artificial_2020}.
+Na tym tle szczególnie obiecująco przedstawia się potencjał smartfonów w dermatologii.
+Analiza dostępnych aplikacji mobilnych wskazuje na szeroką gamę narzędzi wspierających zarówno pacjentów, jak i lekarzy.
+Obejmują one między innymi samokontrolę zmian skórnych, przewodniki dotyczące chorób dermatologicznych oraz systemy teledermatologii.
+Zdecydowana większość tych rozwiązań jest kierowana bezpośrednio do pacjentów, co podkreśla rosnącą rolę urządzeń mobilnych w profilaktyce oraz we wczesnym wykrywaniu niepokojących zmian skórnych.
+W połączeniu z algorytmami sztucznej inteligencji urządzenia mobilne posiadają potencjał do znaczącego zwiększenia dostępności opieki dermatologicznej, zwłaszcza w regionach o ograniczonym dostępie do specjalistów, oraz do wspierania użytkowników w systematycznym monitorowaniu stanu zdrowia skóry \cite{jamadermatol, Binder_2013, Janda_2021}.
 
 Modele sztucznej inteligencji znajdują szerokie zastosowanie w diagnostyce, obejmującej między innymi takie techniki jak radiografia rentgenowska, rezonans magnetyczny, endoskopia, ultrasonografia oraz patologia cyfrowa.
 Podejście to jest określane mianem diagnostyki komputerowo wspomaganej - CADx, czyli \textit{computer-aided diagnosis}.
@@ -144,7 +151,7 @@ Następnie warstwa \textit{fully connected} przypisuje prawdopodobieństwo przyn
 W związku z opisanym mechanizmem wiele badaczy analizujących możliwości konwolucyjnych sieci neuronowych w dziedzinach medycznych decyduje się na zastosowanie uczenia transferowego (ang. \textit{transfer learning}).
 Uczenie transferowe polega na wykorzystaniu wag wstępnie wyszkolonego modelu na dużym, ogólnym zbiorze danych w innym, bardziej wyspecjalizowanym zadaniu, często z mniejszym zbiorem danych.
 Najczęściej stosowane modele wstępnie wytrenowane to AlexNet, VGGNet, GoogLeNet, DenseNet, EfficientNet oraz ich liczne modele pochodne i mieszane.
-Technika \textit{transfer learning} jest szeroko wykorzystywana w analizie obrazów medycznych w celu ich segmentacji i klasyfikacji \cite{Ghosh_2020, Mahbod_Schaefer_Wang_Dorffner_Ecker_Ellinger_2020}.
+Technika \textit{transfer learning} jest szeroko wykorzystywana w analizie obrazów medycznych oraz wykazuje się znacznie wyższymi wynikami niż sieci konwolucyjne budowane od zera do zadań medycznych \cite{Ghosh_2020, Mahbod_Schaefer_Wang_Dorffner_Ecker_Ellinger_2020, kanavati2021partialtransfusionexpressiveinfluence}.
 
 Wydajność modeli uczenia maszynowego jest mierzona za pomocą kilku podstawowym metryk.
 Dokładność (ang. \textit{accuracy}) jest najprostszą miarą określającą zdolność modelu do dokonywania poprawnych przewidywań. 
@@ -164,13 +171,6 @@ gdzie:
 
 Dokładność nie jest optymalną metryką szczególnie w przypadku zbiorów danych, w których liczebności klas nie są równe. 
 Jeżeli jedna klasa ma znacznie większą liczebność, model może osiągać wysoką dokładność, jednocześnie ignorując rzadkie, lecz kluczowe klinicznie przypadki, takie jak zmiany złośliwe \cite{Grandini_Bagli_Visani_2020, Nowak_2022}.
-
-W przypadku klasyfikacji wieloklasowej szczególnie przydatna jest macierz pomyłek (ang. \textit{confusion matrix}).
-Przedstawia ona zestawienie liczby przypadków rzeczywistych i przewidzianych przez model dla każdej z klas, co pozwala ocenić, w jakim stopniu model rozróżnia każdą z klas i z jakimi klasami je myli.
-Elementy znajdujące się na głównej przekątnej macierzy odpowiadają poprawnym klasyfikacjom.
-Macierz pomyłek może być normalizowana względem liczby przykładów w klasie, co jest szczególnie przydatne przy niezbalansowanych zbiorach danych \cite{Rainio_2024}.
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DODAĆ MACIERZ POMYŁEK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 Pełność (ang \textit{recall}), w medycynie określana czułością (ang. \textit{sensitivity}) mierzy stosunek prawidłowo zakwalifikowanych pozytywnych przypadków.
 Wysoka pełność oznacza, że model wykrywa większość pozytywnych próbek.
@@ -355,7 +355,7 @@ Aby możliwe było przełożenie wyników badań na skuteczne wdrożenia klinicz
 \begin{itemize}
 	\item interpretowalność modeli - zwiększenie możliwości wyjaśniania decyzji podejmowanych przez sztuczną inteligencję oraz eliminacja czynników zakłócających proces uczenia,
 	\item rozwój regulacji prawnych - dostosowanie przepisów do specyfiki systemów AI stosowanych w medycynie,
-	\item definicja ram etycznych -określenie odpowiedzialności za decyzje oraz roli lekarza i sztucznej inteligencji w procesie leczenia,
+	\item definicja ram etycznych - określenie odpowiedzialności za decyzje oraz roli lekarza i sztucznej inteligencji w procesie leczenia,
 	\item tworzenie niezależnych i reprezentatywnych zbiorów danych - obecne zbiory są ograniczone i stronnicze, szczególnie pod względem płci, fototypów skóry oraz wieku pacjentów,
 	\item poufność danych - zapewnienie bezpiecznej integracji zanonimizowanych danych pochodzących z wielu źródeł.
 \end{itemize}

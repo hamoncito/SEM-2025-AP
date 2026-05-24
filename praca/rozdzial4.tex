@@ -60,17 +60,17 @@ def remove_corrupted(metadata, path_column="path"):
 
 Ze względu na silną nierównowagę klas zastosowano oversampling, czyli technikę polegającą na sztucznym zwiększeniu liczby przykładów klas rzadkich poprzez wielokrotne powielanie.
 W efekcie liczebność kategorii SK, NEV, MEL oraz SCC została zwiększona do 300 przykładów.
-Rozkład klas przed i po oversamplingu przedstawiono odpowiednio na wykresach \ref{fig:classes_bar}, \ref{fig:classes_pie} oraz \ref{fig:oversampling_classes}.
+Rysunek \ref{fig:oversampling_classes} przedstawia rozkład klas w zbiorze przed (lewy wykres) oraz po oversamplingu (prawy wykres).
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{oversampling_classes}
-	\caption{Rozkład klas po oversamplingu}
+	\caption{Rozkład klas przed i po oversamplingu}
 	\source{Opracowanie własne}
 	\label{fig:oversampling_classes}
 \end{figure}
 
-\subsubsection{Przygotowanie do trenowania}
+
 Następnie wydzielono zbiór treningowy, testowy oraz walidacyjny w proporcjach:
 \begin{itemize}
 	\item dane treningowe - 1998 przykładów (72\% zbioru)
@@ -78,68 +78,108 @@ Następnie wydzielono zbiór treningowy, testowy oraz walidacyjny w proporcjach:
 	\item dane testowe - 555 przykładów (20\% zbioru)
 \end{itemize}
 
+\subsection{Przygotowanie do trenowania}
 W celu przygotowania danych do trenowania wykorzystano klasę ImageDataGenerator z biblioteki Keras, która umożliwia wykonywanie losowych transformacji obrazów podczas trenowania modelu.
-Augmentacje danych wejściowych zwiększają różnorodność danych treningowych, co ogranicza ryzyko przeuczenia oraz lepiej odzwierciedla zmienność jakości zdjęć wykonywanych smartfonem.
-Zastosowano następujące transformacje:
+Zastosowana augmentacja danych zwiększa różnorodność próbek treningowych, co ogranicza ryzyko przeuczenia modelu oraz lepiej odzwierciedla naturalną zmienność jakości zdjęć wykonywanych smartfonem.
+Przeprowadzono trzy eksperymenty porównawcze, analizujące wpływ różnych konfiguracji augmentacji na skuteczność klasyfikacji.
+Na podstawie wyników wybrano zestaw umiarkowanych transformacji, obejmujący:
 \begin{itemize}
-	\item obrót obrazu o losowy kąt do 25 stopni
-	\item przesunięcia poziome i pionowe do 15\% wymiaru obrazu
-	\item przybliżenie do 25\%
-	\item nachylenie obrazu do 10 stopni
-	\item losowe odbicia poziome i pionowe
-	\item zmiane jasności w zakresie 0.4-1.l6
-	\item przesunięcie kanałów kolorystycznych do 40 jednostek
-	\item uzupełnianie pikseli metodą nearest
+	\item rotację do 15 stopni,
+	\item przesunięcia poziome i pionowe do 10\%,
+	\item przybliżenie do 15\%,
+	\item zmiany jasności w zakresie 0.8 - 1.2,
+	\item uzupełnianie pikseli metodą najbliższego sąsiada.
 \end{itemize}
 
-Agresywne transformacje pozwalają modelowi uczyć się bardziej odpornych reprezentacji, szczególnie istotnych w przypadku zdjęć wykonywanych w warunkach domowych, przy zmiennym oświetleniu i różnej jakości aparatów.
+Wybrane transformacje umożliwiają modelowi uczenie się bardziej odpornych reprezentacji cech, co jest szczególnie istotne w przypadku obrazów pozyskiwanych w warunkach domowych, przy zmiennym oświetleniu oraz różnorodnej jakości aparatów mobilnych.
 Dla zbiorów walidacyjnych i testowych zastosowano generatory bez augmentacji, aby zapewnić obiektywną i powtarzalną ocenę jakości modelu.
 
 \begin{lstlisting}[language=Python, caption=Definicja ImageDataGeneratora dla klasy treningowej]
 train_datagen = ImageDataGenerator(
 	preprocessing_function=preprocess_input,
-	rotation_range=10,
-	zoom_range=0.1,
+
+	rotation_range=15,
+	width_shift_range=0.1,
+	height_shift_range=0.1,
+	zoom_range=0.15,
+
 	horizontal_flip=True,
+	vertical_flip=True,
+
+	brightness_range=[0.8, 1.2],
+
 	fill_mode='nearest'
 )
 \end{lstlisting}
 
-Następnie utworzono generatory wczytujące obrazy z dysku, skalujące je do rozmiaru 299 na 299 pikseli, kodujące etykiety oraz stosujące zdefiniowane transformacje.
+W celu dodatkowego zwiększenia różnorodności danych treningowych oraz poprawy uogólniania modelu zastosowano technikę mixup wprowadzoną przez \citet{zhang2018mixupempiricalriskminimization}.
+Polega ona na generowaniu nowych próbek treningowych poprzez tworzenie liniowych kombinacji dwóch losowo dobranych obrazów oraz odpowiadających im etykiet.
+Mixup wprowadza do danych ciągłość, co sprzyja uczeniu bardziej stabilnych funkcji decyzyjnych oraz redukuje tendencję modelu do zapamiętywania pojedynczych przykładów.
 
-W celu porównania skuteczności rożnych architektur konwolucyjnych sieci neuronowych zdefiniowano słownik modeli dostępnych w ramach biblioteki Keras.
-Modele różnią się pod względem liczby parametrów, głębokości architektury oraz przeznaczenia.
-Część z wybranych sieci zostało zaprojektowanych specjalnie z myślą o urządzeniach mobilnych, co jest istotne w kontekście implementacji systemu wykonującego inferencję na smartfonie.
+Funkcja mixup dla każdej partii danych losuje współczynnik $\lambda$ z rozkładu $\beta$($\alpha$, $\alpha$), gdzie $\alpha$ domyślnie ustawiono na 0,4.
 
-\begin{lstlisting}[language=Python, caption=Słownik sieci neuronowych]
-MODELS = {
-	"MobileNetV2": tf.keras.applications.MobileNetV2,
-	"MobileNetV3Large": tf.keras.applications.MobileNetV3Large,
-	"ResNet50": tf.keras.applications.ResNet50,
-	"EfficientNetB0": tf.keras.applications.EfficientNetB0,
-	"DenseNet121": tf.keras.applications.DenseNet121,
-	"ResNet101": tf.keras.applications.ResNet101,
-	"ConvNeXtTiny": tf.keras.applications.ConvNeXtTiny,
-}
+\begin{lstlisting}[language=Python, caption=Implementacja funkcji mixup]
+def mixup(batch_x, batch_y, alpha=0.4):
+	lam = np.random.beta(alpha, alpha)
+	idx = np.random.permutation(len(batch_x))
+	mixed_x = lam * batch_x + (1 - lam) * batch_x[idx]
+	mixed_y = lam * batch_y + (1 - lam) * batch_y[idx]
+	return mixed_x, mixed_y
 \end{lstlisting}
 
-\subsubsection{Przygotowanie do trenowania}
+Współczynnik $\lambda$ określa proporcję, w jakiej łączone są dwa obrazy oraz odpowiadające im etykiety.
+Losowa permutacja \texttt{idx} zapewnia, że każda próbka ze zbioru jest mieszana z inną, niezależnie dobraną obserwacją \cite{zhang2018mixupempiricalriskminimization}.
+Nowe dane treningowe powstają poprzez liniową interpolację:
+
+\begin{equation}
+	\tilde{x} = \lambda x_i + (1 - \lambda) x_j ,\quad \tilde{y} = \lambda y_i + (1 - \lambda) y_j .
+\end{equation}
+
+Aby umożliwić stosowanie funkcji mixup w sposób ciągły podczas trenowania danych, przygotowano generator mixup, który opakowuje standardowy generator z biblioteki Keras.
+Pobiera on partie z innego generatora, stosuje transformacje mixup i zwraca zmodyfikowane próbki.
+
+\begin{lstlisting}[language=Python, caption=Generator Mixup]
+def mixup_generator(base_gen, alpha=0.4):
+	while True:
+		batch_x, batch_y = next(base_gen)
+		mixed_x, mixed_y = mixup(batch_x, batch_y, alpha)
+		yield mixed_x, mixed_y
+\end{lstlisting}
+
+Następnie zdefiniowano generator treningowy, odpowiedzialny za wczytywanie obrazów oraz augmentację obrazu, a w kolejnym kroku wzbogacono go o mixup.
+Generatory walidacyjne i testowe pozostawiono bez augmentacji i mixup, aby zapewnić obiektywną ocenę jakości modelu \cite{thulasidasan2020mixuptrainingimprovedcalibration}.
+
+W celu porównania skuteczności rożnych architektur konwolucyjnych sieci neuronowych zdefiniowano słownik modeli dostępnych w ramach biblioteki Keras.
+Każdy z modeli został wykorzystany jako feature extractor w podejściu transfer learning z wejściem o wymiarach 299 x 299 x 3.
+Wybór architektur obejmuje zarówno modele lekkie, zoptymalizowane pod kątem urządzeń mobilnych, jak i głębokie sieci o wysokiej dokładności, co umożliwia porównanie kompromisu między złożonością obliczeniową a skutecznością klasyfikacji.
+
+\begin{itemize}
+	\item MobileNetV2 - model zoptymalizowany pod kątem urządzeń mobilnych, oparty na liniowych wąskich gardłach, oraz odwróconych blokach resztowych \cite{sandler2019mobilenetv2invertedresidualslinear},
+	\item MobileNetV3Large - ulepszona wersja MobileNet, przeznaczona do zastosowań wymagających wyższej precyzji \cite{howard2019searchingmobilenetv3},
+	\item ResNet50 - 50-warstwowa sieć neuronowa oparta na blokach resztkowych, rozwiązujących problem zanikającego gradientu \cite{he2015deepresiduallearningimage},
+	\item ResNet101 - głębsza wersja ResNet, zawierająca 101 warstw konwolucyjnych \cite{he2015deepresiduallearningimage},
+	\item EfficientNetB0 - \cite{tan2020efficientnetrethinkingmodelscaling},
+	\item DenseNet121 - 121-warstwowa konwolucyjna sieć neuronowa, która łączy wyjście każdej warstwy z wejściem kolejnych warstw \cite{huang2018denselyconnectedconvolutionalnetworks},
+	\item ConvNeXtTiny - model nowej generacji inspirowany architekturą Transformer \cite{liu2022convnet2020s}.
+\end{itemize}
+
+\subsection{Proces trenowania}
 Aby umożliwić elastyczne trenowanie wielu modeli, stworzono wysokopoziomowy moduł TransferLearningTuner, który kompleksowo obsługuje cały proces trenowania z wykorzystaniem techniki transfer learning.
 Konstruktor klasy przyjmuje między innymi nazwę modelu bazowego zdefiniowaną w słowniku, liczbę klas, generatory danych oraz parametry trenowania.
 
-TransferLearningTuner w pierwszym kroku tworzy architekturę wczytując model bazowy i zamrażając jego wagi, co zapobiega degradacji wcześniej wyuczonych reprezentacji.
-W kolejnym kroku dodano warstwy klasyfikacyjne, które redukują wymiar cech, stabilizują trenowanie oraz zapobiegają przeuczeniu.
+TransferLearningTuner w pierwszym kroku tworzy architekturę wczytując wybrany model bazowy i zamrażając jego wagi, co zapobiega degradacji wcześniej wyuczonych reprezentacji.
+W kolejnym kroku dodaje warstwy klasyfikacyjne, które redukują wymiar cech, stabilizują trenowanie oraz zapobiegają przeuczeniu.
 
 Pierwszy etap trenowania polega na uczeniu wyłącznie warstw klasyfikacyjnych przy zamrożonych wagach modelu bazowego.
 Domyślnie trenowanie w tym etapie składa się z pięciu epok.
-Do trenowania wykorzystano optymalizator Adam oraz funkcję straty CategoricalCrossentropy, która redukuje wpływ klas dominujących na predykcje modelu.
-Zdefiniowano również kilka funkcji wywoływanych po każdej epoce lub po zakończeniu procesu, polegających na zapisie najlepszych wag modelu, zatrzymanie trenowania po 3 epokach bez poprawy, redukcji learning rate przy stagnacji oraz minitorowanie różnic między domeną dermoskopową a zdjęć telefonicznych.
+Do trenowania wykorzystano optymalizator Adam oraz funkcję straty CategoricalCrossentropy, która redukuje wpływ klas dominujących na predykcje modelu \cite{kingma2017adammethodstochasticoptimization, zhang2018generalizedcrossentropyloss}.
+Zdefiniowano również kilka funkcji wywoływanych po każdej epoce lub po zakończeniu procesu, polegających na zapisie najlepszych wag modelu, zatrzymaniu trenowania po 3 epokach bez poprawy oraz redukcji learning rate, czyli współczynnika określającego czułość na błędy.
 
-Drugi etap trenowania odmraża większość warstw modelu bazowego z wyjątkiem warstw BatchNormalization, które przechowują statystyki domenowe i ich trenowanie mogłoby destabilizować proces.
+Drugi etap trenowania odmraża większość warstw modelu bazowego z wyjątkiem warstw BatchNormalization, które przechowują statystyki domenowe i ich trenowanie mogłoby destabilizować proces \cite{ioffe2015batchnormalizationacceleratingdeep, kanavati2021partialtransfusionexpressiveinfluence}.
 Odmrożenie warstw pozwala dostosować głębsze reprezentacje do specyfiki danych dermatologicznych.
 
 Po zakończeniu trenowania wykonywana jest ewaluacja na zbiorze testowym a następnie generowana jest macierz pomyłek, wynik F1 dla każdej klasy oraz wykresy strat i dokładności.
-Następnie wytrenowany model jest konwertowany do formatu TensorFlow Lite, umożliwiając wykorzystanie go do bezpośredniej inferencji na urządzeniu mobilnym.
+Wytrenowany model jest konwertowany do formatu TensorFlow Lite, umożliwiając wykorzystanie go do bezpośredniej inferencji na urządzeniu mobilnym.
 Cały pipeline uruchamiany jest metodą run, która wykonuje oba etapy trenowania oraz pełną ewaluację.
 
 \section{Aplikacja mobilna}
@@ -183,7 +223,6 @@ Otrzymane wyniki są przekazywane do warstwy prezentacji i wyświetlane w kompon
 Użytkownik może również przełączyć się do zakładki Info, w której komponent \texttt{InfoScreen} prezentuje szczegółowe opisy wszystkich typów zmian skórnych.
 Pełen przepływ użytkownika wraz z prezentacją interfejsu przedstawiono na diagramach \ref{fig:diagram_app1} oraz \ref{fig:diagram_app2}.
 
-
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{diagram_app1}
@@ -202,7 +241,116 @@ Pełen przepływ użytkownika wraz z prezentacją interfejsu przedstawiono na di
 \end{figure}
 
 
-\section{Wyniki}
+\section{Wyniki modeli}
 
+Wyniki uzyskane przez modele zagregowano na wykresie słupkowym \ref{fig:wyniki1} oraz na mapie cieplnej \ref{fig:wyniki2}.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{wyniki1}
+	\caption{Wykres przedstawiający wyniki badanych modeli}
+	\source{Opracowanie własne}
+	\label{fig:wyniki1}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{wyniki2}
+	\caption{Mapa cieplna przedstawiająca wyniki badanych modeli}
+	\source{Opracowanie własne}
+	\label{fig:wyniki2}
+\end{figure}
+
+\subsection{Metryki}
+Analiza metryk uzyskanych przez poszczególne architektury przedstawiona na \ref{fig:wyniki1} oraz \ref{fig:wyniki2} ujawnia wyraźne różnice w ich skuteczności w zadaniu klasyfikacji zdjęć telefonem komórkowych zmian skórnych.
+Najwyższą jakość predykcji osiągnęły modele z rodziny ResNet. 
+ResNet50 oraz ResNet101 uzyskały odpowiednio średni F1-score równy 0,72 i 0,714, co czyni je zdecydowanie najlepszymi spośród wszystkich testowanych modeli.
+Obie sieci osiągnęły również najwyższe wartości AUC powyżej 0.9, co świadczy o ich wysokiej zdolności rozróżniania klas.
+Dokładność dla ResNet50 wyniosła 0,741, a dla ResNet101 0,768.
+Modele ConvNeXtTiny oraz MobileNetV3Large osiągnęły umiarkowane wyniki z dokładnością na poziomie odpowiednio 0,589 i 0,566, AUC w wysokości 0,852 i 0,856 oraz średnim wynikiem F1 0,5676 oraz 0,498.
+EfficientNetB0, DenseNet121 oraz MobileNetV2 uzyskały najniższe wyniki w badaniu. 
+Dokładność EfficientNetB0 na badanym zbiorze danych wyniosła 0,535, a dla pozostałych modeli była poniżej 50\%.
+Niskie wyniki lekkich architektur zoptymalizowanych pod kątem urządzeń mobilnych nie są w stanie uchwycić złożonych wzorców teksturalnych i strukturalnych charakterystycznych dla obrazów dermatologicznych.
+
+\subsection{Wartości F1 dla poszczególnych klas}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{wyniki3}
+	\caption{Mapa cieplna przedstawiająca F1-score dla wszystkich modeli}
+	\source{Opracowanie własne}
+	\label{fig:wyniki3}
+\end{figure}
+
+Wygenerowano również raport \ref{fig:wyniki3} przedstawiający wartości F1-score dla każdego modelu w podziale na analizowane klasy zmian skórnych.
+W przypadku klasy rogowacenia słonecznego (ACK) najwyższe wyniki uzyskały modele z rodziny ResNet, co potwierdza wysoką zdolność do rozpoznawania zmian przednowotworowych.
+Architektury mobilne osiągnęły znacznie niższe wartości F1, co sugeruje, że ich ograniczona głębokość oraz mniejsza liczba parametrów nie pozwalają na uchwycenie subtelnych cech rogowacenia słonecznego.
+Modele ConvNeXtTiny oraz EfficientNetB0 uzyskały wyniki umiarkowane, plasując się pomiędzy modelami mobilnymi a architekturami rezydualnymi.
+
+Wszystkie modele poradziły sobie stosunkowo dobrze z klasyfikacją raka podstawnokomórkowego skóry (BCC), co może wynikać z jego największej reprezentacji w zbiorze danych. 
+Najwyższe wartości F1 osiągnęły ResNet50 oraz ResNet101, natomiast architektury mobilne uzyskały wyniki w zakresie 0,45 - 0,57.
+DenseNet121 osiągnął w tej klasie swój najlepszy rezultat z F1 na poziomie 0,613.
+
+Czerniak (MEL) stanowi klasę o kluczowym znaczeniu klinicznym i jednocześnie jedną z najtrudniejszych do klasyfikacji ze względu na duże podobieństwo do łagodnych znamion melanocytowych.
+Dodatkowym utrudnieniem jest fakt, że MEL był najmniej liczny w zbiorze i jego liczebność była sztucznie zwiększona procesem oversamplingu.
+Najwyższe wyniki osiągnęły modele ResNet101 i ResNet50, oba z F1 równym 0,917, co potwierdza ich zdolność do uchwycenia złożonych, nieregularnych wzorców charakterystycznych dla czerniaka.
+Bardzo dobry wynik uzyskał również ConvNeXtTiny (0,760).
+Najsłabiej poradził sobie MobileNetV2, co całkowicie dyskwalifikuje go jako kandydata do zastosowań w aplikacjach mających wspierać pacjentów w rozpoznawaniu zmian skórnych.
+
+Znamiona melanocytowe (NEV) były najlepiej klasyfikowane przez modele z rodziny ResNet, które osiągnęły najwyższe wartości F1.
+Umiarkowane wyniki uzyskały MobileNetV3Large oraz ConvNeXtTiny, natomiast najniższy wynik ponownie odnotowano dla MobileNetV2, co potwierdza jego ograniczoną zdolność do rozróżniania zmian o dużej zmienności wewnątrzklasowej.
+
+Największe trudności wiązały się z klasyfikacją raka kolczystokomórkowego (SCC).
+Szczególnie słabo wypadł DenseNet121, który uzyskał F1 równe 0, co wskazuje na całkowity brak zdolności do poprawnej klasyfikacji tej klasy.
+Trudność ta może wynikać z klinicznego podobieństwa SCC do rogowacenia słonecznego, z którego często się rozwija, a także z faktu, że SCC charakteryzuje się objawami, których nie da się w pełni uchwycić na zdjęciach, takimi jak podrażnienie, ból czy uniesienie brzegów przewlekłego owrzodzenia \cite{Bourke_2010}.
+Modele ResNet uzyskały najwyższe, choć nadal umiarkowane wyniki (0,511 – 0,564).
+
+Klasa obejmująca łagodne rogowacenie łojotokowe (SEK) również charakteryzowała się stosunkowo niskimi wynikami F1 w porównaniu z innymi kategoriami.
+Najlepsze rezultaty uzyskały ResNet101 (0,698) oraz ResNet50 (0,718).
+Najsłabszy wynik ponownie osiągnął MobileNetV2 (0,069), natomiast pozostałe architektury uzyskały wartości F1 w zakresie 0,333 – 0,471.
+
+\subsection{Podsumowanie wyników}
+Przeprowadzone eksperymenty wykazały wyraźne różnice skuteczności między analizowanymi architekturami.
+Najwyższą jakości predykcji uzyskały modele z rodziny ResNet, które osiągnęły najlepsze wyniki we wszystkich kluczowych metrykach.
+ResNet101 i ResNet50 wykazały się zarówno najwyższą skutecznością ogólną jak i największą stabilnością między klasami, co potwierdzają wysokie wartości F1 dla większości zmian skórnych, w tym klas trudnych diagnostycznie, takich jak czerniak i rak kolczystokomórkowy.
+Model ConvNeXtTiny, czyli nowoczesna architektura inspirowana Transformerami, osiągnął wyniki wyraźnie lepsze niż wszystkie sieci mobilne oraz DenseNet121.
+ConvNeXtTiny okazał się szczególnie skuteczny w klasach MEL, NEV i ACK.
+Modele mobilne - MobileNetV2, MobileNetV3Large oraz EfficientNetB0 - uzyskały wyraźnie niższe wyniki.
+Ograniczona liczba parametrów i uproszczona architektura sprawiają, że modele nie są w stanie uchwycić złożonych wzorców charakterystycznych dla zmian skórnych.
+Najsłabiej wypadł MobileNetV2, natomiast MobileNetV3Large oraz EfficientNetB0 uzyskały umiarkowane wyniki, jednak nadal były one znacznie gorsze od rezultatów ResNet oraz ConvNeXtTiny.
+DenseNet121, który w literaturze jest często wykorzystywany do zadań medycznych, osiągnął słabe wyniki, wykazując niestabilność między klasami.
+Może to wynikać z wysokiej wrażliwości na hiperparametry oraz podatność na przeuczenie w przypadku zbiorów o dużej zmienności wewnątrzklasowej \cite{huang2018denselyconnectedconvolutionalnetworks}.
+
+\section{Praktyczne zastosowanie aplikacji}
+Wybór modelu do aplikacji mobilnej wykonującej inferencję bezpośrednio na urządzeniu wymaga uwzględnienia zarówno skuteczności diagnostycznej, kosztu obliczeniowego, obejmującego czas przetwarzania, zużycie energii oraz opóźnienie inferencji. 
+W oparciu o uzyskane wyniki, obejmujące wysoką skuteczność ogólną, stabilność między klasami oraz dobrą wydajność, do systemu wdrożono architekturę ResNet101.
+Model został przetestowany po konwersji do formatu TFLite pod kątem złożoności obliczeniowej oraz czasu inferencji na dwóch urządzeniach: Samsung Galaxy A35 oraz Google Pixel 8a, oba z Androidem w wersji 16.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{wyniki4}
+	\caption{Przykładowe wyniki badań empirycznych znamion łagodnych}
+	\source{Opracowanie własne}
+	\label{fig:wyniki4}
+\end{figure}
+
+Aplikacja mobilna osiąga wnioskowanie w czasie niemal rzeczywistym, co potwierdza możliwość praktycznego zastosowania modelu w warunkach mobilnych, bez konieczności korzystania z infrastruktury serwerowej.
+Przeprowadzono również około dziesięciu testów empirycznych na dwóch pacjentach polegających na fotografowaniu rzeczywistych zmian skórnych za pomocą aplikacji oraz analizie wyników klasyfikacji, aby ocenić zachowanie modelu w warunkach zbliżonych do użytkowania przez pacjentów. 
+Badane zmiany stanowiły łagodne znamiona, których charakter został potwierdzony przez dermatologa w standardowym badaniu dermoskopowym w ciągu ostatnich trzech miesięcy. 
+Zdjęcia wykonywano w naturalnym oświetleniu, z wykorzystaniem dziesięciokrotnego przybliżenia.
+W przeprowadzonych testach aplikacja przewidywała łagodność zmian z pewnością przekraczającą 85\%, co potwierdza wysoką skuteczność modelu w praktycznym scenariuszu użytkowym.
+Uzyskane wyniki przedstawiono na rysunku \ref{fig:wyniki4}.
+
+Pomimo obiecujących rezultatów, pełna walidacja systemu wymaga przeprowadzenia rozszerzonych badań obejmujących pozostałe klasy zmian skórnych, w szczególności te rzadziej występujące oraz trudniejsze diagnostycznie.
+Dalsza ocena powinna być realizowana pod nadzorem dermatologa, co pozwoli na zweryfikowanie skuteczności aplikacji w warunkach klinicznych oraz określenie jej potencjalnych ograniczeń i kierunków dalszej optymalizacji.
 
 \section{Podsumowanie}
+Metodyka badania objęła wybór oraz przygotowanie danych, proces trenowania modeli głębokiego uczenia metodą Transfer Learning, analizę uzyskanych wyników oraz implementację i wstępną walidację aplikacji mobilnej służącej do klasyfikacji zmian skórnych.
+Szczegółowo opisano procedurę przygotowania zbioru, obejmującą standaryzację obrazów, podział na zbiory treningowy, walidacyjny i testowy oraz zastosowane techniki augmentacji, w tym klasyczne transformacje obrazu oraz metodę mixup.
+Przedstawiono proces trenowania siedmiu architektur konwolucyjnych kompleksowym pipelinem TransferLearningTuner.
+Analiza wyników wykazała wyraźną przewagę modeli z rodziny ResNet, które osiągnęły najwyższe wartości kluczowych metryk - dokładności, AUC oraz wynik F1 dla klas.
+ResNet101 oraz ResNet50 okazały się najbardziej stabilne między klasami, szczególnie w przypadku kategorii trudnych diagnostycznie, takich jak czerniak (MEL) oraz rak kolczystokomórkowy (SCC).
+Na podstawie przeprowadzonej analizy wybrano model ResNet101 do wdrożenia w aplikacji mobilnej, którą zaimplementowano w języku Kotlin.
+Wybrany model przekonwertowano do formatu TensorFlow Lite w celu inferencji na urządzeniu.
+Przeprowadzono testy empiryczne na rzeczywistych zdjęciach łagodnych zmian skórnych wykonanych aparatem telefonu, których łagodny charakter został przewidziany ze skutecznością 85\%.
+
+
