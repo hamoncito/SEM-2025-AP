@@ -15,7 +15,7 @@ Przedstawiono dostępne repozytoria i zbiory zmian skórnych, ich charakterystyk
 
 Po przeprowadzeniu eksperymentów na różnych zestawach danych ostatecznie zdecydowano się wykorzystać zbiór PAD-UFES-20, zawierający zdjęcia wykonane aparatem telefonu komórkowego, co stanowiło przedmiot dalszych badań i zapewniło wysoką skuteczność pomimo zmienności obrazów.
 W procesie trenowania zastosowano technikę \textit{transfer learning}, polegającą na dostosowaniu wcześniej wytrenowanego modelu do specyfiki nowych danych, oraz zestaw metod augmentacji obrazu, w tym mixup, zwiększających zdolność uogólniania modeli.
-Zbadano skuteczność siedmiu architektur konwolucyjnych.
+Zbadano skuteczność siedmiu wersji architekturt konwolucyjnej.
 Najlepsze wyniki osiągnął model ResNet101, uzyskując AUC równy 0,938 oraz dokładność na poziomie 0,768 w zbiorze testowym.
 Model ten został wykorzystany w implementacji aplikacji mobilnej.
 Skuteczność aplikacji oceniono w ramach wstępnych testów empirycznych przeprowadzonych na niewielkiej próbie łagodnych zmian skórnych, których charakter został potwierdzony przez dermatologa.
@@ -29,7 +29,7 @@ Ograniczeniem obecnej wersji systemu jest wykorzystywanie wyłącznie danych obr
 Uwzględnienie dodatkowych informacji, takich jak wiek, płeć, lokalizacja zmiany czy obecność bólu lub świądu, mogłoby znacząco zwiększyć skuteczność diagnostyczną, szczególnie w przypadku raka kolczystokomórkowego.
 Kolejną wadą jest brak możliwości porównania danej zmiany z pozostałymi znamionami pacjenta, co uniemożliwia zastosowanie zasady "`brzydkiego kaczątka'', powszechnie wykorzystywanej przez dermatologów.
 
-Pomimo tych ograniczeń zaprezentowany system wykazuje znaczący potencjał w obszarze diagnostyki cyfrowej.
+Mimo tych ograniczeń, zaprezentowany system wykazuje znaczący potencjał w obszarze diagnostyki cyfrowej.
 Dostępność narzędzia na urządzeniach mobilnych może realnie zwiększać świadomość pacjentów dotyczącą wyglądu potencjalnie złośliwych zmian skórnych.
 Tworzenie tego typu prototypów jest szczególnie istotne w kontekście dynamicznego rozwoju technologii sztucznej inteligencji oraz kształtujących się ram regulacyjnych.
 Systemy takie mogą w przyszłości przyczynić się do poprawy wczesnej diagnostyki nowotworów skóry na całym świecie, zwłaszcza w regionach o ograniczonym dostępie do specjalistycznej opieki dermatologicznej.

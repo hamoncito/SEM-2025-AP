@@ -5,8 +5,10 @@
 \chapter{Wstęp}
 \section{Motywacja}
 Dynamiczny rozwój technologii sztucznej inteligencji w ostatnich latach skłania środowisko naukowe do intensywnego badania jej zastosowań w różnych obszarach medycyny, w szczególności w diagnostyce obrazowej.
+Algorytmy głębokiego uczenia są wykorzystywane do automatycznej analizy zdjęć rentgenowskich klatki piersiowej w celu wykrywania zmian nowotworowych oraz do oceny obrazów tomografii komputerowej pod kątem wczesnych objawów udaru \cite{lee_validation_2023, 10.1117/12.2216307, KARTHIK2020105728}.
 Konwolucyjne sieci neuronowe wykazały znaczący potencjał w zakresie komputerowo wspomaganej diagnostyki, osiągając wysoką skuteczność w analizie obrazów medycznych.
-Motywacją niniejszej pracy jest pogłębienie wiedzy na temat możliwości wykorzystania konwolucyjnych sieci neuronowych w diagnostyce zmian skórnych oraz opracowanie prototypu mobilnego systemu wspierającego wstępną ocenę znamion.
+Modele te dorównują specjalistom lub nawet osiągają lepsze wyniki od nich w interpretacji wyników badań czynnościowych układu oddechowego oraz w rozpoznawaniu zmian skórnych na podstawie zdjęć klinicznych \cite{BRINKER201947, topalovic_artificial_2019}.
+Motywacją niniejszej pracy jest pogłębienie wiedzy na temat możliwości wykorzystania konwolucyjnych sieci neuronowych w diagnostyce zmian skórnych oraz opracowanie prototypu mobilnego systemu umożliwiającego wstępną ocenę znamion.
 System ten ma na celu zarówno zwiększenie dostępności narzędzi diagnostycznych, jak i podniesienie świadomości pacjentów w zakresie monitorowania zdrowia skóry.
 
 \section{Cele pracy}
@@ -15,12 +17,12 @@ Projektowana aplikacja powinna charakteryzować się wysoką wydajnością oraz 
 
 \section{Metodyka badawcza}
 W ramach badań przedstawiono system klasyfikacji zmian skórnych wykorzystujący konwolucyjną sieć neuronową zaimplementowaną w postaci aplikacji mobilnej. 
-Wykorzystano zbiór PAD-UFES-20, obejmujący zdjęcia wykonane aparatem telefonu komórkowego, na podstawie których dotrenowano siedem wybranych architektur.
+Wykorzystano zbiór PAD-UFES-20, obejmujący zdjęcia wykonane aparatem telefonu komórkowego, na podstawie których dotrenowano siedem wybranych wersji architektury.
 Najlepszy model został następnie przekonwertowany do formatu mobilnego i poddany wstępnym badaniom empirycznym na rzeczywistych zdjęciach zmian skórnych.
 
 \section{Struktura pracy}
 Praca składa się z pięciu rozdziałów.
-Rozdział drugi przedstawia potencjał sztucznej inteligencji oraz urządzeń mobilnych w obszarze diagnostyki wspomaganej komputerowo, omawia dotychczasowe rozwiązania w tej dziedzinie oraz podstawy głebokiego uczenia i metody oceny skuteczności modeli.
+Rozdział drugi przedstawia potencjał sztucznej inteligencji oraz urządzeń mobilnych w obszarze diagnostyki wspomaganej komputerowo, omawia dotychczasowe rozwiązania w tej dziedzinie oraz podstawy głębokiego uczenia i metody oceny skuteczności modeli.
 Uwzględniono również kluczowe wyzwania związane z wykorzystaniem AI w diagnostyce dermatologicznej.
 Rozdział trzeci opisuje dostępne zbiory danych dotyczące zmian skórnych oraz proces decyzyjny prowadzący do wyboru modelu wykorzystanego w systemie.
 Przedstawiono również charakterystykę zmian skórnych uwzględnionych w badaniu oraz teoretyczną infrastrukturę projektowanego systemu.
