@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2024.1.7)  24 MAY 2026 16:35
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2024.1.7)  7 JUN 2026 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2368,20 +2368,14 @@ LaTeX Font Info:    Font shape `TU/Calibri(0)/b/n' will be
 \tf@toc=\write8
 \openout8 = `praca.toc'.
 
- [2] [3] (praca.tdo)
-\tf@tdo=\write9
-\openout9 = `praca.tdo'.
-
- [4
-
-] (wstep.tex
+ [2] [3] (wstep.tex
 Rozdział 1.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
 (Font)              scaled to size 18.67929pt on input line 6.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/b/n' will be
 (Font)              scaled to size 18.67929pt on input line 6.
 
-Underfull \hbox (badness 1681) in paragraph at lines 13--15
+Underfull \hbox (badness 1681) in paragraph at lines 15--17
 \TU/Calibri(1)/m/n/12 Celem pracy jest opracowanie prototypu systemu rozpoznawa
 nia zmian skórnych
  []
@@ -2389,52 +2383,52 @@ nia zmian skórnych
 [1
 
 
-]) (rozdzial2.tex [2]
+]) (rozdzial2.tex [2] [3]
 Rozdział 2.
-[3
+[4
 
-] [4]
+] [5]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/it' will be
 (Font)              scaled to size 12.94171pt on input line 33.
- [5]
-Overfull \hbox (17.01274pt too wide) in paragraph at lines 56--87
+ [6]
+Overfull \hbox (17.01274pt too wide) in paragraph at lines 53--84
  [][] 
  []
 
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 10.80978pt on input line 87.
-[6] [7]
-Underfull \hbox (badness 1331) in paragraph at lines 110--115
+(Font)              scaled to size 10.80978pt on input line 84.
+[7] [8]
+Underfull \hbox (badness 1331) in paragraph at lines 113--118
 \TU/Calibri(1)/m/n/12 oraz wywiadem z pacjentem, stanowi skuteczną metodę profi
 laktyki czerniaka ze
  []
 
-[8]
+[9]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 15.56607pt on input line 117.
+(Font)              scaled to size 15.56607pt on input line 120.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/b/n' will be
-(Font)              scaled to size 15.56607pt on input line 117.
+(Font)              scaled to size 15.56607pt on input line 120.
 File: ai_ml_dl.png Graphic file (type bmp)
 <ai_ml_dl.png>
- [9]
+ [10]
 File: cnn.png Graphic file (type bmp)
 <cnn.png>
- [10]
+ [11]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 9.46936pt on input line 161.
+(Font)              scaled to size 9.46936pt on input line 164.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 7.78304pt on input line 161.
- [11] [12] [13]
-Underfull \hbox (badness 1845) in paragraph at lines 246--248
+(Font)              scaled to size 7.78304pt on input line 164.
+ [12] [13] [14]
+Underfull \hbox (badness 1845) in paragraph at lines 249--251
 \TU/Calibri(1)/m/n/12 zastosowania uczenia transferowego na modelach EfficientN
 etB0, EfficientNetB1 i
  []
 
-[14] [15] [16] [17] [18] [19] [20]) (rozdzial3.tex [21]
+[15] [16] [17] [18] [19] [20] [21]) (rozdzial3.tex [22]
 Rozdział 3.
-[22
+[23
 
-] [23] [24] [25] [26] [27]
+] [24] [25] [26] [27] [28]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
 (Font)              scaled to size 6.48587pt on input line 161.
 LaTeX Font Info:    Font shape `TU/CambriaMath(1)/m/n' will be
@@ -2517,40 +2511,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--291
 []|\TU/Calibri(3)/m/n/6 Zdjęcia wykonane
  []
 
-[28] [29] [30]
+[29] [30] [31]
 File: bcc_sample.png Graphic file (type bmp)
 <bcc_sample.png>
- [31]
 File: ack_sample.png Graphic file (type bmp)
 <ack_sample.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32]
 File: nev_sample.png Graphic file (type bmp)
 <nev_sample.png>
- [32]
 File: sek_examples.png Graphic file (type bmp)
 <sek_examples.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33]
 File: scc_examples.png Graphic file (type bmp)
 <scc_examples.png>
- [33]
 File: mel_sample.png Graphic file (type bmp)
 <mel_sample.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34]
 File: classes_bar.png Graphic file (type bmp)
 <classes_bar.png>
 File: classes_pie.png Graphic file (type bmp)
 <classes_pie.png>
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34]
+[35]
 File: diagram_systemu.png Graphic file (type bmp)
 <diagram_systemu.png>
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35] [36]) (rozdzial4.tex [37]
+File: screen5.png Graphic file (type bmp)
+<screen5.png>
+[36]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37]) (rozdzial4.tex [38] [39]
 Rozdział 4.
-[38
+[40
 
 ]
 Missing character: There is no ‑ in font Calibri/OT:script=latn;language=dflt;m
@@ -2569,76 +2581,71 @@ LaTeX Font Info:    Font shape `TU/InconsolataLGC(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/InconsolataLGC(0)/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 32.
 
-[39]
+[41]
 File: oversampling_classes.png Graphic file (type bmp)
 <oversampling_classes.png>
- [40] [41] [42] [43]
+ [42] [43] [44] [45]
 File: diagram_klas.png Graphic file (type bmp)
 <diagram_klas.png>
- [44] [45]
+ [46] [47]
 File: diagram_app1.png Graphic file (type bmp)
 <diagram_app1.png>
 File: diagram_app2.png Graphic file (type bmp)
 <diagram_app2.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+ [48]
 File: wyniki1.png Graphic file (type bmp)
 <wyniki1.png>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: wyniki2.png Graphic file (type bmp)
 <wyniki2.png>
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[46] [47]
+[49]
 File: wyniki3.png Graphic file (type bmp)
 <wyniki3.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[48] [49] [50]
+[50] [51] [52]
 File: wyniki4.png Graphic file (type bmp)
 <wyniki4.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[51] [52]) (zakonczenie.tex [53]
+[53] [54]) (zakonczenie.tex [55]
 Rozdział 5.
-[54
+[56
 
-]) [55] [56
+]) [57] [58
 
-] [57] [58]
-Underfull \hbox (badness 1642) in paragraph at lines 49--49
+] [59] [60] [61]
+Underfull \hbox (badness 1642) in paragraph at lines 48--48
 []\TU/Calibri(1)/m/n/12 Goodfellow, I., Bengio, Y., Courville, A. (2016). \TU/C
 alibri(0)/m/it/12 Deep Learning \TU/Calibri(1)/m/n/12 [[][]$[][][][] [] [] [] [
 ][][] []
  []
 
-[59] [60] [61] [62] [63] [64] [65] [66] [67] [68] (praca.lot)
-\tf@lot=\write10
-\openout10 = `praca.lot'.
+[62] [63] [64] [65] [66] [67] [68] [69] [70] [71] (praca.lot)
+\tf@lot=\write9
+\openout9 = `praca.lot'.
 
- [69
+ [72
 
 ] (praca.lof)
-\tf@lof=\write11
-\openout11 = `praca.lof'.
+\tf@lof=\write10
+\openout10 = `praca.lof'.
 
 
-[70
+[73
 
 ] (praca.lol)
-\tf@lol=\write12
-\openout12 = `praca.lol'.
+\tf@lol=\write11
+\openout11 = `praca.lol'.
 
- [71
+ [74
 
 ] (praca.aux)
  ***********
@@ -2661,12 +2668,12 @@ Package logreq Info: Writing requests to 'praca.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42812 strings out of 409955
- 848657 string characters out of 5781419
- 2258007 words of memory out of 5000000
- 63925 multiletter control sequences out of 15000+600000
+ 42861 strings out of 409955
+ 850160 string characters out of 5781419
+ 2307362 words of memory out of 5000000
+ 63977 multiletter control sequences out of 15000+600000
  561679 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  123i,12n,137p,2745b,5736s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on praca.pdf (77 pages).
+Output written on praca.pdf (79 pages).

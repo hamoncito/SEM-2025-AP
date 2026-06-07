@@ -215,13 +215,6 @@ Klasa ta jest tworzona i przechowywana wewnątrz \texttt{MainViewModel}, co zape
 Wynik inferencji stanowi wektor prawdopodobieństw, który jest mapowany na typy zmian skórnych zdefiniowane w \texttt{LesionType}.
 Każdy wynik jest reprezentowany jako obiekt \texttt{PredictionResult}.
 
-Przepływ danych w aplikacji odzwierciedla naturalny scenariusz użytkownika.
-Proces rozpoczyna się od wykonania zdjęcia lub wyboru obrazu z galerii.
-\texttt{MainViewModel} aktualizuje stan \texttt{imageBitmap}, a następnie wywołuje metodę \texttt{predict()} w klasie \texttt{TFLiteHelper}.
-Otrzymane wyniki są przekazywane do warstwy prezentacji i wyświetlane w komponencie \texttt{PredictionScreen} w postaci listy obiektów \texttt{PredictionResult}.
-Użytkownik może również przełączyć się do zakładki Info, w której komponent \texttt{InfoScreen} prezentuje szczegółowe opisy wszystkich typów zmian skórnych.
-Pełen przepływ użytkownika wraz z prezentacją interfejsu przedstawiono na Rysunkach \ref{fig:diagram_app1} oraz \ref{fig:diagram_app2}.
-
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{diagram_app1}
@@ -229,7 +222,6 @@ Pełen przepływ użytkownika wraz z prezentacją interfejsu przedstawiono na Ry
 	\source{opracowanie własne}
 	\label{fig:diagram_app1}
 \end{figure}
-
 
 \begin{figure}[h!]
 	\centering
@@ -239,10 +231,15 @@ Pełen przepływ użytkownika wraz z prezentacją interfejsu przedstawiono na Ry
 	\label{fig:diagram_app2}
 \end{figure}
 
+Przepływ danych w aplikacji odzwierciedla naturalny scenariusz użytkownika.
+Proces rozpoczyna się od wykonania zdjęcia lub wyboru obrazu z galerii.
+\texttt{MainViewModel} aktualizuje stan \texttt{imageBitmap}, a następnie wywołuje metodę \texttt{predict()} w klasie \texttt{TFLiteHelper}.
+Otrzymane wyniki są przekazywane do warstwy prezentacji i wyświetlane w komponencie \texttt{PredictionScreen} w postaci listy obiektów \texttt{PredictionResult}.
+Użytkownik może również przełączyć się do zakładki Info, w której komponent \texttt{InfoScreen} prezentuje szczegółowe opisy wszystkich typów zmian skórnych.
+Pełen przepływ użytkownika wraz z prezentacją interfejsu przedstawiono na Rysunkach \ref{fig:diagram_app1} oraz \ref{fig:diagram_app2}.
 
 \section{Wyniki modeli}
 
-Wyniki uzyskane przez modele zagregowano na wykresie słupkowym (Rys. \ref{fig:wyniki1}) oraz na mapie cieplnej (Rys. \ref{fig:wyniki2}).
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{wyniki1}
@@ -258,6 +255,8 @@ Wyniki uzyskane przez modele zagregowano na wykresie słupkowym (Rys. \ref{fig:w
 	\source{opracowanie własne}
 	\label{fig:wyniki2}
 \end{figure}
+
+Wyniki uzyskane przez modele zagregowano na wykresie słupkowym (Rys. \ref{fig:wyniki1}) oraz na mapie cieplnej (Rys. \ref{fig:wyniki2}).
 
 \subsection{Metryki}
 Analiza metryk uzyskanych przez poszczególne architektury przedstawiona na (Rys. \ref{fig:wyniki1}) oraz (Rys. \ref{fig:wyniki2}) ujawnia wyraźne różnice w ich skuteczności w zadaniu klasyfikacji zdjęć telefonem komórkowych zmian skórnych.

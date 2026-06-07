@@ -45,12 +45,9 @@ W kolejnych podrozdziałach przeprowadzono analizę porównawczą dotychczasowyc
 
 \section{Przegląd wstępnych metod diagnostycznych}
 Tradycyjnie wstępna diagnostyka w dermatologii obejmuje badanie dermoskopowe lub wideodermoskopowe, polegające na ocenie znamienia w około dziesięciokrotnym powiększeniu.
-W 1994 roku Stolz wraz z współpracownikami zaproponował algorytm dermoskopowy ABCD \ref{tab:abcd}, opierający się na wielowymiarowej analizie następujących cech: asymetrii (A), nierównych i postrzępionych brzegów (B), zróżnicowania kolorów (C) oraz obecności zmian morfologicznych (D), takich jak kropki, smugi, kuleczki lub sieci pigmentowe.
-Według innych interpretacji kryterium "`D'' dotyczy średnicy zmiany przekraczającej 6 mm.
-Na podstawie sumy iloczynów stopnia spełnienia poszczególnych kryteriów ABCD oraz ich wag jest obliczany wskaźnik badania dermoskopowego TDS (Total Dermatoscopy Score), stanowiący półilościową miarę znacząco poprawiającą skuteczność diagnostyczną, szczególnie w przypadku osób niebędących dermatologami, takich jak pacjenci.
-Znamiona o wartości TDS poniżej 4,75 są uznawane za łagodne, w przedziale 4,76-5,45 za podejrzane i wymagającej rutynowej kontroli dermoskopowej, a powyżej 5,45 za wysoce podejrzane w kierunku czerniaka \cite{Nachbar_Stolz_Merkle_Cognetta_Vogt_Landthaler_Bilek_Braun-Falco_Plewig_1994, Wysocki_2016}.
 
-\begin{table}[htbp]
+
+\begin{table}[h]
 	\caption{Algorytm ABCD}
 	\centering
 	\begin{tabular}{|c|p{8cm}|c|}
@@ -87,6 +84,11 @@ Znamiona o wartości TDS poniżej 4,75 są uznawane za łagodne, w przedziale 4,
 	\source{opracowanie własne na podstawie  \cite{Nachbar_Stolz_Merkle_Cognetta_Vogt_Landthaler_Bilek_Braun-Falco_Plewig_1994}}
 	\label{tab:abcd}
 \end{table}
+
+W 1994 roku Stolz wraz z współpracownikami zaproponował algorytm dermoskopowy ABCD (Tab. \ref{tab:abcd}), opierający się na wielowymiarowej analizie następujących cech: asymetrii (A), nierównych i postrzępionych brzegów (B), zróżnicowania kolorów (C) oraz obecności zmian morfologicznych (D), takich jak kropki, smugi, kuleczki lub sieci pigmentowe.
+Według innych interpretacji kryterium "`D'' dotyczy średnicy zmiany przekraczającej 6 mm.
+Na podstawie sumy iloczynów stopnia spełnienia poszczególnych kryteriów ABCD oraz ich wag jest obliczany wskaźnik badania dermoskopowego TDS (Total Dermatoscopy Score), stanowiący półilościową miarę znacząco poprawiającą skuteczność diagnostyczną, szczególnie w przypadku osób niebędących dermatologami, takich jak pacjenci.
+Znamiona o wartości TDS poniżej 4,75 są uznawane za łagodne, w przedziale 4,76-5,45 za podejrzane i wymagającej rutynowej kontroli dermoskopowej, a powyżej 5,45 za wysoce podejrzane w kierunku czerniaka \cite{Nachbar_Stolz_Merkle_Cognetta_Vogt_Landthaler_Bilek_Braun-Falco_Plewig_1994, Wysocki_2016}.
 
 W 2004 roku rozszerzono tę zasadę o dodatkową cechę "`E'', oznaczającą ewolucję rozmiaru, kształtu, koloru, powierzchni oraz innych objawów, co pozwala uwzględnić dynamiczny charakter nowotworu \cite{Abbasi_Shaw_Rigel_Friedman_McCarthy_Osman_Kopf_Polsky_2004, Duarte_Sousa-Pinto_Azevedo_Barros_Puig_Malvehy_Haneke_Correia_2021}.
 W literaturze przedstawiono również podobny algorytm CASH - kolor (C), architektura (A), symetria (S), homogeniczność (H) - który rozszerza ABCD o analizę wzorców oraz nie wymaga wag, przez co jest prostszy w użyciu \cite{Henning_Stein_Yeung_Dusza_Marghoob_Rabinovitz_Polsky_Kopf_2008}.
@@ -126,7 +128,7 @@ Badanie dermoskopowe nie stanowi ostatecznej diagnozy i powinno być połączone
 W 2000 roku opracowano pierwszy komputerowy system dermoskopii cyfrowej, klasyfikujący zmiany skórne na podstawie cech charakterystycznych czerniaka opisanych w metodzie ABCD i siedmiu punktów \cite{Oliviero_2000}.
 Wraz z dynamicznym rozwojem sztucznej inteligencji rozpoczęto badania nad jej zastosowaniem w medycynie, w tym w dermatologii \cite{Goodfellow-et-al-2016}.
 Sztuczna inteligencja (AI, ang. \textit{artificial intelligence}) stanowi szeroką dziedzinę badań dotyczącą zdolności systemów komputerowych do symulowania procesów poznawczych.
-Uczenie maszynowe (ML, ang. \textit{machine learning}) jest podzbiorem sztucznej inteligencji poświęconym algorytmom potrafiącym uczyć się z danych oraz identyfikować wzorce bez konieczności dostarczania instrukcji \ref{fig:cnn}.
+Uczenie maszynowe (ML, ang. \textit{machine learning}) jest podzbiorem sztucznej inteligencji poświęconym algorytmom potrafiącym uczyć się z danych oraz identyfikować wzorce bez konieczności dostarczania instrukcji (Rys. \ref{fig:cnn}).
 Głębokie uczenie (DL, ang. \textit{deep learning}) to obszar uczenia maszynowego polegający na uczeniu głębokich sieci neuronowych, czyli sieci neuronowych składających się z wielu warstw.
 \textit{Deep learning} radzi sobie szczególnie dobrze z wykrywaniem złożonych struktur i zależności, osiągając przełomowe wyniki zarówno w zadaniach rozpoznawania obrazów i dźwięków jak i rozumienia języka naturalnego i tłumaczeniu \cite{LeCun_Bengio_Hinton_2015, Goodfellow-et-al-2016, Russell_Norvig_2022}.
 
@@ -141,7 +143,7 @@ Głębokie uczenie (DL, ang. \textit{deep learning}) to obszar uczenia maszynowe
 Sieci neuronowe (ANN, ang. \textit{artificial neural network}) są definiowane jako systemy przetwarzania informacji inspirowane funkcjonowaniem układu nerwowego.
 W dziedzinie widzenia komputerowego (CV, \textit{computer vision}) standardem stały się konwolucyjne sieci neuronowe (CNN, ang. \textit{convolutional neural network}), których architektura jest inspirowana korą wzrokową\cite{Ghosh_2020, Hubel_Wiesel_1968}.
 Podstawy teoretyczne CNN zostały opracowane już w latach 60, lecz ich rozwój rozpoczął się dopiero w 2012 roku wraz z prezentacją architektury AlexNet \cite{Krizhevsky_2012, Hubel_Wiesel_1968}.
-Tradycyjna konwolucyjna sieć neuronowa \ref{fig:cnn} składa się z jednej lub wielu warstw konwolucyjnych oraz warstw łączenia (ang. \textit{pooling}), po których następuje jedna lub wiele warstw w pełni połączonych (FC, ang. \textit{fully connected}).
+Tradycyjna konwolucyjna sieć neuronowa (Rys. \ref{fig:cnn}) składa się z jednej lub wielu warstw konwolucyjnych oraz warstw łączenia (ang. \textit{pooling}), po których następuje jedna lub wiele warstw w pełni połączonych (FC, ang. \textit{fully connected}).
 Warstwa konwolucyjna składa się z kliku jąder konwolucyjnych które obliczają mapy cech danych wejściowych, jednocześnie ucząc się ich reprezentacji.
 Kolejne warstwy przetwarzają mapy cech z warstw poprzednich, stosując nieliniowe funkcje aktywacji i generując coraz bardziej abstrakcyjne uogólnienia obrazu. 
 Warstwa pooling redukuje liczbę parametrów poprzez zagregowanie danych z poprzednich warstw, natomiast końcowa warstwa FC pełni funkcję klasyfikatora \cite{Ghosh_2020}.
