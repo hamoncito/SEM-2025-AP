@@ -4,17 +4,16 @@
 \def\filename{podsumowanie}
 
 \chapter{Podsumowanie}\label{ch:podsumowanie}
-\section{Podsumowanie}
 W niniejszej pracy podjęto tematykę dynamicznie rozwijających się technologii sztucznej inteligencji w kontekście diagnostyki zmian skórnych.
-Przedstawiono potencjał konwolucyjnych sieci neuronowych w obszarze \textit{computer-aided diagnosis}, jednocześnie zwracajac uwagę na istniejąc ograniczenia, takie jak ramy etyczne i regulacyjne, kwestie poufności oraz bezpieczeństwa danych pacjentów, brak wyjaśnialności decyzji oraz brak niezależnych oraz reprezentatywnych zbiorów danych.
+Przedstawiono potencjał konwolucyjnych sieci neuronowych w obszarze \textit{computer-aided diagnosis}, jednocześnie zwracajac uwagę na istniejąc ograniczenia, takie jak ramy etyczne i regulacyjne, kwestie poufności oraz bezpieczeństwa danych pacjentów, brak wyjaśnialności decyzji oraz brak niezależnych i reprezentatywnych zbiorów danych.
 Zauważono również rosnącą rolę urządzeń mobilnych jako narzędzi wspierających pacjentów w monitorowaniu zmian skórnych oraz zwiększaniu świadomości dotyczącej wczesnej diagnostyki.
 
-W pracy przeanalizowano aktualną literaturę dotyczącą zastosowania konwolucyjnych sieci neuronowych w medycynie,ze szczególnym uwzględnieniem diagnostyki dermatologicznej, oraz omówiono istniejące rozwiązania mobilne w tej dziedzinie.
+W pracy przeanalizowano aktualną literaturę dotyczącą zastosowania konwolucyjnych sieci neuronowych w medycynie, ze szczególnym uwzględnieniem diagnostyki dermatologicznej, oraz omówiono istniejące rozwiązania mobilne w tej dziedzinie.
 Zaproponowano autorski system obejmujący model \textit{pre-trained} przekonwertowany do formatu TensorFlow Lite oraz aplikację mobilną na system Android, wykonującą inferencję bezpośrednio na urządzeniu pacjenta.
 Przedstawiono dostępne repozytoria i zbiory zmian skórnych, ich charakterystykę oraz luki, które wypełniają w kontekście badań nad sztuczną inteligencją w dermatologii.
 
 Po przeprowadzeniu eksperymentów na różnych zestawach danych ostatecznie zdecydowano się wykorzystać zbiór PAD-UFES-20, zawierający zdjęcia wykonane aparatem telefonu komórkowego, co stanowiło przedmiot dalszych badań i zapewniło wysoką skuteczność pomimo zmienności obrazów.
-W procesie trenowania zastosowano technikę \textit{transfer learning}, polegającą na dostosowaniu wcześniej wytrenowanego modelu do specyfiki nowych danych, oraz zestaw metod augmentacji obrazu, w tym mixup, zwiększających zdolność uogólniania modeli.
+W procesie trenowania zastosowano technikę \textit{transfer learning}, polegającą na dostosowaniu wcześniej wytrenowanego modelu do specyfiki nowych danych oraz zestaw metod augmentacji obrazu, w tym mixup, zwiększających zdolność uogólniania modeli.
 Zbadano skuteczność siedmiu wersji architekturt konwolucyjnej.
 Najlepsze wyniki osiągnął model ResNet101, uzyskując AUC równy 0,938 oraz dokładność na poziomie 0,768 w zbiorze testowym.
 Model ten został wykorzystany w implementacji aplikacji mobilnej.

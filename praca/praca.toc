@@ -1,58 +1,53 @@
 \babel@toc {polish}{}\relax 
 \contentsline {chapter}{\numberline {1}Wstęp}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motywacja}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Cele pracy}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Metodyka badawcza}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Struktura pracy}{2}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Głębokie uczenie w diagnostyce dermatologicznej}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Wpływ rozwoju sztucznej inteligencji na medycynę}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Przegląd wstępnych metod diagnostycznych}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Głębokie uczenie w dermatologii}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Podstawy deep learning}{10}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Klasyfikacja binarna}{14}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Klasyfikacja wieloklasowa}{15}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Rozwiązania mobilne}{17}{subsection.2.3.4}%
-\contentsline {section}{\numberline {2.4}Wyzwania związane z głębokim uczeniem w dziedzinie dermatologii}{18}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Stronniczość i ograniczona reprezentatywność}{18}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Problemy z generalizacją}{19}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Brak wyjaśnialności modeli}{19}{subsection.2.4.3}%
-\contentsline {subsubsection}{\numberline {2.4.3.1}Prywatność i bezpieczeństwo danych}{19}{subsubsection.2.4.3.1}%
-\contentsline {subsection}{\numberline {2.4.4}Regulacje prawne i odpowiedzialność}{20}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Problemy społeczne}{21}{subsection.2.4.5}%
-\contentsline {subsection}{\numberline {2.4.6}Wyzwania związane z aplikacjami mobilnymi}{21}{subsection.2.4.6}%
-\contentsline {section}{\numberline {2.5}Podsumowanie}{21}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Propozycja systemu do diagnostyki zmian skórnych}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Dostępne zbiory danych zmian skórnych}{23}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}ISIC}{23}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}HAM10000}{23}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}BCN20000}{25}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}DERM7PT}{26}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}PAD-UFES-20}{26}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}MED-NODE}{27}{subsection.3.1.6}%
-\contentsline {subsection}{\numberline {3.1.7}PH2}{27}{subsection.3.1.7}%
-\contentsline {subsection}{\numberline {3.1.8}Fitzpatrick17k}{28}{subsection.3.1.8}%
-\contentsline {subsection}{\numberline {3.1.9}Dermofit}{29}{subsection.3.1.9}%
-\contentsline {section}{\numberline {3.2}Dobór zbiorów i opis wybranych zmian skórnych}{31}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Rak podstawnokomórkowy - basal cell carcinoma}{32}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Rogowacenie słoneczne - actinic keratosis}{32}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Zmiana melanocytowa - nevus}{33}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Rogowacenie łojotokowe - seborrheic keratosis}{33}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Rak kolczystokomórkowy - squamous cell carcinoma}{34}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Czerniak - melanoma}{35}{subsection.3.2.6}%
-\contentsline {section}{\numberline {3.3}Infrastruktura}{36}{section.3.3}%
+\contentsline {chapter}{\numberline {2}Głębokie uczenie w diagnostyce dermatologicznej}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Wpływ rozwoju sztucznej inteligencji na medycynę}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Przegląd wstępnych metod diagnostycznych}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Głębokie uczenie w dermatologii}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Podstawy deep learning}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Klasyfikacja binarna}{13}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Klasyfikacja wieloklasowa}{14}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Rozwiązania mobilne}{16}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Wyzwania związane z głębokim uczeniem w dziedzinie dermatologii}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Stronniczość i ograniczona reprezentatywność}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Problemy z generalizacją}{18}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Brak wyjaśnialności modeli}{18}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Prywatność i bezpieczeństwo danych}{18}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Regulacje prawne i odpowiedzialność}{19}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Problemy społeczne}{20}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Wyzwania związane z aplikacjami mobilnymi}{20}{subsection.2.4.7}%
+\contentsline {section}{\numberline {2.5}Podsumowanie}{20}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Propozycja systemu do diagnostyki zmian skórnych}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dostępne zbiory danych zmian skórnych}{22}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}ISIC}{22}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}HAM10000}{22}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}BCN20000}{24}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}DERM7PT}{25}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}PAD-UFES-20}{25}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}MED-NODE}{26}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}PH2}{26}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.8}Fitzpatrick17k}{27}{subsection.3.1.8}%
+\contentsline {subsection}{\numberline {3.1.9}Dermofit}{28}{subsection.3.1.9}%
+\contentsline {section}{\numberline {3.2}Dobór zbiorów i opis wybranych zmian skórnych}{30}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Rak podstawnokomórkowy - basal cell carcinoma}{31}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Rogowacenie słoneczne - actinic keratosis}{31}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Zmiana melanocytowa - nevus}{32}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Rogowacenie łojotokowe - seborrheic keratosis}{32}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Rak kolczystokomórkowy - squamous cell carcinoma}{33}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Czerniak - melanoma}{34}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Infrastruktura}{35}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Podsumowanie}{37}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Metodyka badania}{40}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Model sieci neuronowej}{40}{section.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.0.1}Wstęp}{40}{subsubsection.4.1.0.1}%
-\contentsline {subsection}{\numberline {4.1.1}Obróbka danych}{41}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Przygotowanie do trenowania}{42}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Proces trenowania}{45}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Aplikacja mobilna}{46}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Wyniki modeli}{49}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Metryki}{49}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Wartości F1 dla poszczególnych klas}{50}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Podsumowanie wyników}{52}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Praktyczne zastosowanie aplikacji}{53}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Podsumowanie}{55}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Podsumowanie}{56}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Podsumowanie}{56}{section.5.1}%
+\contentsline {chapter}{\numberline {4}Metodyka badania}{38}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Model sieci neuronowej}{38}{section.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.0.1}Wstęp}{38}{subsubsection.4.1.0.1}%
+\contentsline {subsection}{\numberline {4.1.1}Obróbka danych}{39}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Przygotowanie do trenowania}{40}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Proces trenowania}{43}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Aplikacja mobilna}{44}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Wyniki modeli}{47}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Metryki}{47}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Wartości F1 dla poszczególnych klas}{48}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Podsumowanie wyników}{50}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Praktyczne zastosowanie aplikacji}{51}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Podsumowanie}{53}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Podsumowanie}{54}{chapter.5}%

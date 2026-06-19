@@ -173,12 +173,12 @@ W kolejnym kroku dodaje warstwy klasyfikacyjne, które redukują wymiar cech, st
 Pierwszy etap trenowania polega na uczeniu wyłącznie warstw klasyfikacyjnych przy zamrożonych wagach modelu bazowego.
 Domyślnie trenowanie w tym etapie składa się z pięciu epok.
 Do trenowania wykorzystano optymalizator Adam oraz funkcję straty CategoricalCrossentropy, która redukuje wpływ klas dominujących na predykcje modelu \cite{kingma2017adammethodstochasticoptimization, zhang2018generalizedcrossentropyloss}.
-Zdefiniowano również kilka funkcji wywoływanych po każdej epoce lub po zakończeniu procesu, polegających na zapisie najlepszych wag modelu, zatrzymaniu trenowania po 3 epokach bez poprawy oraz redukcji learning rate, czyli współczynnika określającego czułość na błędy.
+Zdefiniowano również kilka funkcji wywoływanych po każdej epoce lub po zakończeniu procesu, polegających na zapisie najlepszych wag modelu, zatrzymaniu trenowania po trzech epokach bez poprawy oraz redukcji learning rate, czyli współczynnika określającego czułość na błędy.
 
 Drugi etap trenowania odmraża większość warstw modelu bazowego z wyjątkiem warstw BatchNormalization, które przechowują statystyki domenowe i ich trenowanie mogłoby destabilizować proces \cite{ioffe2015batchnormalizationacceleratingdeep, kanavati2021partialtransfusionexpressiveinfluence}.
 Odmrożenie warstw pozwala dostosować głębsze reprezentacje do specyfiki danych dermatologicznych.
 
-Po zakończeniu trenowania wykonywana jest ewaluacja na zbiorze testowym a następnie generowana jest macierz pomyłek, wynik F1 dla każdej klasy oraz wykresy strat i dokładności.
+Po zakończeniu trenowania jest wykonywana ewaluacja na zbiorze testowym a następnie generowana jest macierz pomyłek, wynik F1 dla każdej klasy oraz wykresy strat i dokładności.
 Wytrenowany model jest konwertowany do formatu TensorFlow Lite, umożliwiając wykorzystanie go do bezpośredniej inferencji na urządzeniu mobilnym.
 Cały przepływ jest uruchamiany metodą run, która wykonuje oba etapy trenowania oraz pełną ewaluację.
 

@@ -1,26 +1,26 @@
 \babel@toc {polish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Relacje między sztuczną inteligencją, uczeniem maszynowym i głębokim uczeniem}}{10}{figure.caption.3}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Podstawowa architektura konwolucyjnej sieci neuronowej}}{11}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Relacje między sztuczną inteligencją, uczeniem maszynowym i głębokim uczeniem}}{9}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Podstawowa architektura konwolucyjnej sieci neuronowej}}{10}{figure.caption.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Klasa "`basal cell carcinoma''}}{32}{figure.caption.6}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Klasa "`actinic keratosis''}}{33}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Klasa "`nevus''}}{33}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Klasa "`seborrheic keratosis''}}{34}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Klasa "`squamous cell carcinoma''}}{34}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Klasa "`melanoma''}}{35}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Rozkład klas w zbiorze po ich ujednoliceniu}}{35}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Procentowy udział klas w zbiorze przed ich ujednoliceniem}}{36}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Uproszczony diagram systemu przedstawiający działanie aplikacji}}{37}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Interfejs użytkownika aplikacji}}{38}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Klasa "`basal cell carcinoma''}}{31}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Klasa "`actinic keratosis''}}{32}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Klasa "`nevus''}}{32}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Klasa "`seborrheic keratosis''}}{33}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Klasa "`squamous cell carcinoma''}}{33}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Klasa "`melanoma''}}{34}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Rozkład klas w zbiorze po ich ujednoliceniu}}{34}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Procentowy udział klas w zbiorze przed ich ujednoliceniem}}{35}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Uproszczony diagram systemu przedstawiający działanie aplikacji}}{36}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Interfejs użytkownika aplikacji}}{36}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Rozkład klas przed i po procesie oversampling}}{42}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagram klas przedstawiający działanie aplikacji}}{46}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagram klas przedstawiający przepływ użytkownika przez proces klasyfikacji zmiany skórnej}}{48}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagram klas przedstawiający InfoScreen}}{48}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Wykres przedstawiający wyniki badanych modeli}}{49}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mapa cieplna przedstawiająca wyniki badanych modeli}}{50}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Mapa cieplna przedstawiająca F1-score dla wszystkich modeli}}{51}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Przykładowe wyniki badań empirycznych znamion łagodnych}}{54}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Rozkład klas przed i po procesie oversampling}}{40}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagram klas przedstawiający działanie aplikacji}}{44}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagram klas przedstawiający przepływ użytkownika przez proces klasyfikacji zmiany skórnej}}{46}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagram klas przedstawiający InfoScreen}}{46}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Wykres przedstawiający wyniki badanych modeli}}{47}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mapa cieplna przedstawiająca wyniki badanych modeli}}{48}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Mapa cieplna przedstawiająca F1-score dla wszystkich modeli}}{49}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Przykładowe wyniki badań empirycznych znamion łagodnych}}{52}{figure.caption.23}%
 \addvspace {10\p@ }

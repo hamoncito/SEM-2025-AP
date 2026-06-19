@@ -27,7 +27,7 @@ Na tym tle szczególnie obiecująco przedstawia się potencjał smartfonów w de
 Analiza dostępnych aplikacji mobilnych wskazuje na szeroką gamę narzędzi wspierających zarówno pacjentów, jak i lekarzy.
 Obejmują one między innymi samokontrolę zmian skórnych, przewodniki dotyczące chorób dermatologicznych oraz systemy teledermatologii.
 Zdecydowana większość tych rozwiązań jest kierowana bezpośrednio do pacjentów, co podkreśla rosnącą rolę urządzeń mobilnych w profilaktyce oraz we wczesnym wykrywaniu niepokojących zmian skórnych.
-W połączeniu z algorytmami sztucznej inteligencji urządzenia mobilne posiadają potencjał do znaczącego zwiększenia dostępności opieki dermatologicznej, zwłaszcza w regionach o ograniczonym dostępie do specjalistów, oraz do wspierania użytkowników w systematycznym monitorowaniu stanu zdrowia skóry \cite{jamadermatol, Binder_2013, Janda_2021}.
+W połączeniu z algorytmami sztucznej inteligencji urządzenia mobilne posiadają potencjał do znaczącego zwiększenia dostępności opieki dermatologicznej, zwłaszcza w regionach o ograniczonym dostępie do specjalistów oraz do wspierania użytkowników w systematycznym monitorowaniu stanu zdrowia skóry \cite{jamadermatol, Binder_2013, Janda_2021}.
 
 Modele sztucznej inteligencji znajdują szerokie zastosowanie w diagnostyce, obejmującej między innymi takie techniki jak radiografia rentgenowska, rezonans magnetyczny, endoskopia, ultrasonografia oraz patologia cyfrowa.
 Podejście to jest określane mianem diagnostyki komputerowo wspomaganej - CADx, czyli \textit{computer-aided diagnosis}.
@@ -141,7 +141,7 @@ Głębokie uczenie (DL, ang. \textit{deep learning}) to obszar uczenia maszynowe
 \end{figure}
 
 Sieci neuronowe (ANN, ang. \textit{artificial neural network}) są definiowane jako systemy przetwarzania informacji inspirowane funkcjonowaniem układu nerwowego.
-W dziedzinie widzenia komputerowego (CV, \textit{computer vision}) standardem stały się konwolucyjne sieci neuronowe (CNN, ang. \textit{convolutional neural network}), których architektura jest inspirowana korą wzrokową\cite{Ghosh_2020, Hubel_Wiesel_1968}.
+W dziedzinie widzenia komputerowego (CV, \textit{computer vision}) standardem stały się konwolucyjne sieci neuronowe (CNN, ang. \textit{convolutional neural network}), których architektura jest inspirowana korą wzrokową \cite{Ghosh_2020, Hubel_Wiesel_1968}.
 Podstawy teoretyczne CNN zostały opracowane już w latach 60, lecz ich rozwój rozpoczął się dopiero w 2012 roku wraz z prezentacją architektury AlexNet \cite{Krizhevsky_2012, Hubel_Wiesel_1968}.
 Tradycyjna konwolucyjna sieć neuronowa (Rys. \ref{fig:cnn}) składa się z jednej lub wielu warstw konwolucyjnych oraz warstw łączenia (ang. \textit{pooling}), po których następuje jedna lub wiele warstw w pełni połączonych (FC, ang. \textit{fully connected}).
 Warstwa konwolucyjna składa się z kliku jąder konwolucyjnych które obliczają mapy cech danych wejściowych, jednocześnie ucząc się ich reprezentacji.
@@ -265,10 +265,10 @@ Model osiągnął wyniki porównywalne do 16 dermatologów.
 \citet{Kawahara_2016} w 2016 roku zaprezentowali klasyfikator liniowy wytrenowany na podstawie cech wyodrębnionych z głębokiej sieci konwolucyjnej.
 Model został wyuczony na zbiorze danych Dermofit i rozróżniał dziesięć kategorii zmian skórnych z większą dokładnością niż ówczesne wyniki innych metod dla tego samego zbioru danych.
  
-\citet{Esteva_Kuprel_Novoa_Ko_Swetter_Blau_Thrun_2017} wytrenowali konwolucyjną sieć neuronową GoogleNetInceptionV3 na 129.450 przykładach obejmujących 2.032 jednostek chorobowych i porównali jej wydajność z 21 dermatologami.
+\citet{Esteva_Kuprel_Novoa_Ko_Swetter_Blau_Thrun_2017} wytrenowali konwolucyjną sieć neuronową GoogleNetInceptionV3 na 129.450 przykładach obejmujących 2.032 jednostki chorobowe i porównali jej wydajność z 21 dermatologami.
 Szczególnie skupiono się na rozróżnianiu nowotworów keratynocytowych (rak podstawnokomórkowy i płaskonabłonkowy) od łagodnych rogowaceń oraz rozróżnianiu czerniaków złośliwych i znamion melanocytowych.
 Sieć wykazała się skutecznością na poziomie porównywalnym z dermatologami.
-Autorzy zasugerowali wykorzystanie tego typu rozwiązań do zapewnienia powszechnego dostępu do opieki diagnostycznej po niższych kosztach przy pomocy urządzeń mobilnych.
+Autorzy zasugerowali wykorzystanie tego typu rozwiązań do zapewnienia powszechnego dostępu do opieki diagnostycznej po niższych kosztach za pomocą urządzeń mobilnych.
 
 \subsection{Rozwiązania mobilne}
 
@@ -321,9 +321,9 @@ Ponadto, obecnie sztuczna inteligencja nie jest w stanie zastosować metody "`br
 
 \subsection{Brak wyjaśnialności modeli}
 Modele głębokiego uczenia działają na zasadzie "`czarnej skrzynki'', co utrudnia w wielu przypadkach uzasadnienie decyzji podjętych przez model.
-W medycynie jest kluczowe zrozumienie oraz weryfikacja diagnozy, dlatego tworzenie wyjaśnialnej sztucznej inteligencji (XAI, ang.\textit{Explainable Artificial Intelligence}) stanowi poważne wyzwanie w wdrażaniu głębokiego uczenia \cite{Herrera_2023, He_Baxter_Xu_Xu_Zhou_Zhang_2019, Kelly_Karthikesalingam_Suleyman_Corrado_King_2019}.
+W medycynie jest kluczowe zrozumienie oraz weryfikacja diagnozy, dlatego tworzenie wyjaśnialnej sztucznej inteligencji (XAI, ang. \textit{Explainable Artificial Intelligence}) stanowi poważne wyzwanie w wdrażaniu głębokiego uczenia \cite{Herrera_2023, He_Baxter_Xu_Xu_Zhou_Zhang_2019, Kelly_Karthikesalingam_Suleyman_Corrado_King_2019}.
 
-\subsubsection{Prywatność i bezpieczeństwo danych}
+\subsection{Prywatność i bezpieczeństwo danych}
 Skuteczne modele głębokiego uczenia wymagają dużych, wolnych od uprzedzeń i dobrze opisanych zbiorów danych.
 Ich pozyskiwanie wiąże się jednak z koniecznością ich anonimizacji oraz uzyskania zgody od pacjentów.
 Dane powinny być przechowywane i wykorzystywane z zachowaniem wysokiego stopnia cyberbezpieczeństwa oraz zgodnie z regulacjami prawnymi dotyczącymi ochrony danych \cite{Farhud_Zokaei_2021, He_Baxter_Xu_Xu_Zhou_Zhang_2019}.

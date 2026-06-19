@@ -4710,25 +4710,25 @@
     \endentry
     \entry{dermatoscopy-kamiska-wiciorek-spiewak}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=eddb938a3245f19e65803c1b6a21f844}{%
-           family={Kaminska-Winciorek},
+        {{un=0,uniquepart=base,hash=0ead1d5104a10ed7273ae66184b31c3e}{%
+           family={Kamińska-Winciorek},
            familyi={K\bibinithyphendelim W\bibinitperiod},
-           given={Grazyna},
+           given={Grażyna},
            giveni={G\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=1949710f20ad4e81e0d42188f584aa98}{%
-           family={Spiewak},
-           familyi={S\bibinitperiod},
-           given={Radoslaw},
+        {{un=0,uniquepart=base,hash=77ba550c63222fd1440c459b2c418a73}{%
+           family={Śpiewak},
+           familyi={Ś\bibinitperiod},
+           given={Radosław},
            giveni={R\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{ee02df66d916e949a8e7e113f0dbcfe8}
-      \strng{fullhash}{ee02df66d916e949a8e7e113f0dbcfe8}
-      \strng{bibnamehash}{ee02df66d916e949a8e7e113f0dbcfe8}
-      \strng{authorbibnamehash}{ee02df66d916e949a8e7e113f0dbcfe8}
-      \strng{authornamehash}{ee02df66d916e949a8e7e113f0dbcfe8}
-      \strng{authorfullhash}{ee02df66d916e949a8e7e113f0dbcfe8}
+      \strng{namehash}{50906642bec4134f7878b686612ca763}
+      \strng{fullhash}{50906642bec4134f7878b686612ca763}
+      \strng{bibnamehash}{50906642bec4134f7878b686612ca763}
+      \strng{authorbibnamehash}{50906642bec4134f7878b686612ca763}
+      \strng{authornamehash}{50906642bec4134f7878b686612ca763}
+      \strng{authorfullhash}{50906642bec4134f7878b686612ca763}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -13318,25 +13318,25 @@
     \endentry
     \entry{dermatoscopy-kamiska-wiciorek-spiewak}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=eddb938a3245f19e65803c1b6a21f844}{%
-           family={Kaminska-Winciorek},
+        {{un=0,uniquepart=base,hash=0ead1d5104a10ed7273ae66184b31c3e}{%
+           family={Kamińska-Winciorek},
            familyi={K\bibinithyphendelim W\bibinitperiod},
-           given={Grazyna},
+           given={Grażyna},
            giveni={G\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=1949710f20ad4e81e0d42188f584aa98}{%
-           family={Spiewak},
-           familyi={S\bibinitperiod},
-           given={Radoslaw},
+        {{un=0,uniquepart=base,hash=77ba550c63222fd1440c459b2c418a73}{%
+           family={Śpiewak},
+           familyi={Ś\bibinitperiod},
+           given={Radosław},
            giveni={R\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{ee02df66d916e949a8e7e113f0dbcfe8}
-      \strng{fullhash}{ee02df66d916e949a8e7e113f0dbcfe8}
-      \strng{bibnamehash}{ee02df66d916e949a8e7e113f0dbcfe8}
-      \strng{authorbibnamehash}{ee02df66d916e949a8e7e113f0dbcfe8}
-      \strng{authornamehash}{ee02df66d916e949a8e7e113f0dbcfe8}
-      \strng{authorfullhash}{ee02df66d916e949a8e7e113f0dbcfe8}
+      \strng{namehash}{50906642bec4134f7878b686612ca763}
+      \strng{fullhash}{50906642bec4134f7878b686612ca763}
+      \strng{bibnamehash}{50906642bec4134f7878b686612ca763}
+      \strng{authorbibnamehash}{50906642bec4134f7878b686612ca763}
+      \strng{authornamehash}{50906642bec4134f7878b686612ca763}
+      \strng{authorfullhash}{50906642bec4134f7878b686612ca763}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
