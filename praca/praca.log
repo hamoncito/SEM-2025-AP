@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2024.1.7)  25 JUN 2026 00:04
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2024.1.7)  25 JUN 2026 00:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2651,7 +2651,7 @@ Package logreq Info: Writing requests to 'praca.run.xml'.
 Here is how much of TeX's memory you used:
  42859 strings out of 409955
  850138 string characters out of 5781419
- 2307359 words of memory out of 5000000
+ 2307360 words of memory out of 5000000
  63975 multiletter control sequences out of 15000+600000
  561679 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
