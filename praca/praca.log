@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2024.1.7)  24 JUN 2026 22:57
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2024.1.7)  24 JUN 2026 23:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2461,4 +2461,200 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--170
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at 
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+[]|\TU/Calibri(3)/m/n/6 Badanie dermosko-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+[]|\TU/Calibri(3)/m/n/6 Zdjęcia kliniczne,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\TU/Calibri(3)/m/n/6 zdjęcia z przybli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\TU/Calibri(3)/m/n/6 żeniem, badanie
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 249--249
+[]|\TU/Calibri(3)/m/n/6 Zdjęcia kliniczne wy-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--262
+[]|\TU/Calibri(3)/m/n/6 Zdjęcia wykonane
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+[]|\TU/Calibri(3)/m/n/6 Badanie dermosko-
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 272--272
+[]|\TU/Calibri(3)/m/n/6 Zdjęcia wykonane w
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
+[]|\TU/Calibri(3)/m/n/6 Zdjęcia wykonane
+ []
+
+[28] [29] [30]
+File: bcc_sample.png Graphic file (type bmp)
+<bcc_sample.png>
+File: ack_sample.png Graphic file (type bmp)
+<ack_sample.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31]
+File: nev_sample.png Graphic file (type bmp)
+<nev_sample.png>
+File: sek_examples.png Graphic file (type bmp)
+<sek_examples.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32]
+File: scc_examples.png Graphic file (type bmp)
+<scc_examples.png>
+File: mel_sample.png Graphic file (type bmp)
+<mel_sample.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33]
+File: classes_bar.png Graphic file (type bmp)
+<classes_bar.png>
+File: classes_pie.png Graphic file (type bmp)
+<classes_pie.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34]
+File: diagram_systemu.png Graphic file (type bmp)
+<diagram_systemu.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: screen5.png Graphic file (type bmp)
+<screen5.png>
+[35] [36]) (rozdzial4.tex [37]
+Rozdział 4.
+[38
+
+]
+Missing character: There is no ‑ in font Calibri/OT:script=latn;language=dflt;m
+apping=tex-text;!
+Missing character: There is no ‑ in font Calibri/OT:script=latn;language=dflt;m
+apping=tex-text;!
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 31.
+LaTeX Font Info:    Font shape `TU/InconsolataLGC(0)/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 31.
+LaTeX Font Info:    Font shape `TU/InconsolataLGC(0)/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 31.
+LaTeX Font Info:    Font shape `TU/InconsolataLGC(0)/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 32.
+
+[39]
+File: oversampling_classes.png Graphic file (type bmp)
+<oversampling_classes.png>
+ [40] [41] [42] [43]
+File: diagram_klas.png Graphic file (type bmp)
+<diagram_klas.png>
+ [44] [45]
+File: diagram_app1.png Graphic file (type bmp)
+<diagram_app1.png>
+File: diagram_app2.png Graphic file (type bmp)
+<diagram_app2.png>
+ [46]
+File: wyniki1.png Graphic file (type bmp)
+<wyniki1.png>
+File: wyniki2.png Graphic file (type bmp)
+<wyniki2.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[47]
+File: wyniki3.png Graphic file (type bmp)
+<wyniki3.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[48] [49] [50]
+File: wyniki4.png Graphic file (type bmp)
+<wyniki4.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[51] [52]) (zakonczenie.tex [53]
+Rozdział 5.
+[54
+
+]) [55] [56
+
+] [57] [58] [59]
+Underfull \hbox (badness 1642) in paragraph at lines 48--48
+[]\TU/Calibri(1)/m/n/12 Goodfellow, I., Bengio, Y., Courville, A. (2016). \TU/C
+alibri(0)/m/it/12 Deep Learning \TU/Calibri(1)/m/n/12 [[][]$[][][][] [] [] [] [
+][][] []
+ []
+
+[60] [61] [62] [63] [64] [65] [66] [67] [68] [69] (praca.lot)
+\tf@lot=\write9
+\openout9 = `praca.lot'.
+
+ [70
+
+] (praca.lof)
+\tf@lof=\write10
+\openout10 = `praca.lof'.
+
+
+[71
+
+] (praca.lol)
+\tf@lol=\write11
+\openout11 = `praca.lol'.
+
+ [72
+
+] (praca.aux)
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-10-10>
+ ***********
+Package rerunfilecheck Info: File `praca.out' has not changed.
+(rerunfilecheck)             Checksum: 61352C006DA1C758E96D78DEE2E3EF1A;9640.
+Package logreq Info: Writing requests to 'praca.run.xml'.
+\openout1 = `praca.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 42859 strings out of 409955
+ 850138 string characters out of 5781419
+ 2307362 words of memory out of 5000000
+ 63975 multiletter control sequences out of 15000+600000
+ 561679 words of font info for 121 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 123i,12n,137p,2745b,5736s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on praca.pdf (76 pages).
