@@ -30,9 +30,9 @@ fun PredictionScreen(
             Text(
                 text = "Dodaj nową zmianę skórną klikając '+'\n\n" +
                         "1. Upewnij się, że fotografowany fragment skóry jest czysty i widoczny na zdjęciu.\n\n" +
-                        "2. Zdjęcie wykonaj w naturalnym świetle, wykorzystując przybliżenie aparatu i zachowując ostrości obrazu.\n\n" +
+                        "2. Zdjęcie wykonaj w naturalnym świetle, wykorzystując przybliżenie aparatu i zachowując ostrość obrazu.\n\n" +
                         "3. Zmiana skórna powinna być na środku zdjęcia.",
-                color = Color.LightGray,
+                color = Color.DarkGray,
                 textAlign = TextAlign.Center
             )
         }
